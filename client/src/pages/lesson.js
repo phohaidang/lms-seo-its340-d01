@@ -38,8 +38,7 @@ export async function renderLesson(app, { id }) {
     
     // Improved extraction logic for Student View
     try {
-      const paddedId = id.toString().padStart(2, '0');
-      const origHtmlReq = await fetch(`/lessons/Buoi_${paddedId}.html`);
+      const origHtmlReq = await fetch(`/lessons/buoi-${id}.html`);
       if (origHtmlReq.ok) {
          const rawHtml = await origHtmlReq.text();
          const parser = new DOMParser();
@@ -78,7 +77,7 @@ export async function renderLesson(app, { id }) {
     }
   }
 
-  const paddedId = id.toString().padStart(2, '0');
+
 
   app.innerHTML = `
     <div class="container page">
@@ -100,13 +99,13 @@ export async function renderLesson(app, { id }) {
 
       <div id="content-lesson" class="content-tab" style="display: ${isStudent ? 'none' : 'block'}">
         ${!isStudent ? (session.hasLesson
-          ? `<iframe src="/lessons/Buoi_${paddedId}.html" style="width:100%;height:80vh;border:1px solid var(--border);border-radius:var(--radius-md);background:white"></iframe>`
+          ? `<iframe src="/lessons/buoi-${id}.html" style="width:100%;height:80vh;border:1px solid var(--border);border-radius:var(--radius-md);background:white"></iframe>`
           : `<div class="alert alert-warning">Giáo án chưa được upload cho buổi này</div>`) : ''}
       </div>
 
       <div id="content-slide" class="content-tab" style="display:none">
         ${!isStudent ? (session.hasSlide
-          ? `<embed src="/slides/Buoi_${paddedId}.pdf" type="application/pdf" style="width:100%;height:80vh;border:1px solid var(--border);border-radius:var(--radius-md)">`
+          ? `<embed src="/slides/buoi-${id}.pdf" type="application/pdf" style="width:100%;height:80vh;border:1px solid var(--border);border-radius:var(--radius-md)">`
           : `<div class="alert alert-warning">Slide chưa được convert cho buổi này</div>`) : ''}
       </div>
 
@@ -165,10 +164,6 @@ export async function renderLesson(app, { id }) {
          <!-- Anonymous Feedback Section -->
          <div id="feedback-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border)">
             <div id="feedback-loading" style="text-align:center; padding: 2rem"><div class="spinner"></div></div>
-         </div>
-      </div>
-: 2rem; border-top: 2px solid var(--border-color)">
-           <div id="feedback-loading" style="text-align:center"><div class="spinner"></div></div>
          </div>
       </div>
       ` : `

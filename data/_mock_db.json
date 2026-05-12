@@ -112,7 +112,7 @@
       "student_id": "ADMIN",
       "full_name": "Phó Hải Đăng",
       "email": "dangph@hub.edu.vn",
-      "password_hash": "$2a$10$zOqamcJmmUF0hDsdWQpbSushs620DN/cbja.qyTMlSnD4NtUPGepO",
+      "password_hash": "$2a$10$y3eTMjnAN/8q67BXtIIYd.fcQ0ANUqOnL5zivzdQf2NAx8nfiaaHu",
       "role": "admin",
       "registered_at": "2026-05-12T15:26:44.618Z"
     }
