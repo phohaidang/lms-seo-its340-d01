@@ -1,0 +1,209 @@
+{
+  "students": [
+    {
+      "student_id": "2024001234",
+      "email": "test@hub.edu.vn",
+      "full_name": "Nguyen Van A",
+      "password_hash": "$2a$10$UlvGOZWRtap51Z5MjsrUceZejg9kbkJ7I3RojuoJICXgEDkI7Nn2.",
+      "role": "student",
+      "created_at": "2026-04-11T12:20:57.028Z",
+      "last_login": "2026-04-28T12:37:24.716Z"
+    },
+    {
+      "student_id": "SV002",
+      "email": "test2@hub.edu.vn",
+      "full_name": "Nguyen Van Test",
+      "password_hash": "$2a$10$wi7vYZzsFyavEkcEOVD4T.XSxcje7Jq9/qUd/SeI9oig/geeVb86G",
+      "role": "student",
+      "created_at": "2026-04-11T14:24:45.088Z",
+      "last_login": "2026-04-11T14:24:45.090Z"
+    },
+    {
+      "student_id": "test@hub.edu.vnADMIN001",
+      "email": "admin@hub.edu.vn",
+      "full_name": "Giảng viên Admin",
+      "password_hash": "$2a$10$ae3BFwBCZHZzhejUKBJZ4eo3U/kAG.CqU2xze9JihGKmAOt/B/dCS",
+      "role": "admin",
+      "created_at": "2026-04-11T15:01:31.556Z",
+      "last_login": "2026-04-28T13:12:31.119Z"
+    },
+    {
+      "student_id": "SV001",
+      "email": "sv01@hub.edu.vn",
+      "full_name": "Test Student",
+      "password_hash": "$2a$10$q6Q2P4upqRnkM01B3umCUedS2HoHZXLPFGksMYL4f04VaTsxJzI0C",
+      "role": "student",
+      "created_at": "2026-04-11T15:05:14.392Z",
+      "last_login": "2026-04-11T15:05:14.392Z"
+    },
+    {
+      "student_id": "tester2026",
+      "email": "tester@hub.edu.vn",
+      "full_name": "Tester",
+      "password_hash": "$2a$10$dYb2JrepA9UblDN1KAcb/e5bHjzuTvqDSq6GupTolSPpWw0s/dJOS",
+      "role": "student",
+      "created_at": "2026-04-11T15:13:59.860Z",
+      "last_login": "2026-04-11T15:13:59.860Z"
+    },
+    {
+      "student_id": "test@hub.edu.vn12345678",
+      "email": "testuser1@hub.edu.vn",
+      "full_name": "Test User One",
+      "password_hash": "$2a$10$Q4COjgtPypCxJ6BsKyuUJOlikqgki0yOnwbmCFVldoO86NyWYZ4VW",
+      "role": "student",
+      "created_at": "2026-04-11T15:23:34.722Z",
+      "last_login": "2026-04-11T15:23:34.722Z"
+    },
+    {
+      "student_id": "test@hub.edu.vn",
+      "email": "vitor@hub.edu.vn",
+      "full_name": "Vitor Test",
+      "password_hash": "$2a$10$XU8qpEIkJ9W.GFE6tXvsW.AaipGxWkDoKjoVzR7bTtd4Hnm5IMaj.",
+      "role": "student",
+      "created_at": "2026-04-11T15:29:13.278Z",
+      "last_login": "2026-04-11T15:29:13.278Z"
+    },
+    {
+      "student_id": "sv11",
+      "email": "sv11@hub.edu.vn",
+      "full_name": "SV 11",
+      "password_hash": "$2a$10$XnZpRrAwADQRqMb/oDUw/eOH1gzsmaQXCVz6nzsWUhms1Dl5WRXZe",
+      "role": "student",
+      "created_at": "2026-04-12T03:12:33.504Z",
+      "last_login": "2026-04-26T13:45:29.281Z"
+    },
+    {
+      "student_id": "test@hub.edu.vn2024000001",
+      "email": "sv1@hub.edu.vn",
+      "full_name": "Sinh vien 1",
+      "password_hash": "$2a$10$8EtPG6POkMJI0/HcNmvkbe6/CBcrPqqsqYXViWm89NNBtX4AHK7hq",
+      "role": "student",
+      "created_at": "2026-04-12T04:28:38.406Z",
+      "last_login": "2026-04-12T04:28:38.411Z"
+    },
+    {
+      "student_id": "999999",
+      "email": "unique_tester_99@hub.edu.vn",
+      "full_name": "Unique Tester",
+      "password_hash": "$2a$10$sNrOIpbOSXPhkCUqP7jvKOEQxt1D6BTKBLhqmrEU9JhwDNhZ.meli",
+      "role": "student",
+      "created_at": "2026-04-28T11:49:36.005Z",
+      "last_login": "2026-04-28T11:49:36.005Z"
+    },
+    {
+      "student_id": "test@hub.edu.vnFIX_TEST_01",
+      "email": "fixtest01@hub.edu.vn",
+      "full_name": "Fix Tester",
+      "password_hash": "$2a$10$KT8.A8Z5pPv8A19S8j5qPOeIPw7DkjED.qySvsGjJcvWj/g5IH8xG",
+      "role": "student",
+      "created_at": "2026-04-28T12:03:25.173Z",
+      "last_login": "2026-04-28T12:03:25.173Z"
+    },
+    {
+      "student_id": "2026000002",
+      "email": "final_test@hub.edu.vn",
+      "full_name": "Student Test 2",
+      "password_hash": "$2a$10$Uz7WFwiYzJt929Y07q5PuOg.Ey86NAiljyIRzA8.kZ.U70hRzwwx2",
+      "role": "student",
+      "created_at": "2026-04-28T13:17:33.217Z",
+      "last_login": "2026-04-28T13:17:33.218Z"
+    },
+    {
+      "student_id": "ADMIN",
+      "full_name": "Phó Hải Đăng",
+      "email": "dangph@hub.edu.vn",
+      "password_hash": "$2a$10$zOqamcJmmUF0hDsdWQpbSushs620DN/cbja.qyTMlSnD4NtUPGepO",
+      "role": "admin",
+      "registered_at": "2026-05-12T15:26:44.618Z"
+    }
+  ],
+  "quiz_attempts": [
+    {
+      "attempt_id": "4791ce75-043b-4346-be98-fe5c56f98911",
+      "student_id": "2024001234",
+      "session_number": 1,
+      "answers_json": "[{\"question_id\":\"s1-tf1\",\"selected\":true},{\"question_id\":\"s1-mc2\",\"selected\":\"C\"},{\"question_id\":\"s1-mc4\",\"selected\":\"B\"},{\"question_id\":\"s1-tf2\",\"selected\":true},{\"question_id\":\"s1-mc3\",\"selected\":\"B\"},{\"question_id\":\"s1-mc5\",\"selected\":\"B\"},{\"question_id\":\"s1-mc1\",\"selected\":\"C\"}]",
+      "score": 8.57,
+      "total_questions": 7,
+      "correct_count": 6,
+      "submitted_at": "2026-04-11T12:50:32.531Z"
+    },
+    {
+      "attempt_id": "379bde95-7923-4a56-af20-6a44b65fb934",
+      "student_id": "sv11",
+      "session_number": 1,
+      "answers_json": "[{\"question_id\":\"s1-mc2\",\"selected\":\"C\"},{\"question_id\":\"s1-mc3\",\"selected\":\"B\"},{\"question_id\":\"s1-mc4\",\"selected\":\"B\"},{\"question_id\":\"s1-mc1\",\"selected\":\"C\"},{\"question_id\":\"s1-tf1\",\"selected\":true},{\"question_id\":\"s1-mc5\",\"selected\":\"C\"},{\"question_id\":\"s1-tf2\",\"selected\":true}]",
+      "score": 7.14,
+      "total_questions": 7,
+      "correct_count": 5,
+      "submitted_at": "2026-04-13T03:27:23.192Z"
+    },
+    {
+      "attempt_id": "ea7fb98a-6d98-41e5-a95a-7b4615fd060d",
+      "student_id": "sv11",
+      "session_number": 2,
+      "answers_json": "[{\"question_id\":\"s2-mc5\",\"selected\":\"D\"},{\"question_id\":\"s2-mc1\",\"selected\":\"A\"},{\"question_id\":\"s2-mc6\",\"selected\":\"A\"},{\"question_id\":\"s2-tf1\",\"selected\":true},{\"question_id\":\"s2-mc3\",\"selected\":\"A\"},{\"question_id\":\"s2-mc4\",\"selected\":\"B\"},{\"question_id\":\"s2-mc9\",\"selected\":\"C\"},{\"question_id\":\"s2-mc7\",\"selected\":\"A\"},{\"question_id\":\"s2-mc2\",\"selected\":\"C\"},{\"question_id\":\"s2-mc8\",\"selected\":\"B\"}]",
+      "score": 3,
+      "total_questions": 10,
+      "correct_count": 3,
+      "submitted_at": "2026-04-17T03:17:39.854Z"
+    }
+  ],
+  "exam_attempts": [],
+  "manual_grades": [],
+  "ebook_progress": [
+    {
+      "attempt_id": "3465b6f6-c5eb-4e34-aa91-3529d6bafc08",
+      "student_id": "2024001234",
+      "chapter": 1,
+      "level": 1,
+      "answers_json": "[{\"question_id\":\"L1-c1-q1\",\"selected\":\"B\"},{\"question_id\":\"L1-c1-q2\",\"selected\":\"B\"},{\"question_id\":\"L1-c1-q3\",\"selected\":\"C\"},{\"question_id\":\"L1-c1-q4\",\"selected\":\"C\"},{\"question_id\":\"L1-c1-q5\",\"selected\":\"D\"},{\"question_id\":\"L1-c1-q6\",\"selected\":\"C\"},{\"question_id\":\"L1-c1-q7\",\"selected\":\"B\"}]",
+      "score": 2.86,
+      "graded": true,
+      "submitted_at": "2026-04-11T12:37:53.638Z"
+    }
+  ],
+  "course_config": [],
+  "session_feedback": [
+    {
+      "id": "be654ba3-78e9-4b4a-9ee3-2b181528cfa1",
+      "session_id": 1,
+      "anon_hash": "OTk5OTk5X3Nlc3Npb25fMQ==",
+      "understanding": 5,
+      "pace": 3,
+      "usefulness": 4,
+      "comment": "Bu",
+      "submitted_at": "2026-04-28T11:51:30.773Z"
+    },
+    {
+      "id": "57e7f4f1-7e33-42fa-abbb-40913672319f",
+      "session_id": 2,
+      "anon_hash": "OTk5OTk5X3Nlc3Npb25fMg==",
+      "understanding": 4,
+      "pace": 3,
+      "usefulness": 5,
+      "comment": "Good session!",
+      "submitted_at": "2026-04-28T11:53:44.078Z"
+    },
+    {
+      "id": "e3cd0d55-2956-4164-9788-aa6bf6915e74",
+      "session_id": 3,
+      "anon_hash": "OTk5OTk5X3Nlc3Npb25fMw==",
+      "understanding": 4,
+      "pace": 3,
+      "usefulness": 5,
+      "comment": "Thanks for the lesson!",
+      "submitted_at": "2026-04-28T11:59:03.182Z"
+    },
+    {
+      "id": "92a01b01-0553-4fa1-b438-0ccb62554fca",
+      "session_id": 1,
+      "anon_hash": "dGVzdEBodWIuZWR1LnZuRklYX1RFU1RfMDFfc2Vzc2lvbl8x",
+      "understanding": 5,
+      "pace": 3,
+      "usefulness": 5,
+      "comment": "Great lesson",
+      "submitted_at": "2026-04-28T12:05:04.576Z"
+    }
+  ]
+}

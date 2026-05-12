@@ -1,0 +1,150 @@
+{
+  "chapter": 1,
+  "title": "Tổng quan & Nền tảng Lý thuyết",
+  "sessions": [1, 2, 3],
+  "scqa": {
+    "situation": "Thế giới đã chuyển từ Web 1.0 (đọc thụ động) sang Web 2.0 (đọc-viết-tương tác). Mạng xã hội bùng nổ với hơn 4.5 tỷ người dùng. E-Commerce phát triển mạnh nhưng vẫn thiếu yếu tố xã hội — người mua \"cô độc\" trên các sàn TMĐT truyền thống.",
+    "complication": "TMĐT truyền thống dựa trên mô hình AIDA (Attention → Interest → Desire → Action), nhưng mô hình này bỏ qua hai hành vi quan trọng nhất trong thời đại MXH: SEARCH (tìm kiếm thông tin từ cộng đồng) và SHARE (chia sẻ trải nghiệm). Chỉ 14% người tiêu dùng tin quảng cáo — họ tin bạn bè, review, và cộng đồng.",
+    "question": "Làm sao kết hợp TMĐT + MXH để tạo ra mô hình kinh doanh mới? Social Commerce là gì, vận hành trên nền tảng nào, và lý thuyết hành vi nào giải thích sức mạnh của nó?",
+    "answer": "Social Commerce = E-Commerce + Social Media + Social Interaction. Nó vận hành trên nền tảng Social Computing (blog, wiki, SNS, mobile SC), tuân theo mô hình AISAS (Dentsu), và được thúc đẩy bởi Social Influence, Social Capital, WoM/eWoM, và Engagement 5Cs."
+  },
+  "concepts": [
+    {
+      "id": "c1-social-computing",
+      "term": "Social Computing",
+      "definition": "Lĩnh vực ứng dụng CNTT kết hợp mạng xã hội và hành vi xã hội — nền tảng kỹ thuật của Social Commerce.",
+      "key_points": [
+        "Bao gồm: blog, wiki, SNS, social media, crowdsourcing",
+        "Là nền tảng (foundation) của Social Commerce",
+        "Biến người dùng từ 'đọc' thành 'tạo nội dung'"
+      ],
+      "case_study": {
+        "title": "Starbucks — My Starbucks Idea",
+        "context": "Starbucks tạo platform cho KH đề xuất ý tưởng sản phẩm mới. Hàng nghìn ý tưởng được submit, vote, và nhiều ý tưởng được triển khai thực tế.",
+        "analysis": "Đây là ví dụ crowdsourcing + social computing: DN dùng công nghệ xã hội để khai thác trí tuệ đám đông.",
+        "lesson_learned": "Social computing không chỉ là công nghệ — nó BIẾN khách hàng thành co-creator và tăng loyalty."
+      },
+      "related_concepts": ["c1-web20", "c1-social-media", "c1-sc-definition"]
+    },
+    {
+      "id": "c1-web20",
+      "term": "Web 2.0",
+      "definition": "Thế hệ web thứ 2 — 'participative web' — nơi người dùng KHÔNG CHỈ đọc mà còn tạo nội dung, tương tác, và cùng xây dựng.",
+      "key_points": [
+        "Web 1.0 = Read-only (đọc thụ động)",
+        "Web 2.0 = Read-Write (đọc + viết + tương tác)",
+        "Công nghệ: AJAX, RSS, APIs, mashups"
+      ],
+      "case_study": null,
+      "related_concepts": ["c1-social-computing", "c1-social-media"]
+    },
+    {
+      "id": "c1-sc-definition",
+      "term": "Social Commerce (SC)",
+      "definition": "TMĐT thực hiện qua social media và/hoặc social networks — nơi tương tác xã hội trở thành động lực mua hàng.",
+      "key_points": [
+        "SC = E-Commerce + Social Media + Social Interaction",
+        "Không chỉ 'bán hàng trên Facebook' — bao gồm cả social shopping, group buying, social CRM",
+        "Xu hướng: Mobile SC, Live Commerce, Creator Economy"
+      ],
+      "case_study": {
+        "title": "TikTok Shop — SC thế hệ mới",
+        "context": "TikTok tích hợp mua sắm trực tiếp vào video ngắn. Creator review sản phẩm → người xem mua ngay trong app → chia sẻ trải nghiệm.",
+        "analysis": "TikTok Shop hoàn hảo thể hiện SC: content (social media) + commerce (mua bán) + community (tương tác, review, share).",
+        "lesson_learned": "SC mạnh nhất khi giải trí + mua sắm + cộng đồng hòa làm một."
+      },
+      "related_concepts": ["c1-social-computing", "c1-aisas"]
+    },
+    {
+      "id": "c1-aisas",
+      "term": "AISAS (Dentsu)",
+      "definition": "Mô hình hành vi NTD trong thời đại MXH: Attention → Interest → Search → Action → Share. Thay thế mô hình AIDA truyền thống.",
+      "key_points": [
+        "Thay 'Desire' bằng 'Search' — NTD chủ động tìm kiếm thông tin",
+        "Thêm 'Share' — NTD chia sẻ trải nghiệm, tạo earned media",
+        "Search + Share là 2 yếu tố ĐẶC TRƯNG của SC so với EC truyền thống"
+      ],
+      "case_study": {
+        "title": "Shopee Live — AISAS trong thực tế VN",
+        "context": "Người dùng thấy quảng cáo Shopee (Attention) → quan tâm sản phẩm (Interest) → xem review trên YouTube/TikTok (Search) → mua qua livestream (Action) → chia sẻ deal cho bạn bè (Share).",
+        "analysis": "Mỗi bước trong AISAS đều có touchpoint trên MXH. Customer journey không còn tuyến tính mà xoay vòng.",
+        "lesson_learned": "Share KHÔNG phải bước cuối — nó quay lại thành Attention cho người khác, tạo viral loop."
+      },
+      "related_concepts": ["c1-sc-definition", "c1-engagement-5cs"]
+    },
+    {
+      "id": "c1-engagement-5cs",
+      "term": "Engagement 5Cs",
+      "definition": "5 cấp độ tương tác của người dùng trên MXH: Consume → Connect → Collect → Create → Collaborate.",
+      "key_points": [
+        "Consume: đọc, xem, lướt (thụ động nhất)",
+        "Connect: follow, like, comment",
+        "Collect: save, bookmark, curate",
+        "Create: tạo nội dung UGC",
+        "Collaborate: cùng tạo, crowdsource (chủ động nhất)"
+      ],
+      "case_study": null,
+      "related_concepts": ["c1-aisas", "c1-social-influence"]
+    },
+    {
+      "id": "c1-social-influence",
+      "term": "Social Influence",
+      "definition": "Sức ảnh hưởng xã hội — khả năng thay đổi thái độ, hành vi người khác thông qua tương tác. Bao gồm Conformity và Social Proof.",
+      "key_points": [
+        "Social Proof: 'Nhiều người mua = sản phẩm tốt'",
+        "Conformity: đồng thuận với nhóm",
+        "KOL/Influencer = người có social influence cao",
+        "Social Capital: giá trị từ kết nối mạng xã hội"
+      ],
+      "case_study": null,
+      "related_concepts": ["c1-engagement-5cs", "c1-wom"]
+    },
+    {
+      "id": "c1-wom",
+      "term": "WoM / eWoM / Viral Marketing",
+      "definition": "Word-of-Mouth: truyền miệng. eWoM: truyền miệng điện tử trên MXH. Viral Marketing: khuyến khích người dùng truyền bá thông điệp.",
+      "key_points": [
+        "Chỉ 14% tin quảng cáo — đa số tin bạn bè và review",
+        "eWoM = earned media có giá trị nhất",
+        "Viral = nội dung lan truyền tự nhiên, chi phí thấp"
+      ],
+      "case_study": null,
+      "related_concepts": ["c1-social-influence", "c1-aisas"]
+    }
+  ],
+  "tests": {
+    "level_1": {
+      "name": "🎯 Level 1: Nắm rõ khái niệm",
+      "description": "Trắc nghiệm — Bạn có nhớ đúng định nghĩa không?",
+      "bloom_level": "Remember / Understand",
+      "questions": [
+        { "id": "L1-c1-q1", "type": "mc", "concept_ref": "c1-social-computing", "question": "Social Computing là gì?", "options": ["A. Phần mềm máy tính cho mạng xã hội", "B. Công nghệ cloud computing cho social media", "C. Ứng dụng CNTT kết hợp mạng xã hội và hành vi xã hội", "D. Thuật toán AI phân tích hành vi người dùng"], "correct": "C" },
+        { "id": "L1-c1-q2", "type": "mc", "concept_ref": "c1-web20", "question": "Web 2.0 còn được gọi là gì?", "options": ["A. Static Web", "B. Semantic Web", "C. Participative Web", "D. Mobile Web"], "correct": "C" },
+        { "id": "L1-c1-q3", "type": "mc", "concept_ref": "c1-aisas", "question": "Trong mô hình AISAS, 'S' đầu tiên viết tắt của gì?", "options": ["A. Social", "B. Search", "C. Share", "D. Sale"], "correct": "B" },
+        { "id": "L1-c1-q4", "type": "mc", "concept_ref": "c1-aisas", "question": "AISAS khác AIDA ở điểm nào quan trọng nhất?", "options": ["A. Thêm bước Awareness", "B. Bỏ bước Interest", "C. Thay Desire bằng Search, thêm Share", "D. Thêm bước Satisfaction"], "correct": "C" },
+        { "id": "L1-c1-q5", "type": "mc", "concept_ref": "c1-engagement-5cs", "question": "Engagement 5Cs KHÔNG bao gồm:", "options": ["A. Consume", "B. Create", "C. Convert", "D. Collaborate"], "correct": "C" },
+        { "id": "L1-c1-q6", "type": "mc", "concept_ref": "c1-wom", "question": "Theo Qualman, bao nhiêu % người tiêu dùng tin quảng cáo?", "options": ["A. 50%", "B. 14%", "C. 30%", "D. 75%"], "correct": "B" },
+        { "id": "L1-c1-q7", "type": "mc", "concept_ref": "c1-sc-definition", "question": "Social Commerce là sự kết hợp của:", "options": ["A. E-Commerce + AI", "B. E-Commerce + Social Media + Social Interaction", "C. Marketing + Social Media", "D. CRM + Social Network"], "correct": "B" }
+      ]
+    },
+    "level_2": {
+      "name": "📝 Level 2: Giải thích",
+      "description": "Tự luận — Bạn có HIỂU không? Giải thích bằng lời của mình.",
+      "bloom_level": "Understand / Analyze",
+      "questions": [
+        { "id": "L2-c1-q1", "type": "essay", "concept_ref": "c1-aisas", "question": "Hãy giải thích sự khác biệt giữa AIDA và AISAS. Tại sao AISAS phù hợp hơn trong bối cảnh Social Commerce?", "rubric": "Cần nêu: (1) AIDA thiếu Search + Share, (2) AISAS phản ánh hành vi tìm kiếm + chia sẻ trên MXH, (3) Cho ví dụ cụ thể", "max_words": 300 },
+        { "id": "L2-c1-q2", "type": "essay", "concept_ref": "c1-social-influence", "question": "Social Proof hoạt động như thế nào trong Social Commerce? Cho 2 ví dụ cụ thể ở Việt Nam.", "rubric": "Cần: (1) Định nghĩa Social Proof, (2) Cơ chế tâm lý, (3) 2 ví dụ VN (ratings, reviews, số lượng đã bán...)", "max_words": 300 },
+        { "id": "L2-c1-q3", "type": "essay", "concept_ref": "c1-engagement-5cs", "question": "Phân tích 5 cấp độ Engagement (5Cs) bằng ví dụ trên TikTok. Cấp độ nào có giá trị nhất cho DN?", "rubric": "Cần: (1) 5Cs đầy đủ + ví dụ TikTok cho mỗi cấp, (2) Giải thích tại sao Collaborate > Consume, (3) Liên hệ Earned Media", "max_words": 400 }
+      ]
+    },
+    "level_3": {
+      "name": "🚀 Level 3: Vận dụng",
+      "description": "Bạn có thể ÁP DỤNG không? Lên kế hoạch thực tế.",
+      "bloom_level": "Apply / Create",
+      "questions": [
+        { "id": "L3-c1-q1", "type": "essay", "question": "Bạn muốn bán quần áo handmade trên MXH. Hãy dùng mô hình AISAS để thiết kế customer journey từ lúc KH nhìn thấy SP đến lúc chia sẻ cho bạn bè. Cho mỗi bước, chỉ rõ: platform sử dụng, nội dung cụ thể, và metric đo lường.", "rubric": "Cần: (1) 5 bước AISAS cụ thể, (2) Platform cho mỗi bước (TikTok, Instagram, Shopee...), (3) Nội dung/chiến lược cụ thể, (4) 5 metrics tương ứng", "max_words": 500 },
+        { "id": "L3-c1-q2", "type": "essay", "question": "Nếu bạn là Social Media Manager của một quán trà sữa mới mở tại quận 1, hãy thiết kế kế hoạch SC 3 tháng đầu: (1) Chọn platform, (2) Chiến lược Engagement 5Cs, (3) Kế hoạch tạo eWoM. Budget: 10 triệu/tháng.", "rubric": "Cần: (1) Chọn platform + lý do, (2) Kế hoạch 5Cs chi tiết theo tháng, (3) Chiến lược viral/eWoM, (4) Phân bổ budget, (5) KPIs", "max_words": 600 }
+      ]
+    }
+  }
+}

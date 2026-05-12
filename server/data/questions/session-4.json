@@ -1,0 +1,102 @@
+{
+  "session": 4,
+  "chapter": "Ch.2 §2.5",
+  "title": "Phân tích đối thủ & Topic Cluster | ITS340 SEO",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s4-mc1",
+      "type": "mc",
+      "question": "Khi search 'cà phê specialty quận 3', top 10 kết quả có: 2 quán cà phê (The Workshop, Shin Coffee), 1 bài blog cá nhân của Thầy Đăng, 1 bài báo VnExpress, 1 listing Foody. Theo buổi 4, cái nào là 'đối thủ SEO' của Hạt Mộc?",
+      "options": [
+        "A. Chỉ The Workshop và Shin Coffee (vì bán cùng sản phẩm)",
+        "B. The Workshop + Shin Coffee + bài blog Thầy Đăng + báo VnExpress (ai rank trên SERP cùng query)",
+        "C. Chỉ bài blog Thầy Đăng (vì không bán, chỉ rank bằng content)",
+        "D. Chỉ listing Foody (vì marketplace listing luôn cạnh tranh)"
+      ],
+      "correct": "B",
+      "explanation": "Đối thủ SEO = bất kỳ nội dung tranh nhau cùng 1 chỗ trên trang 1 SERP, bất kể họ có bán cà phê hay không. Buổi 4 phân thành 3 nhóm: (1) Direct competitor (The Workshop, Shin), (2) Adjacent competitor (quán brunch, quán cocktail), (3) Content competitor (blog, báo, listing). Tất cả đều là đối thủ SEO."
+    },
+    {
+      "id": "s4-mc2",
+      "type": "mc",
+      "question": "Bạn phân tích top 5 ranking cho keyword 'V60 pha pour over'. Phát hiện: tất cả đều có cấu trúc 'Định nghĩa + Bước 1-5 + Lưu ý + Video'. Nhưng không có bài nào giải thích 'tại sao V60 lại nhòng hơn Aeropress'. Cái này là gì?",
+      "options": [
+        "A. Keyword gap — keyword nhưng chưa có bài",
+        "B. Content gap — câu hỏi chưa ai trả lời tốt",
+        "C. Ranking opportunity — cơ hội rank nhanh",
+        "D. Competitor strength — phải match cấu trúc của đối thủ"
+      ],
+      "correct": "B",
+      "explanation": "Content gap = câu hỏi/nhu cầu mà chưa ai trên SERP trả lời tốt. Keyword gap = keyword chưa có bài. Trường hợp này, keyword 'V60 pha pour over' có bài (keyword gap = NO), nhưng hộp hỏi 'tại sao nhòng hơn Aeropress' không ai trả lời (content gap = YES). Hạt Mộc có thể viết bài so sánh sâu → vượt mặt đối thủ."
+    },
+    {
+      "id": "s4-mc3",
+      "type": "mc",
+      "question": "Theo buổi 4, Pillar + Topic Cluster dùng để làm gì?",
+      "options": [
+        "A. Để dễ quản lý nội dung và sắp xếp file trên folder",
+        "B. Để xây dựng 'lưới' topical authority — Google hiểu Hạt Mộc 'chuyên về' chủ đề",
+        "C. Để tránh bị phạt Panda khi có quá nhiều trang",
+        "D. Để tạo backlink trong nội bộ site (internal linking)"
+      ],
+      "correct": "B",
+      "explanation": "Pillar-cluster tạo mô hình cấu trúc: 1 pillar (2000-4000 từ) bao quát chủ đề rộng + 8-12 cluster (mỗi cái đào sâu 1 sub-topic). Các cluster internal-link lại pillar → tạo 'lưới' topical authority. Google thấy Hạt Mộc không chỉ có 1 bài V60 mà có 12 bài xoay quanh 'pha V60 + V60 vs Aeropress + lịch sử V60...' = chuyên gia về V60 = thưởng ranking."
+    },
+    {
+      "id": "s4-mc4",
+      "type": "mc",
+      "question": "Tiết 2 Buổi 4 yêu cầu bóc tách 3 thứ từ đối thủ. Cái nào KHÔNG phải?",
+      "options": [
+        "A. Title tag — copy chính xác, nhận diện pattern",
+        "B. Meta description — đối thủ 'bán' gì trong 160 ký tự",
+        "C. Internal link structure — bóc tách cách đối thủ link nội bộ",
+        "D. Cấu trúc bài — H1, H2, H3, số chữ, số ảnh"
+      ],
+      "correct": "C",
+      "explanation": "Buổi 4 Tiết 2 trình bày rõ 3 thứ: (1) Title tag + pattern, (2) Meta description, (3) Cấu trúc bài (heading + word count + image). Internal link structure là công việc sau, không phải tiết này."
+    },
+    {
+      "id": "s4-mc5",
+      "type": "mc",
+      "question": "Mô hình Pillar-Cluster dùng cho SEO lẫn GEO vì sao?",
+      "options": [
+        "A. Chỉ SEO, vì Google crawl từ pillar xuống cluster theo hierarchy",
+        "B. Vì AI engines tokenize HTML → stitch lại câu trả lời. Content có cấu trúc rõ (pillar+cluster) = 'ontology' rõ ràng cho LLM = AI cite dễ hơn",
+        "C. Vì mô hình này giúp tránh duplicate content",
+        "D. Vì cluster bắt buộc phải có schema markup"
+      ],
+      "correct": "B",
+      "explanation": "Buổi 4 Tiết 4 giải thích: AI engines tokenize HTML, push vào không gian vector, rồi stitch lại thành câu trả lời. Khi nội dung bạn có cấu trúc rõ (pillar-cluster tạo 'ontology' rõ ràng), LLM dễ dàng tokenize, retrieve, và cite. Topic Authority = signal cực mạnh cho AI quyết định cite ai."
+    }
+  ],
+  "discussion_questions": [
+    {
+      "id": "s4-tf1",
+      "type": "tf",
+      "question": "Để thiết kế 1 cluster tốt, ta phải tránh 'cannibalization' — tức là 2 cluster không được target cùng 1 keyword chính.",
+      "correct": true,
+      "explanation": "Đúng. Buổi 4 Tiết 4 danh sách 4 quy tắc thiết kế cluster, điểm 4 là 'Tránh cannibalization — 2 cluster không được target cùng 1 keyword chính'. Nếu 2 cluster target cùng keyword, chúng sẽ cạnh tranh nhau trên SERP, làm yếu tín hiệu topical authority."
+    },
+    {
+      "id": "s4-tf2",
+      "type": "tf",
+      "question": "Keyword gap là câu hỏi chưa ai trả lời tốt; content gap là keyword đối thủ rank được mà mình chưa rank.",
+      "correct": false,
+      "explanation": "Sai — định nghĩa bị đảo. Keyword gap = keyword đối thủ rank được mà mình chưa rank. Content gap = câu hỏi/nhu cầu mà chưa ai trả lời tốt. Hạt Mộc nên focus content gap nhiều hơn (vì nhỏ, có expertise sâu), không nên đua keyword gap (vì tốn ngân sách bắt kịp)."
+    }
+  ],
+  "essays": [
+    {
+      "id": "s4-essay1",
+      "type": "essay",
+      "question": "Scenario: Bạn phân tích SERP cho 5 keyword cốt lõi của Hạt Mộc và phát hiện:\n\n- 'specialty coffee là gì' (1.2K/tháng): Top 5 có 1 bài Blog Thầy Đăng (500 từ, định nghĩa đơn giản), 2 bài Wikipedia (đưa định nghĩa toàn cầu), 1 bài Sprudge (2000 từ, chi tiết nhưng tiếng Anh), 1 bài coffee forum.\n\n- 'top quán cà phê specialty quận 3' (950/tháng): Top 5 toàn blog cá nhân, group Facebook, listing Foody (nội dung rời rạc, không có site chuyên có authority).\n\n- 'V60 vs Aeropress' (300/tháng): Top 5 toàn blog nước ngoài, chỉ 1 bài blog tiếng Việt (xếp #8, 800 từ, không chi tiết).\n\nYêu cầu:\n(1) Xác định keyword gap vs content gap cho từng keyword;\n(2) Rank các keyword theo độ ưu tiên cho Hạt Mộc (Priority 1-3);\n(3) Đề xuất topic cluster cho keyword Priority 1 — nó sẽ có mấy sub-topic?",
+      "sample_answer": "**Phần 1: Keyword Gap vs Content Gap**\n\n**'specialty coffee là gì' (1.2K/tháng)**\n- Keyword gap: NO (có 5 bài)\n- Content gap: YES — các bài hiện tại quá ngắn (Thầy Đăng 500 từ) hoặc quá toàn cầu (Wikipedia). Không có bài nào giải thích **theo ngữ cảnh specialty coffee Việt Nam** (vùng trồng nào, tại sao VN specialty lại khác Thái Lan, v.v.)\n- Cơ hội: viết bài \"Specialty coffee là gì? Hướng dẫn từ A-Z cho người Việt\" (2500 từ), nhắc tới VN context.\n\n**'top quán cà phê specialty quận 3' (950/tháng)**\n- Keyword gap: NO (có 5 bài ranking)\n- Content gap: YES — top 5 toàn blog cá nhân / listing rời rạc, không có bài có authority đứng độc lập, so sánh sâu, địa chỉ/giờ/menu cụ thể. Nội dung khó bị AI cite.\n- Cơ hội: viết bài listicle \"5 quán cà phê specialty quận 3 tốt nhất 2026: menu, giờ, giá\" (1500 từ), có ảnh, có schema LocalBusiness.\n\n**'V60 vs Aeropress' (300/tháng)**\n- Keyword gap: YES — chỉ 1 bài tiếng Việt ranking (#8), rất yếu. Có cơ hội lấy #3-5 nếu viết bài tốt.\n- Content gap: Cũng có — các bài nước ngoài không giải thích cho người Việt (giá, tìm mua ở đâu trong SG, v.v.)\n- Cơ hội: **ưu tiên cao** — viết bài \"V60 vs Aeropress: so sánh chi tiết + giá mua Sài Gòn 2026\" (1800 từ), có bảng so sánh visual, link tới sản phẩm.\n\n**Phần 2: Priority Ranking**\n\n**Priority 1 (Rank ngay — dễ rank):**\n- 'top quán cà phê specialty quận 3' (950/tháng) — keyword gap NO, content gap YES, competition yếu (blog cá nhân)\n- 'V60 vs Aeropress' (300/tháng) — keyword gap YES, top 5 toàn nước ngoài (chưa ai tiếng Việt vào top 3)\n\n**Priority 2 (Rank tiếp — vừa):**\n- 'specialty coffee là gì' (1.2K/tháng) — keyword gap NO, nhưng content gap có thể fill. Volume cao nên đáng đầu tư.\n\n**Priority 3 (Rank sau — KPI support):**\n- Các keyword khác từ danh sách 80 (supporting, question keywords)\n\n**Phần 3: Topic Cluster cho Priority 1 Keyword**\n\nPriority 1 là 'top quán cà phê specialty quận 3'. Đây là **keyword local + local intent**, có thể tạo **pillar local + sub-pillar global**.\n\n**Pillar: \"Top Quán Cà Phê Specialty Quận 3 — Hướng Dẫn 2026\" (2500 từ)**\n- Định nghĩa specialty coffee + tại sao chọn quận 3\n- Tiêu chí chọn quán (chất lượng hạt, barista, atmosphere)\n- 5 quán top + menu + giờ + giá + map\n- Map xem vị trí\n- FAQ: mở cửa lúc mấy giờ, có wifi không, có thể đặt bàn không\n\n**8-10 Sub-Topic Clusters:**\n1. \"Specialty coffee là gì — khác với cà phê thương mại\"\n2. \"Các vùng trồng cà phê VN — Cầu Đất, Đắk Lắk, Sơn La\"\n3. \"Single origin vs Blend — khi nào dùng loại nào\"\n4. \"Cách thử cà phê specialty (cupping cơ bản)\"\n5. \"V60 pha thủ công — hướng dẫn từng bước\"\n6. \"Hạt Mộc Coffee — quán specialty quận 3 của chúng tôi\" (nhân thuật, lịch sử, team)\n7. \"Menu Hạt Mộc — các loại hạt rang + cách pha\" (product page)\n8. \"Workshop pha cà phê tại Hạt Mộc — đặt chỗ ở đâu\" (event/workshop)\n9. \"Review + FAQ — các câu hỏi thường gặp khách hàng\"\n10. \"Cà phê specialty Quận 1 vs Quận 3 — nên chọn quán nào\" (comparative, local expansion)\n\n**Kết luận:** Pillar này có 10 cluster (không quá, không quá ít) cover toàn bộ user journey từ SEE (tìm hiểu specialty là gì) → THINK (cân nhắc quán nào) → DO (đến Hạt Mộc) → CARE (workshop, mua online). Tạo thành lưới topical authority rõ ràng cho chủ đề \"specialty coffee + local quận 3\".",
+      "rubric": {
+        "excellent": "10-9đ: (1) Phân biệt rõ gap cho từng keyword, lý giải đúng tính chất; (2) Priority ranking hợp logic dựa trên volume + competition + gap; (3) Cluster structure có ≥8 sub-topic, cover đủ journey STDC, có tiêu đề rõ ràng, không trùng lặp.",
+        "acceptable": "8-6đ: (1) Phân biệt được gap nhưng chưa sâu; (2) Priority ranking hơi logic nhưng chưa rõ lý do; (3) Cluster có ≥6 sub-topic nhưng chưa đầy đủ cover STDC hoặc tiêu đề chưa rõ.",
+        "insufficient": "<6đ: (1) Gap không phân biệt hoặc sai; (2) Priority ranking không logic hoặc sai hoàn toàn; (3) Cluster <5 sub-topic hoặc không liên hệ gì với keyword."
+      }
+    }
+  ]
+}

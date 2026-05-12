@@ -1,0 +1,37 @@
+{
+  "exam_id": "midterm-1",
+  "title": "Kiểm tra Quá trình 1 — Trắc nghiệm",
+  "scope": "Chương 1 + Chương 2 (Buổi 1–5)",
+  "session": 6,
+  "weight": "20%",
+  "time_limit_minutes": 30,
+  "instructions": "Trắc nghiệm khách quan, cá nhân, không sử dụng tài liệu. Chọn đáp án đúng nhất.",
+  "strict_mode": true,
+  "variants": [
+    {
+      "variant_id": 1,
+      "questions": [
+        { "id": "mt1-q1", "type": "mc", "question": "Điện toán xã hội (Social Computing) đề cập đến cách tiếp cận dựa trên ____ để tham gia vào mạng xã hội.", "options": ["A. thông tin", "B. công nghệ", "C. điện toán", "D. phần mềm"], "correct": "C" },
+        { "id": "mt1-q2", "type": "mc", "question": "Ban đầu được gọi là web tham gia, ____ là một thuật ngữ bao trùm.", "options": ["A. Web 1.0", "B. Web 2.0", "C. Phương tiện truyền thông xã hội", "D. Thương mại xã hội"], "correct": "B" },
+        { "id": "mt1-q3", "type": "mc", "question": "Thương mại xã hội (Social commerce) đề cập đến các giao dịch mua bán qua ____.", "options": ["A. digital media", "B. truyền thông mạng xã hội", "C. online media", "D. cyber media"], "correct": "B" },
+        { "id": "mt1-q4", "type": "mc", "question": "____ là một hình thức blog cho phép gửi văn bản ngắn hoặc hình ảnh và âm thanh nhỏ.", "options": ["A. Tiểu blog (Microblogging)", "B. Wiki", "C. Podcast", "D. RSS"], "correct": "A" },
+        { "id": "mt1-q5", "type": "mc", "question": "Một ____ cho phép người dùng cùng nhau tạo và chỉnh sửa tài liệu số.", "options": ["A. Blog", "B. Podcast", "C. Wiki", "D. RSS"], "correct": "C" },
+        { "id": "mt1-q6", "type": "mc", "question": "Một ____ là một cấu trúc mô tả mối quan hệ và luồng thông tin giữa các thành viên.", "options": ["A. Social media", "B. Social computing", "C. Social Web", "D. Mạng xã hội (Social network)"], "correct": "D" },
+        { "id": "mt1-q7", "type": "mc", "question": "Mô hình Tập đoàn Dentsu (AISAS) phản ánh các hành động đặc thù của ____.", "options": ["A. Thương mại xã hội", "B. Quảng cáo truyền thống", "C. Chỉ thương mại điện tử", "D. Báo in"], "correct": "A" },
+        { "id": "mt1-q8", "type": "mc", "question": "Cá nhân hóa (Personalization) đề cập đến ____.", "options": ["A. Thay đổi, kết hợp dịch vụ, sản phẩm quảng cáo tới chính xác cá nhân tùy ý muốn", "B. Gửi email hàng loạt tới muôn người", "C. Dùng MXH làm nơi chăm sóc khách", "D. Làm chiến dịch marketing dồn dập"], "correct": "A" },
+        { "id": "mt1-q9", "type": "mc", "question": "Truyền miệng kỹ thuật số (Digital WOM) là ____.", "options": ["A. Email marketing", "B. Paid advertising on social media", "C. Truyền miệng trực tiếp truyền thống", "D. Quá trình truyền tin tức số liên tục từ cá nhân sang cá nhân khác"], "correct": "D" },
+        { "id": "mt1-q10", "type": "mc", "question": "Vốn xã hội (Social capital) là ____.", "options": ["A. Tiền vốn đầu tư cổ phiếu", "B. Quỹ marketing công ty", "C. Giá mua fan (followers) trên mạng", "D. Giá trị và sức mạnh được tạo ra nhờ chính mạng quan hệ kết nối giữa các cá thể"], "correct": "D" },
+        { "id": "mt1-q11", "type": "mc", "question": "Phương tiện truyền thông trả phí (Paid media) là ____.", "options": ["A. Nội dung tự tạo từ người mua hàng (UGC)", "B. Website nhà làm trọn gói", "C. Việc một thương hiệu dùng tiền trả để thâu tóm sân chơi MXH lên sóng hiển thị", "D. Độ tương quan tự nhiên trên truyền thông mạng xã hội"], "correct": "C" },
+        { "id": "mt1-q12", "type": "mc", "question": "Tiếp thị nội dung (Content marketing) nhắm đến ____.", "options": ["A. Việc mua không gian phát chạy quảng cáo", "B. Lợi dụng những nhân vật KOLs ảnh hưởng lèo lái", "C. Việc tạo và tung ra những nội dung bền bỉ, thông thái và sát sườn cho chuẩn người dùng mục tiêu nhắm hút ánh nhìn", "D. Chỉ xài mảng Email gửi theo kỳ hàng tuần"], "correct": "C" },
+        { "id": "mt1-q13", "type": "mc", "question": "Phương tiện kiếm được (Earned media) là ____.", "options": ["A. Quảng bá do rót tiền từ công ty", "B. Sự tỏa lửa nhờ nội dung thương hiệu bị chia sẻ, truyền tải đi không phanh tự nguyện từ người dùng tiêu thụ", "C. Khối trang web trụ sở của một Doanh nghiệp", "D. Bảng truyền thông làm tin dán ở vách tường công ty"], "correct": "B" },
+        { "id": "mt1-q14", "type": "mc", "question": "Theo báo cáo Qualman, chỉ ____ phần trăm khách lưu dùng tin vào nội dung quảng cáo rao trên mạng.", "options": ["A. 50", "B. 14", "C. 30", "D. 75"], "correct": "B" },
+        { "id": "mt1-q15", "type": "mc", "question": "SEO là quy trình dính líu với việc ____.", "options": ["A. Đầu tư mua Ads xếp mốc ưu tiên", "B. Cải thiện lượng hiện ra của nhãn hãng qua trang thống kê tìm kiếm search engine (trang KQ)", "C. Phát tin email xám xịt nhắm trúng đối tượng", "D. Xây móng làm dựng mới tinh trang profile mạng cá nhân"], "correct": "B" },
+        { "id": "mt1-q16", "type": "mc", "question": "Mua sắm xã hội (Social Shopping) là ____.", "options": ["A. Bấm lệnh mua đồ bằng Ads Facebook", "B. Thương mại điện tử E-commerce đơn thuần khuyết tương tác", "C. Kinh doanh mua bán lô đồ cổ lớn", "D. Các phi vụ lướt chốt đơn ứng dụng bằng những chức năng mxh để bàn tính giao lưu mạn đàm trước bạn bè quen khi có nhu cầu xuống tiền"], "correct": "D" },
+        { "id": "mt1-q17", "type": "mc", "question": "Mua theo nhóm (Group buying) là một biến thể thương mại nơi ____.", "options": ["A. Mọi người tự tự do sắm túi hiệu cho riêng mình", "B. Các Cty lẻ bán giá lẻ", "C. Chỉ dân kinh doanh buôn bán mới được đăng ký sỉ", "D. Một hội bầy đông đảo hùn kết lại mua cùng 1 danh mục hòng cấu cấu xé vé giảm giá lớn bù đắp theo lượng lớn"], "correct": "D" },
+        { "id": "mt1-q18", "type": "mc", "question": "SCRM (Social CRM hay là CRM 2.0) nghĩa là ____.", "options": ["A. Quá trình khai tử CRM trước đó nay chẳng xài nữa", "B. Bộ máy CRM vốn dĩ được chêm thêm những cánh tay vũ khí làm từ phương tiện truyền thông mạng giao cấu nhằm giăng vòng đối thoại, tạo khơi hội thoại từ chính cộng đồng người xài", "C. Việc thiết đặt cho chạy auto-mail tự cung", "D. Danh pháp cho loại định chế quảng bá"], "correct": "B" },
+        { "id": "mt1-q19", "type": "mc", "question": "Định nghĩa Điểm chạm (Touch point) là ____.", "options": ["A. Bất luận điể nào có giao tuyến tạo một vệt giao dịch qua tương giao giữa nhãn quyền và đại biểu khách vãng lai", "B. Một mảnh poster dán mẩu bé cỡ ngón trên mặt kính quảng cáo", "C. Đưa tiền thanh chi phí ngân hàng", "D. Tên chung cho Nền tảng cấu thành lên các mạng cộng đồng ảo"], "correct": "A" },
+        { "id": "mt1-q20", "type": "mc", "question": "Tiếp thị Marketing kiểu Lan Truyền nhạy rễ (Viral marketing) là kĩ năng ____.", "options": ["A. Rập khuôn gõ lên băng tầng chiếu qua vô tuyến TV", "B. Nịnh nhồi cho người thụ hưởng sẽ trực triết làm đầu tàu lan báo cho thiên hạ chung quanh truyền lan (messages to others)", "C. Cần phải có bạc núi tiền vương giả ngân quỹ", "D. Focus vào email list mua được mảng Subscribers"], "correct": "B" }
+      ]
+    }
+  ]
+}

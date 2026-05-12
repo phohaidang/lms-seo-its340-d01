@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buổi 5 — On-Page SEO + Nội dung cho AI trích dẫn | ITS340 SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --paper: #F7F2E7;
+    --paper-shade: #EFE8D6;
+    --ink: #1B1714;
+    --ink-soft: #4A413A;
+    --rule: #C8BCA3;
+    --oxblood: #7A1F1F;
+    --oxblood-soft: #9B3838;
+    --gold: #B8893A;
+    --gold-soft: #D4A85F;
+    --green: #2F4A36;
+    --warm-gray: #8B7E6F;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+    background-image: 
+        radial-gradient(ellipse at top left, rgba(184,137,58,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(122,31,31,0.03) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.frame {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 48px 120px;
+    position: relative;
+}
+
+@media (max-width: 720px) {
+    .frame { padding: 40px 24px 80px; }
+    body { font-size: 16px; }
+}
+
+/* ===== Hero / Cover ===== */
+.cover {
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.cover-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    font-family: 'DM Mono', 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.cover-meta-left { line-height: 1.9; }
+.cover-meta-right { text-align: right; line-height: 1.9; }
+
+.cover-meta strong {
+    color: var(--oxblood);
+    font-weight: 600;
+}
+
+.session-roman {
+    font-family: 'Cormorant Garamond', 'Garamond', serif;
+    font-size: 220px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.9;
+    color: var(--gold);
+    margin-bottom: 0;
+    letter-spacing: -0.04em;
+    opacity: 0.9;
+}
+
+.session-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-bottom: 16px;
+}
+
+.session-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 24px 0 32px;
+    letter-spacing: -0.02em;
+    max-width: 720px;
+}
+
+@media (max-width: 720px) {
+    .session-roman { font-size: 140px; }
+    .session-title { font-size: 36px; }
+}
+
+.session-subtitle {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    max-width: 640px;
+    margin-bottom: 40px;
+}
+
+.cover-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0;
+}
+
+.cover-stat {
+    text-align: left;
+}
+
+.cover-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--oxblood);
+    line-height: 1;
+}
+
+.cover-stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+    .cover-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Section ===== */
+section {
+    margin-bottom: 72px;
+    scroll-margin-top: 40px;
+}
+
+.section-num {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.section-num::before {
+    content: "§ ";
+    color: var(--oxblood);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 28px;
+    letter-spacing: -0.015em;
+    max-width: 720px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--oxblood);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+p { margin-bottom: 18px; max-width: 720px; }
+
+p.lede {
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+p.lede::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    float: left;
+    line-height: 0.85;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: var(--oxblood);
+    font-style: normal;
+    font-weight: 500;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 28px;
+    max-width: 720px;
+}
+
+li { margin-bottom: 8px; padding-left: 6px; }
+
+ul li::marker { color: var(--gold); }
+ol li::marker { color: var(--oxblood); font-weight: 600; }
+
+strong { color: var(--ink); font-weight: 700; }
+em { color: var(--ink-soft); }
+
+a {
+    color: var(--oxblood);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-soft);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+/* ===== SCQA blocks ===== */
+.scqa {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: var(--paper-shade);
+    border-left: 3px solid var(--oxblood);
+    position: relative;
+}
+
+.scqa-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--gold);
+    font-style: italic;
+}
+
+.scqa-body { padding-top: 4px; }
+
+.scqa-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.scqa-content { font-size: 16px; line-height: 1.7; }
+.scqa-content p { margin-bottom: 10px; }
+.scqa-content p:last-child { margin-bottom: 0; }
+
+/* ===== Blockquote / Pull quote ===== */
+blockquote {
+    margin: 32px 0;
+    padding: 0 0 0 32px;
+    border-left: 3px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 720px;
+}
+
+blockquote::before {
+    content: "❝";
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--oxblood);
+    margin-right: 8px;
+    font-size: 28px;
+    line-height: 0;
+    vertical-align: -8px;
+}
+
+/* ===== Tiết block — kịch bản từng tiết ===== */
+.tiet {
+    margin: 36px 0;
+    background: #FFFEFB;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(27, 23, 20, 0.04);
+}
+
+.tiet-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 20px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tiet-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.tiet-num::before { content: "§ "; }
+
+.tiet-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    flex: 1;
+    line-height: 1.3;
+    color: var(--paper);
+    letter-spacing: -0.005em;
+}
+
+.tiet-duration {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+}
+
+.tiet-body { padding: 28px 32px; }
+
+.tiet-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px dashed var(--rule);
+}
+
+.tiet-row:last-child { border-bottom: none; }
+
+.tiet-row-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--oxblood);
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.tiet-row-content {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.tiet-row-content p { margin-bottom: 10px; }
+.tiet-row-content p:last-child { margin-bottom: 0; }
+.tiet-row-content ol, .tiet-row-content ul { margin-bottom: 10px; padding-left: 22px; }
+.tiet-row-content li { font-size: 15px; }
+
+@media (max-width: 720px) {
+    .tiet-row { grid-template-columns: 1fr; gap: 8px; }
+    .tiet-body { padding: 20px; }
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+table thead {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+}
+
+table th {
+    padding: 12px 14px;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    vertical-align: bottom;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--rule);
+}
+
+table tbody tr:last-child {
+    border-bottom: 2px solid var(--ink);
+}
+
+table td {
+    padding: 14px;
+    vertical-align: top;
+    color: var(--ink);
+}
+
+table td:first-child {
+    font-weight: 600;
+    color: var(--oxblood);
+}
+
+/* ===== Cards / Callouts ===== */
+.callout {
+    background: var(--paper-shade);
+    border-radius: 2px;
+    padding: 24px 28px;
+    margin: 28px 0;
+    border-left: 3px solid var(--gold);
+}
+
+.callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.callout-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.callout p { margin-bottom: 8px; font-size: 15.5px; }
+.callout p:last-child { margin-bottom: 0; }
+
+.callout.danger {
+    border-left-color: var(--oxblood);
+    background: rgba(122, 31, 31, 0.04);
+}
+.callout.danger .callout-label { color: var(--oxblood); }
+
+.callout.note {
+    border-left-color: var(--green);
+}
+.callout.note .callout-label { color: var(--green); }
+
+/* ===== Story / Persona Box ===== */
+.persona {
+    border: 1px solid var(--rule);
+    background: linear-gradient(135deg, rgba(184,137,58,0.05) 0%, rgba(122,31,31,0.03) 100%);
+    padding: 28px 32px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.persona::before {
+    content: "";
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+    border-radius: 1px;
+    transform: translate(4px, 4px);
+    z-index: -1;
+}
+
+.persona-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.persona p {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-style: italic;
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 100%;
+}
+
+/* ===== Numbered list with circles ===== */
+.steps {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+    max-width: 720px;
+}
+
+.steps > li {
+    counter-increment: step;
+    padding-left: 56px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--oxblood);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--oxblood);
+    background: var(--paper);
+}
+
+/* ===== Tag / Pill ===== */
+.tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.tag.gold { border-color: var(--gold-soft); color: var(--oxblood); background: rgba(184,137,58,0.08); }
+
+/* ===== Story map (diagram) ===== */
+.story-map {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 32px 36px;
+    margin: 32px 0;
+    border-radius: 2px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-x: auto;
+}
+
+.story-map pre {
+    color: var(--gold-soft);
+    font-family: inherit;
+    white-space: pre;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 100px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--warm-gray);
+    text-align: center;
+    line-height: 1.8;
+}
+
+footer .ornament {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--gold);
+    letter-spacing: 0.4em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* ===== TOC sidebar (navigation) ===== */
+.nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.nav-pill {
+    padding: 8px 14px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 1px;
+}
+
+.nav-pill:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+/* ===== Highlight box for key concepts ===== */
+.concept {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 24px 0;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.concept-formula {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.concept-formula .accent { color: var(--oxblood); font-weight: 600; }
+.concept-formula .gold { color: var(--gold); font-weight: 600; }
+
+/* ===== Print ===== */
+@media print {
+    body { 
+        background: white; 
+        font-size: 12pt;
+        background-image: none;
+    }
+    .frame { padding: 0; max-width: 100%; }
+    .session-roman { font-size: 100pt; }
+    .session-title { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    h3 { font-size: 14pt; }
+    .tiet { break-inside: avoid; box-shadow: none; }
+    .tiet-header { background: #1B1714 !important; -webkit-print-color-adjust: exact; }
+    section { break-inside: avoid-page; }
+}
+</style>
+</head>
+<body>
+<div class="frame">
+
+<header class="cover">
+    <div class="cover-meta">
+        <div class="cover-meta-left">
+            ITS340 · Phân tích & Tối ưu Bộ máy Tìm kiếm<br>
+            Khoa HTTT Quản lý — Đại học Ngân hàng TP.HCM<br>
+            <strong>Học liệu điện tử</strong> · Cập nhật 2026
+        </div>
+        <div class="cover-meta-right">
+            Buổi 5 / 6<br>
+            05 tiết · 250 phút<br>
+            <strong>Phiên bản SEO + GEO</strong>
+        </div>
+    </div>
+    
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:280px;">
+            <div class="session-label">Buổi học · Session</div>
+            <h1 class="session-title">On-Page SEO + Nội dung cho AI trích dẫn</h1>
+            <p class="session-subtitle">Biến cluster thành trang đích thật — 9 thẻ HTML cốt lõi, 5 quy tắc tối ưu, và 5 nguyên tắc GEO mà giáo trình cũ chưa kịp đề cập.</p>
+        </div>
+        <div class="session-roman">V</div>
+    </div>
+    
+    <div class="cover-stats">
+        <div class="cover-stat">
+            <div class="cover-stat-value">05</div>
+            <div class="cover-stat-label">Tiết học</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">SCQA</div>
+            <div class="cover-stat-label">Khung tài liệu</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">B2C</div>
+            <div class="cover-stat-label">Local · Café</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">2026</div>
+            <div class="cover-stat-label">Phiên bản</div>
+        </div>
+    </div>
+    
+    <nav class="nav-pills" style="margin-top:32px;"><a class="nav-pill" href="buoi-4.html">← Buổi 4</a>
+<a class="nav-pill" href="#muc-tieu">Mục tiêu</a>
+<a class="nav-pill" href="#tai-lieu">Tài liệu SCQA</a>
+<a class="nav-pill" href="#kich-ban">Kịch bản</a>
+<a class="nav-pill" href="#bai-tap">Bài tập</a>
+<a class="nav-pill" href="#hoc-lieu">Học liệu</a>
+<a class="nav-pill" href="buoi-6.html">Buổi 6 →</a></nav>
+</header>
+
+<section id="muc-tieu">
+    <div class="section-num">Phần I</div>
+    <h2>Mục tiêu buổi học</h2>
+    
+<p class="lede">Có pillar và 12 cluster — nhưng nếu mỗi trang viết sai cấu trúc, cả lưới content sụp đổ. Buổi này biến 1 cluster thành 1 trang web tối ưu cả SEO lẫn GEO. "Tay chân" nhất trong toàn môn — nhưng vẫn không phải code, mà là kỹ năng viết và sắp xếp.</p>
+
+<h3>Chuẩn đầu ra (CLO mapping)</h3>
+<ul>
+    <li><strong>CLO1 + CLO2 + CLO3.</strong> Tối ưu được toàn bộ on-page elements của 1 trang đích; sử dụng được Google Search Console cơ bản.</li>
+    <li><strong>Bổ sung GEO.</strong> Viết được nội dung "<em>chunkable</em>" (đoạn đứng độc lập có nghĩa) và áp dụng schema markup cho local business.</li>
+</ul>
+
+<div class="nav-pills" style="margin-top:24px;">
+    <span class="tag gold">CLO1 · CLO2 · CLO3</span>
+    <span class="tag">Ch.3 Giáo trình</span>
+    <span class="tag">9 HTML tags</span>
+    <span class="tag">Schema</span>
+    <span class="tag gold">Chunkable Content</span>
+    <span class="tag">Search Console</span>
+</div>
+
+</section><section id="ket-noi">
+    <div class="section-num">Phần II</div>
+    <h2>Kết nối với Buổi 4 (3 phút mở bài)</h2>
+    
+<blockquote>Các em đã có pillar + 12 cluster. Hôm nay biến 1 cluster thành 1 trang web tối ưu cả SEO lẫn GEO. Buổi này là buổi 'tay chân' nhất — nhưng vẫn không phải code, mà là kỹ năng viết và sắp xếp.</blockquote>
+<p>GV thu topic map digital của các nhóm — chiếu nhanh 2 nhóm xuất sắc lên màn hình để cả lớp tham khảo cấu trúc cluster trước khi đi vào on-page.</p>
+
+</section><section id="tai-lieu">
+    <div class="section-num">Phần III</div>
+    <h2>Tài liệu điện tử — khung SCQA</h2>
+    <div class="scqa">
+    <div class="scqa-letter">S</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Situation — Cái sinh viên đã biết</div>
+        <div class="scqa-content">
+<p>Sinh viên đã viết bài Facebook, caption Instagram. Biết "tag HTML" tồn tại — title bar trên trình duyệt, h1 trong bài blog WordPress.</p>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">C</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Complication — Cái không khớp</div>
+        <div class="scqa-content">
+<p>Content cho Facebook viết để <strong>nuôi cảm xúc</strong>; content cho web SEO/GEO phải vừa nuôi cảm xúc vừa <strong>có cấu trúc kỹ thuật</strong> crawler đọc được. Và một bước nữa: GEO yêu cầu mỗi đoạn văn phải đứng độc lập có nghĩa — vì LLM cắt content thành <em>chunks</em>, biến thành vector, retrieve những chunks liên quan và lắp ráp thành câu trả lời, thường mất ngữ cảnh xung quanh trang gốc; những đoạn văn vẫn giữ được ý nghĩa khi đọc tách rời sẽ có khả năng được retrieve và sử dụng chính xác cao hơn.</p>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">Q</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Question — Câu hỏi định hướng</div>
+        <div class="scqa-content">
+<blockquote>Quy tắc cụ thể nào để Phương — không biết HTML — vẫn có thể yêu cầu freelancer làm đúng, hoặc tự làm trên WordPress?</blockquote>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">A</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Answer — Định hướng giải đáp</div>
+        <div class="scqa-content">
+<p><strong>9 thẻ HTML cốt lõi</strong> (giáo trình) + <strong>5 quy tắc tối ưu trang đích</strong> (giáo trình) + <strong>5 nguyên tắc viết GEO-friendly</strong> (mới) + <strong>Schema markup</strong> cho local business + <strong>Google Search Console</strong> kiểm tra.</p>
+<div class="concept">
+    <div class="concept-formula">
+        <span class="accent">9 HTML tags</span> &nbsp;+&nbsp; 5 quy tắc trang đích &nbsp;+&nbsp; <span class="gold">5 nguyên tắc GEO</span>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+</section><section id="kich-ban">
+    <div class="section-num">Phần IV</div>
+    <h2>Kịch bản giảng dạy — 5 tiết</h2>
+    <div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 1</div>
+        <div class="tiet-title">9 thẻ HTML cốt lõi (theo giáo trình)</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–5'</div><div class="tiet-row-content"><p>GV mở 1 trang web cà phê thật, dùng <strong>View Page Source (Ctrl+U)</strong> cho cả lớp xem HTML.</p>
+<blockquote>Đây là cái Google đọc. Cái thấy đẹp trên trình duyệt là kết quả render. Khác nhau.</blockquote></div></div>
+<div class="tiet-row"><div class="tiet-row-time">5–45'</div><div class="tiet-row-content"><p>Trình bày 9 thẻ + quy tắc, ngay trên ví dụ Hạt Mộc:</p>
+<table>
+<thead><tr><th>#</th><th>Thẻ</th><th>Quy tắc</th><th>Ví dụ Hạt Mộc</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><code>&lt;title&gt;</code></td><td>50–60 ký tự, core keyword đầu, brand cuối</td><td>"Cà phê Specialty Quận 3 – Hạt Mộc Coffee | Pha Thủ Công V60"</td></tr>
+<tr><td>2</td><td><code>&lt;meta description&gt;</code></td><td>140–160 ký tự, có CTA, có core keyword</td><td>"Hạt Mộc Coffee – quán cà phê specialty quận 3 với hạt rang tại quán, V60 pha thủ công. Mở 7h–22h. Đặt bàn ☎ 0xxx."</td></tr>
+<tr><td>3</td><td>URL</td><td>Ngắn, có keyword, dùng dấu gạch ngang</td><td>Tốt: <code>hatmoc.coffee/ca-phe-specialty-quan-3</code><br>Xấu: <code>hatmoc.coffee/?p=1234</code></td></tr>
+<tr><td>4</td><td><code>&lt;h1&gt;</code></td><td>1 cái duy nhất/trang, chứa core keyword</td><td>"Cà Phê Specialty Quận 3 – Hạt Mộc Coffee"</td></tr>
+<tr><td>5</td><td><code>&lt;h2&gt;/&lt;h3&gt;</code></td><td>Phân tầng, mỗi H2 = 1 sub-topic</td><td>H2: "Vì sao chọn Hạt Mộc?", H3: "Hạt rang tại quán"</td></tr>
+<tr><td>6</td><td>Body content</td><td>Đoạn đầu chứa core keyword trong 100 từ đầu</td><td>"Hạt Mộc Coffee là quán cà phê specialty quận 3..."</td></tr>
+<tr><td>7</td><td>Internal link</td><td>Link đến pillar/cluster cùng topic, anchor text rõ ràng</td><td><a href="#">"hướng dẫn pha V60"</a> (không phải "click here")</td></tr>
+<tr><td>8</td><td>Image alt text</td><td>Mô tả ảnh, không nhồi keyword</td><td>alt="Barista Hạt Mộc đang pour V60 bằng ấm cổ ngỗng"</td></tr>
+<tr><td>9</td><td>Schema markup</td><td>JSON-LD trong <code>&lt;head&gt;</code></td><td>Tiết 4 sẽ học sâu</td></tr>
+</tbody>
+</table></div></div>
+<div class="tiet-row"><div class="tiet-row-time">45–50'</div><div class="tiet-row-content"><p><strong>Bài tập đọc ngược.</strong> Lớp đọc 1 trang đối thủ — đếm xem họ đúng/sai bao nhiêu trong 9 cái trên. Mỗi nhóm 1 trang.</p></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 2</div>
+        <div class="tiet-title">Tối ưu trang đích — 5 quy tắc vàng (giáo trình)</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–35'</div><div class="tiet-row-content"><p>Theo giáo trình của thầy Đăng, <strong>Tối ưu trang đích</strong> gồm 5 quy tắc cốt lõi — GV trình bày + áp dụng ngay vào 1 trang sản phẩm Hạt Mộc.</p>
+<table>
+<thead><tr><th>Quy tắc</th><th>Nội dung</th><th>Ví dụ Hạt Mộc (trang sản phẩm "Hạt Cà Phê Specialty Cầu Đất")</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Xác định <strong>core keyword</strong> cho trang</td><td>"hạt cà phê specialty cầu đất"</td></tr>
+<tr><td>2</td><td>Core keyword trong <code>&lt;title&gt;</code> (≤ 80 ký tự)</td><td>"Hạt Cà Phê Specialty Cầu Đất – Hạt Mộc Coffee"</td></tr>
+<tr><td>3</td><td>Core keyword trong <code>&lt;meta description&gt;</code> (≤ 300 ký tự)</td><td>"Hạt cà phê specialty Cầu Đất rang tại Hạt Mộc Coffee, lượng nhỏ mỗi mẻ, giao trong 24h tại Sài Gòn..."</td></tr>
+<tr><td>4</td><td>Core keyword trong <code>&lt;h1&gt;</code></td><td>&lt;h1&gt;Hạt Cà Phê Specialty Cầu Đất – 250g&lt;/h1&gt;</td></tr>
+<tr><td>5</td><td>Core keyword trong <strong>paragraph đầu tiên</strong></td><td>"Hạt cà phê specialty Cầu Đất là dòng arabica trồng ở độ cao 1500m..."</td></tr>
+</tbody>
+</table></div></div>
+<div class="tiet-row"><div class="tiet-row-time">35–50'</div><div class="tiet-row-content"><div class="callout">
+    <div class="callout-label">Câu chuyện chốt</div>
+    <p>5 cái này cộng lại = "tín hiệu" rõ ràng cho Google rằng trang này nói về cái gì. <strong>Thiếu 1 trong 5 → tín hiệu mờ → khó rank.</strong></p>
+</div>
+<p><strong>Bài tập:</strong> mỗi nhóm chọn 1 cluster trong topic map → áp 5 quy tắc → viết title, meta, URL, H1, paragraph 1. Trình bày 1 phút/nhóm.</p></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 3</div>
+        <div class="tiet-title">5 nguyên tắc viết content GEO-friendly (mới)</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–35'</div><div class="tiet-row-content"><p>GV trình bày kết hợp ví dụ <em>before / after</em> cho mỗi nguyên tắc.</p>
+<table>
+<thead><tr><th>#</th><th>Nguyên tắc</th><th>Vì sao quan trọng cho GEO</th><th>Ví dụ áp dụng</th></tr></thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td><strong>Direct answer trong 40–60 từ đầu</strong></td>
+    <td>AI ưu tiên content có cấu trúc câu trả lời trực tiếp</td>
+    <td>Bài "Specialty coffee là gì" — đoạn 1: định nghĩa thẳng, không vòng vo "trong những năm gần đây..."</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td><strong>Chunkable paragraphs</strong> — mỗi đoạn đứng độc lập có nghĩa</td>
+    <td>Đoạn dùng tham chiếu kiểu "như đã nói ở trên" mất ngữ cảnh khi bị cắt rời</td>
+    <td>Tránh: "Như đã nói ở phần trước, V60..." Dùng: "V60 là dụng cụ pha pour-over..." (lặp lại định danh)</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td><strong>Fact density</strong> — thống kê mỗi 150–200 từ</td>
+    <td>Nghiên cứu GEO: phương pháp "Statistics Addition" cải thiện performance 22-37% so với baseline</td>
+    <td>Thêm: "Cà phê arabica chiếm 60% sản lượng cà phê toàn cầu" hoặc "Cầu Đất nằm ở độ cao 1500m"</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td><strong>Cite authoritative sources</strong></td>
+    <td>AI tin content trích nguồn uy tín</td>
+    <td>Trích Specialty Coffee Association, USDA, hoặc nghiên cứu cụ thể</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td><strong>Q&amp;A / FAQ block cuối bài</strong></td>
+    <td>AI hay extract trực tiếp từ FAQ</td>
+    <td>Cuối mỗi cluster: 5–7 câu Q&amp;A schema-markup</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="tiet-row"><div class="tiet-row-time">35–50'</div><div class="tiet-row-content"><p><strong>Bài tập 15'.</strong> GV chuẩn bị sẵn 1 đoạn content xấu, lớp viết lại theo 5 nguyên tắc. Đối chiếu kết quả.</p>
+<blockquote>Đoạn nào dễ được ChatGPT/Perplexity cite hơn? Vì sao?</blockquote>
+<div class="callout note">
+    <div class="callout-label">Insight quan trọng</div>
+    <p>Một đoạn văn có 1 thống kê cụ thể (con số, tỷ lệ, năm) có khả năng được AI cite cao gấp 2–3 lần so với đoạn chỉ có nhận định chung chung.</p>
+</div></div></div></div>
+</div><div style="text-align:center; margin:24px 0; color:var(--gold); font-family:Cormorant Garamond, serif; font-size:24px; letter-spacing:0.3em;">— ☕ NGHỈ GIẢI LAO 15' —</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 4</div>
+        <div class="tiet-title">Schema Markup cho Local Business + Google Search Console</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–25'</div><div class="tiet-row-content"><p><strong>Schema markup là gì?</strong> Đoạn JSON-LD trong <code>&lt;head&gt;</code> mô tả "tôi là gì" cho crawler bằng vocabulary chuẩn (schema.org).</p>
+<p><strong>Hạt Mộc cần 3 loại schema:</strong></p>
+<ol class="steps">
+    <li><strong>LocalBusiness</strong> / <strong>CafeOrCoffeeShop</strong> — tên, địa chỉ, giờ mở, điện thoại, geo, ảnh</li>
+    <li><strong>Product</strong> — cho từng SKU hạt rang bán online</li>
+    <li><strong>FAQPage</strong> — cho block FAQ trong cluster</li>
+</ol>
+<p><strong>Demo:</strong> GV mở Google Rich Results Test, copy 1 đoạn JSON-LD mẫu, paste, xem kết quả.</p>
+<blockquote>Cái này không cần biết code — copy template trên schema.org rồi sửa thông tin.</blockquote></div></div>
+<div class="tiet-row"><div class="tiet-row-time">25–50'</div><div class="tiet-row-content"><p><strong>Google Search Console</strong> (theo giáo trình mục 3.3). GV demo:</p>
+<ol class="steps">
+    <li><strong>Verify property</strong> (đã làm sẵn trên domain demo)</li>
+    <li><strong>Submit sitemap.xml</strong></li>
+    <li><strong>Inspect URL</strong> — kiểm tra trang có index không, lỗi gì</li>
+    <li><strong>Performance</strong> — clicks/impressions/CTR/position cho keyword</li>
+    <li><strong>Coverage / Pages</strong> — phát hiện lỗi crawl</li>
+    <li><strong>Mới:</strong> tab "AI Overview impressions" (nếu Google đã release ở khu vực — verify trước khi dạy)</li>
+</ol>
+<p>SV xem GV thao tác, không cần làm theo. Tập trung hiểu <em>logic</em> hơn là thao tác.</p></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 5</div>
+        <div class="tiet-title">Workshop — Tối ưu 1 trang sản phẩm cho Hạt Mộc</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–10'</div><div class="tiet-row-content"><p>Mỗi nhóm chọn 1 cluster từ topic map Buổi 4 → biến thành 1 trang web hoàn chỉnh. Yêu cầu nộp 1 file Google Doc gồm:</p>
+<ul>
+    <li>Title + Meta description (ghi rõ số ký tự)</li>
+    <li>URL đề xuất</li>
+    <li>Outline H1/H2/H3</li>
+    <li>Body 800–1200 từ, áp dụng đầy đủ 5 nguyên tắc GEO</li>
+    <li>5 câu FAQ cuối</li>
+    <li>1 đoạn JSON-LD schema phù hợp (template)</li>
+</ul></div></div>
+<div class="tiet-row"><div class="tiet-row-time">10–45'</div><div class="tiet-row-content"><p>Các nhóm làm. GV walkthrough — bắt 5 lỗi phổ biến:</p>
+<ul>
+    <li>Title quá dài (&gt; 60 ký tự, bị cắt)</li>
+    <li>H1 không chứa core keyword</li>
+    <li>Paragraph 1 không trả lời thẳng câu hỏi tiêu đề</li>
+    <li>FAQ chỉ là 1 dòng (cần 2–3 câu cho mỗi answer)</li>
+    <li>Quên alt text cho ảnh</li>
+</ul></div></div>
+<div class="tiet-row"><div class="tiet-row-time">45–50'</div><div class="tiet-row-content"><div class="callout danger">
+    <div class="callout-label">Đánh giá quá trình 1 · 20%</div>
+    <div class="callout-title">Đề bài cá nhân chính thức</div>
+    <p>File workshop hôm nay = đầu bài đánh giá quá trình 1 (sau Ch3, theo đề cương rubric — 20%, cá nhân). GV phát chính thức đề bài, hạn nộp 2 tuần. Mỗi SV tự chọn 1 cluster <em>khác</em> và làm tương tự.</p>
+</div></div></div></div>
+</div>
+</section><section id="bai-tap">
+    <div class="section-num">Phần V</div>
+    <h2>Bài tập về nhà</h2>
+    
+<h3>Cá nhân — Đánh giá quá trình 1</h3>
+<div class="callout danger">
+    <div class="callout-label">20% · Hạn 2 tuần</div>
+    <div class="callout-title">Bài tập cá nhân (theo rubric đề cương)</div>
+    <ul style="margin-top:8px;">
+        <li><strong>Yêu cầu 1 (CLO1, 20%):</strong> Mô tả persona khách hàng cho cluster của em.</li>
+        <li><strong>Yêu cầu 2 (CLO2, 40%):</strong> Xác định core keyword + 5 supporting keywords.</li>
+        <li><strong>Yêu cầu 3 (CLO2, 40%):</strong> Tối ưu hoàn chỉnh trang đích theo 9 thẻ HTML + 5 nguyên tắc GEO.</li>
+    </ul>
+    <p style="margin-top:12px;"><strong>Hạn nộp:</strong> 2 tuần sau Buổi 5.</p>
+</div>
+
+<h3>Nhóm — 3 trang content hoàn chỉnh</h3>
+<div class="callout">
+    <div class="callout-label">Chuẩn bị Buổi 6</div>
+    <div class="callout-title">3 cluster pages hoàn chỉnh</div>
+    <p>Mỗi nhóm chọn 3 cluster trong topic map → soạn 3 trang theo template tiết 5. Nộp đầu Buổi 6.</p>
+</div>
+
+</section><section id="hoc-lieu">
+    <div class="section-num">Phần VI</div>
+    <h2>Học liệu</h2>
+    
+<h3>Bắt buộc</h3>
+<ul>
+    <li>McDonald, Jason. <em>SEO Workbook</em>, 2021. <strong>Chương 3 mục 3.1, 3.2, 3.3.</strong></li>
+    <li>Slide gốc: <em>On-Page SEO, Tối ưu hoá trang đích</em>.</li>
+</ul>
+
+<h3>Bổ sung 2026</h3>
+<ul>
+    <li><a href="https://schema.org/LocalBusiness" target="_blank">schema.org/LocalBusiness</a> — vocabulary chuẩn.</li>
+    <li>Google Search Central — <em>Search Quality Evaluator Guidelines</em> (phần E-E-A-T).</li>
+    <li>Aggarwal et al. (2024) — <em>GEO: Generative Engine Optimization</em> (KDD '24, ACM).</li>
+    <li>Search Engine Land — <em>How to write chunkable content for AI</em>.</li>
+</ul>
+
+</section>
+
+<footer>
+    <div class="ornament">⁂ · ⁂ · ⁂</div>
+    Phân tích & Tối ưu hoá Bộ máy Tìm kiếm · ITS340<br>
+    Khoa Hệ thống Thông tin Quản lý — Trường Đại học Ngân hàng TP. Hồ Chí Minh<br>
+    Buổi 5 of 6 · Phiên bản SEO + GEO · 2026
+</footer>
+
+</div>
+</body>
+</html>

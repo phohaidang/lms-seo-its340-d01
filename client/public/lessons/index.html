@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITS340 — Phân tích &amp; Tối ưu Bộ máy Tìm kiếm | 6 buổi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --paper: #F7F2E7;
+    --paper-shade: #EFE8D6;
+    --ink: #1B1714;
+    --ink-soft: #4A413A;
+    --rule: #C8BCA3;
+    --oxblood: #7A1F1F;
+    --oxblood-soft: #9B3838;
+    --gold: #B8893A;
+    --gold-soft: #D4A85F;
+    --green: #2F4A36;
+    --warm-gray: #8B7E6F;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+    background-image: 
+        radial-gradient(ellipse at top left, rgba(184,137,58,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(122,31,31,0.03) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.frame {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 48px 120px;
+    position: relative;
+}
+
+@media (max-width: 720px) {
+    .frame { padding: 40px 24px 80px; }
+    body { font-size: 16px; }
+}
+
+/* ===== Hero / Cover ===== */
+.cover {
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.cover-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    font-family: 'DM Mono', 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.cover-meta-left { line-height: 1.9; }
+.cover-meta-right { text-align: right; line-height: 1.9; }
+
+.cover-meta strong {
+    color: var(--oxblood);
+    font-weight: 600;
+}
+
+.session-roman {
+    font-family: 'Cormorant Garamond', 'Garamond', serif;
+    font-size: 220px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.9;
+    color: var(--gold);
+    margin-bottom: 0;
+    letter-spacing: -0.04em;
+    opacity: 0.9;
+}
+
+.session-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-bottom: 16px;
+}
+
+.session-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 24px 0 32px;
+    letter-spacing: -0.02em;
+    max-width: 720px;
+}
+
+@media (max-width: 720px) {
+    .session-roman { font-size: 140px; }
+    .session-title { font-size: 36px; }
+}
+
+.session-subtitle {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    max-width: 640px;
+    margin-bottom: 40px;
+}
+
+.cover-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0;
+}
+
+.cover-stat {
+    text-align: left;
+}
+
+.cover-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--oxblood);
+    line-height: 1;
+}
+
+.cover-stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+    .cover-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Section ===== */
+section {
+    margin-bottom: 72px;
+    scroll-margin-top: 40px;
+}
+
+.section-num {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.section-num::before {
+    content: "§ ";
+    color: var(--oxblood);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 28px;
+    letter-spacing: -0.015em;
+    max-width: 720px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--oxblood);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+p { margin-bottom: 18px; max-width: 720px; }
+
+p.lede {
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+p.lede::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    float: left;
+    line-height: 0.85;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: var(--oxblood);
+    font-style: normal;
+    font-weight: 500;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 28px;
+    max-width: 720px;
+}
+
+li { margin-bottom: 8px; padding-left: 6px; }
+
+ul li::marker { color: var(--gold); }
+ol li::marker { color: var(--oxblood); font-weight: 600; }
+
+strong { color: var(--ink); font-weight: 700; }
+em { color: var(--ink-soft); }
+
+a {
+    color: var(--oxblood);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-soft);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+/* ===== SCQA blocks ===== */
+.scqa {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: var(--paper-shade);
+    border-left: 3px solid var(--oxblood);
+    position: relative;
+}
+
+.scqa-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--gold);
+    font-style: italic;
+}
+
+.scqa-body { padding-top: 4px; }
+
+.scqa-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.scqa-content { font-size: 16px; line-height: 1.7; }
+.scqa-content p { margin-bottom: 10px; }
+.scqa-content p:last-child { margin-bottom: 0; }
+
+/* ===== Blockquote / Pull quote ===== */
+blockquote {
+    margin: 32px 0;
+    padding: 0 0 0 32px;
+    border-left: 3px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 720px;
+}
+
+blockquote::before {
+    content: "❝";
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--oxblood);
+    margin-right: 8px;
+    font-size: 28px;
+    line-height: 0;
+    vertical-align: -8px;
+}
+
+/* ===== Tiết block — kịch bản từng tiết ===== */
+.tiet {
+    margin: 36px 0;
+    background: #FFFEFB;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(27, 23, 20, 0.04);
+}
+
+.tiet-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 20px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tiet-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.tiet-num::before { content: "§ "; }
+
+.tiet-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    flex: 1;
+    line-height: 1.3;
+    color: var(--paper);
+    letter-spacing: -0.005em;
+}
+
+.tiet-duration {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+}
+
+.tiet-body { padding: 28px 32px; }
+
+.tiet-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px dashed var(--rule);
+}
+
+.tiet-row:last-child { border-bottom: none; }
+
+.tiet-row-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--oxblood);
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.tiet-row-content {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.tiet-row-content p { margin-bottom: 10px; }
+.tiet-row-content p:last-child { margin-bottom: 0; }
+.tiet-row-content ol, .tiet-row-content ul { margin-bottom: 10px; padding-left: 22px; }
+.tiet-row-content li { font-size: 15px; }
+
+@media (max-width: 720px) {
+    .tiet-row { grid-template-columns: 1fr; gap: 8px; }
+    .tiet-body { padding: 20px; }
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+table thead {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+}
+
+table th {
+    padding: 12px 14px;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    vertical-align: bottom;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--rule);
+}
+
+table tbody tr:last-child {
+    border-bottom: 2px solid var(--ink);
+}
+
+table td {
+    padding: 14px;
+    vertical-align: top;
+    color: var(--ink);
+}
+
+table td:first-child {
+    font-weight: 600;
+    color: var(--oxblood);
+}
+
+/* ===== Cards / Callouts ===== */
+.callout {
+    background: var(--paper-shade);
+    border-radius: 2px;
+    padding: 24px 28px;
+    margin: 28px 0;
+    border-left: 3px solid var(--gold);
+}
+
+.callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.callout-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.callout p { margin-bottom: 8px; font-size: 15.5px; }
+.callout p:last-child { margin-bottom: 0; }
+
+.callout.danger {
+    border-left-color: var(--oxblood);
+    background: rgba(122, 31, 31, 0.04);
+}
+.callout.danger .callout-label { color: var(--oxblood); }
+
+.callout.note {
+    border-left-color: var(--green);
+}
+.callout.note .callout-label { color: var(--green); }
+
+/* ===== Story / Persona Box ===== */
+.persona {
+    border: 1px solid var(--rule);
+    background: linear-gradient(135deg, rgba(184,137,58,0.05) 0%, rgba(122,31,31,0.03) 100%);
+    padding: 28px 32px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.persona::before {
+    content: "";
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+    border-radius: 1px;
+    transform: translate(4px, 4px);
+    z-index: -1;
+}
+
+.persona-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.persona p {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-style: italic;
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 100%;
+}
+
+/* ===== Numbered list with circles ===== */
+.steps {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+    max-width: 720px;
+}
+
+.steps > li {
+    counter-increment: step;
+    padding-left: 56px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--oxblood);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--oxblood);
+    background: var(--paper);
+}
+
+/* ===== Tag / Pill ===== */
+.tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.tag.gold { border-color: var(--gold-soft); color: var(--oxblood); background: rgba(184,137,58,0.08); }
+
+/* ===== Story map (diagram) ===== */
+.story-map {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 32px 36px;
+    margin: 32px 0;
+    border-radius: 2px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-x: auto;
+}
+
+.story-map pre {
+    color: var(--gold-soft);
+    font-family: inherit;
+    white-space: pre;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 100px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--warm-gray);
+    text-align: center;
+    line-height: 1.8;
+}
+
+footer .ornament {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--gold);
+    letter-spacing: 0.4em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* ===== TOC sidebar (navigation) ===== */
+.nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.nav-pill {
+    padding: 8px 14px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 1px;
+}
+
+.nav-pill:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+/* ===== Highlight box for key concepts ===== */
+.concept {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 24px 0;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.concept-formula {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.concept-formula .accent { color: var(--oxblood); font-weight: 600; }
+.concept-formula .gold { color: var(--gold); font-weight: 600; }
+
+/* ===== Print ===== */
+@media print {
+    body { 
+        background: white; 
+        font-size: 12pt;
+        background-image: none;
+    }
+    .frame { padding: 0; max-width: 100%; }
+    .session-roman { font-size: 100pt; }
+    .session-title { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    h3 { font-size: 14pt; }
+    .tiet { break-inside: avoid; box-shadow: none; }
+    .tiet-header { background: #1B1714 !important; -webkit-print-color-adjust: exact; }
+    section { break-inside: avoid-page; }
+}
+
+.intro {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 720px;
+}
+
+.session-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.session-card {
+    display: grid;
+    grid-template-columns: 100px 1fr 40px;
+    gap: 32px;
+    align-items: center;
+    padding: 32px 36px;
+    background: #FFFEFB;
+    border: 1px solid var(--rule);
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.session-card::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gold);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s;
+}
+
+.session-card:hover {
+    border-color: var(--ink);
+    box-shadow: 0 12px 32px -8px rgba(27, 23, 20, 0.12);
+    transform: translateX(6px);
+}
+
+.session-card:hover::before {
+    transform: scaleY(1);
+}
+
+.session-card:hover .card-arrow {
+    color: var(--oxblood);
+    transform: translateX(8px);
+}
+
+.session-card:hover .card-roman {
+    color: var(--oxblood);
+}
+
+.card-roman {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1;
+    color: var(--gold);
+    letter-spacing: -0.04em;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.card-body { padding: 4px 0; }
+
+.card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--ink);
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+}
+
+.card-subtitle {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 15.5px;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+    line-height: 1.55;
+    max-width: 100%;
+}
+
+.card-meta { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.card-arrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: var(--gold);
+    transition: all 0.3s;
+}
+
+@media (max-width: 720px) {
+    .session-card {
+        grid-template-columns: 60px 1fr 28px;
+        gap: 18px;
+        padding: 22px 20px;
+    }
+    .card-roman { font-size: 48px; }
+    .card-title { font-size: 22px; }
+}
+
+.persona-bar {
+    margin: 48px 0;
+    padding: 32px 36px;
+    background: linear-gradient(135deg, rgba(184,137,58,0.07) 0%, rgba(122,31,31,0.04) 100%);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--oxblood);
+}
+
+.persona-bar-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.persona-bar-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 12px;
+}
+
+.persona-bar p {
+    font-size: 16px;
+    color: var(--ink-soft);
+    font-style: italic;
+    line-height: 1.65;
+    margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="frame">
+
+<header class="cover">
+    <div class="cover-meta">
+        <div class="cover-meta-left">
+            ITS340 · Phân tích &amp; Tối ưu Bộ máy Tìm kiếm<br>
+            Khoa HTTT Quản lý — Đại học Ngân hàng TP.HCM<br>
+            <strong>Bộ học liệu điện tử 6 buổi</strong> · Cập nhật 2026
+        </div>
+        <div class="cover-meta-right">
+            06 buổi · 30 tiết<br>
+            SEO + GEO Edition<br>
+            <strong>Phiên bản học thuật</strong>
+        </div>
+    </div>
+    
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:280px;">
+            <div class="session-label">Mục lục · Table of Contents</div>
+            <h1 class="session-title">Phân tích &amp; Tối ưu Bộ máy Tìm kiếm</h1>
+            <p class="session-subtitle">Bộ học liệu điện tử cho 6 buổi giảng dạy — kết hợp giáo trình SEO truyền thống với cập nhật GEO (Generative Engine Optimization) cho kỷ nguyên AI.</p>
+        </div>
+        <div class="session-roman">⁂</div>
+    </div>
+    
+    <div class="cover-stats">
+        <div class="cover-stat">
+            <div class="cover-stat-value">06</div>
+            <div class="cover-stat-label">Buổi học</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">30</div>
+            <div class="cover-stat-label">Tổng tiết</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">SCQA</div>
+            <div class="cover-stat-label">Khung tài liệu</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">2026</div>
+            <div class="cover-stat-label">Phiên bản</div>
+        </div>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="section-num">Lời mở đầu</div>
+    <h2>Một môn học, một câu chuyện</h2>
+    <p>Bộ học liệu này được thiết kế quanh một nguyên tắc sư phạm: kiến thức rời rạc khó nhớ, kiến thức gắn với một câu chuyện nhất quán dễ vận dụng. Vì vậy, suốt 6 buổi, chúng ta đi cùng một nhân vật chính — và mỗi buổi đầu vào của workshop là output của buổi trước.</p>
+    
+    <div class="persona-bar">
+        <div class="persona-bar-tag">Case study chính · xuyên suốt 6 buổi</div>
+        <div class="persona-bar-name">Hạt Mộc Coffee</div>
+        <p>Phương, 32 tuổi, cựu nhân viên ngân hàng, mở quán specialty 40m² trong hẻm Trần Quốc Thảo, Quận 3. Mở 6 tháng. Doanh thu 60–80 triệu/tháng nhưng chưa có lãi. Khi search "cà phê specialty quận 3" trên Google → quán không nằm trong top 30. Khi hỏi ChatGPT → không có Hạt Mộc trong câu trả lời. Mỗi buổi học sẽ giúp chị Phương giải quyết một mảnh của bài toán — đến Buổi 6, mỗi nhóm sinh viên có sẵn một bản kế hoạch SEO + GEO hoàn chỉnh để nộp đánh giá quá trình.</p>
+    </div>
+</section>
+
+<section>
+    <div class="section-num">Mục lục 6 buổi</div>
+    <h2>Lộ trình giảng dạy</h2>
+    <p style="margin-bottom:20px;">Click vào từng buổi để xem chi tiết kịch bản 5 tiết, tài liệu SCQA, bài tập về nhà và học liệu.</p>
+    
+    <div class="session-grid">
+        
+<a class="session-card" href="buoi-1.html">
+    <div class="card-roman">I</div>
+    <div class="card-body">
+        <div class="card-label">Buổi 1 · 5 tiết</div>
+        <h3 class="card-title">SEO trong kỷ nguyên AI</h3>
+        <p class="card-subtitle">Từ Search Engine đến Answer Engine — bản đồ tổng thể của một thời đại đang chuyển dịch.</p>
+        <div class="card-meta">
+            <span class="tag">Ch.1 + GEO Foundation</span>
+        </div>
+    </div>
+    <div class="card-arrow">→</div>
+</a>
+
+<a class="session-card" href="buoi-2.html">
+    <div class="card-roman">II</div>
+    <div class="card-body">
+        <div class="card-label">Buổi 2 · 5 tiết</div>
+        <h3 class="card-title">Hành trình khách hàng & Search Intent</h3>
+        <p class="card-subtitle">Cái gốc của mọi từ khoá — không phải tools, mà là sự thấu hiểu người dùng đang ở đâu trên hành trình.</p>
+        <div class="card-meta">
+            <span class="tag">Ch.2.1 + Persona + Prompt Intent</span>
+        </div>
+    </div>
+    <div class="card-arrow">→</div>
+</a>
+
+<a class="session-card" href="buoi-3.html">
+    <div class="card-roman">III</div>
+    <div class="card-body">
+        <div class="card-label">Buổi 3 · 5 tiết</div>
+        <h3 class="card-title">Nghiên cứu từ khoá</h3>
+        <p class="card-subtitle">Từ keyword đến prompt — biến 36 ô intent thành 80+ cơ hội content cụ thể, có thể đo lường.</p>
+        <div class="card-meta">
+            <span class="tag">Ch.2.2-2.4 + Prompt Research</span>
+        </div>
+    </div>
+    <div class="card-arrow">→</div>
+</a>
+
+<a class="session-card" href="buoi-4.html">
+    <div class="card-roman">IV</div>
+    <div class="card-body">
+        <div class="card-label">Buổi 4 · 5 tiết</div>
+        <h3 class="card-title">Phân tích đối thủ &amp; Topic Cluster</h3>
+        <p class="card-subtitle">Từ 80 keyword rời rạc đến cấu trúc nội dung có thể chiếm trọn topic — tiền đề cho Topic Authority.</p>
+        <div class="card-meta">
+            <span class="tag">Ch.2.5 + Topic Authority</span>
+        </div>
+    </div>
+    <div class="card-arrow">→</div>
+</a>
+
+<a class="session-card" href="buoi-5.html">
+    <div class="card-roman">V</div>
+    <div class="card-body">
+        <div class="card-label">Buổi 5 · 5 tiết</div>
+        <h3 class="card-title">On-Page SEO + Nội dung cho AI trích dẫn</h3>
+        <p class="card-subtitle">Biến cluster thành trang đích thật — 9 thẻ HTML, 5 quy tắc tối ưu, 5 nguyên tắc GEO.</p>
+        <div class="card-meta">
+            <span class="tag">Ch.3 + Chunkable Content</span>
+        </div>
+    </div>
+    <div class="card-arrow">→</div>
+</a>
+
+<a class="session-card" href="buoi-6.html">
+    <div class="card-roman">VI</div>
+    <div class="card-body">
+        <div class="card-label">Buổi 6 · 5 tiết</div>
+        <h3 class="card-title">Thuật toán, Off-Page Authority &amp; Tổng kết</h3>
+        <p class="card-subtitle">Từ Panda đến AI Overview — và bản kế hoạch SEO+GEO hoàn chỉnh cho Hạt Mộc.</p>
+        <div class="card-meta">
+            <span class="tag">Ch.4 + Ch.5 + Final Plan</span>
+        </div>
+    </div>
+    <div class="card-arrow">→</div>
+</a>
+
+    </div>
+</section>
+
+<section>
+    <div class="section-num">Khung sư phạm</div>
+    <h2>Nguyên tắc thiết kế chung</h2>
+
+    <h3>SCQA — Situation · Complication · Question · Answer</h3>
+    <p>Mỗi buổi mở đầu bằng cái sinh viên đã biết (Situation), chỉ ra cái không khớp với hiện thực 2026 (Complication), đặt câu hỏi định hướng (Question), rồi mới đến đáp án (Answer). Khung Minto Pyramid này giúp sinh viên đi từ vùng quen thuộc sang vùng mới một cách tự nhiên.</p>
+
+    <h3>Cấu trúc 5 tiết / buổi</h3>
+    <p>Mỗi buổi 5 tiết được cấu trúc: 1 tiết mở vấn đề + kết nối buổi trước, 2–3 tiết lý thuyết kèm thảo luận, nghỉ giải lao 15', 1 tiết workshop nhóm thực hành trên Hạt Mộc, 1 tiết tổng kết và bài tập về nhà.</p>
+
+    <h3>Cập nhật GEO 2026</h3>
+    <p>Giáo trình gốc của môn dừng ở RankBrain (2015). Bộ học liệu này bổ sung BERT, MUM, Helpful Content Update, E-E-A-T mở rộng, AI Overview, và toàn bộ tư duy GEO (Generative Engine Optimization) — đảm bảo sinh viên ra trường có kỹ năng phù hợp với thực tế 2026.</p>
+</section>
+
+<footer>
+    <div class="ornament">⁂ · ⁂ · ⁂</div>
+    Phân tích &amp; Tối ưu hoá Bộ máy Tìm kiếm · ITS340<br>
+    Khoa Hệ thống Thông tin Quản lý — Trường Đại học Ngân hàng TP. Hồ Chí Minh<br>
+    Bộ học liệu 6 buổi · Phiên bản SEO + GEO · 2026
+</footer>
+
+</div>
+</body>
+</html>

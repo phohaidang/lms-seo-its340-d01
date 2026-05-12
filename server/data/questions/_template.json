@@ -1,0 +1,66 @@
+{
+  "_instructions": {
+    "REMOVE_THIS_KEY": "Xoá key '_instructions' này trước khi dùng thật",
+    "session": "Số buổi học (integer)",
+    "chapter": "Tên chương, ví dụ: 'Ch.1 §1.1'",
+    "title": "Tên buổi học — hiển thị trên quiz screen",
+    "time_limit_minutes": "Thời gian làm bài (phút) — thường 10",
+    "questions": [
+      {
+        "id": "s[số buổi]-mc[số câu] — ví dụ: s1-mc1, s1-mc2",
+        "type": "'mc' cho trắc nghiệm | 'tf' cho Đúng/Sai",
+        "question": "Nội dung câu hỏi",
+        "MC_options": "Mảng 4 phần tử bắt đầu bằng 'A. ', 'B. ', 'C. ', 'D. '",
+        "MC_correct": "Chữ cái đáp án đúng: 'A', 'B', 'C', hoặc 'D'",
+        "TF_correct": "Nếu type là 'tf': 'A' = Đúng, 'B' = Sai",
+        "explanation": "Giải thích đáp án — xuất hiện trong Word export"
+      }
+    ]
+  },
+  "session": 1,
+  "chapter": "Ch.1 §1.1",
+  "title": "Tên buổi học",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s1-mc1",
+      "type": "mc",
+      "question": "Social Computing là gì?",
+      "options": [
+        "A. Một loại máy tính dùng cho mạng xã hội",
+        "B. Phần mềm quản lý mạng xã hội doanh nghiệp",
+        "C. Hệ thống điện toán đám mây kết nối xã hội",
+        "D. Một loại hình điện toán bao gồm sự tương tác giữa máy tính và hành vi xã hội"
+      ],
+      "correct": "D",
+      "explanation": "Theo định nghĩa chuẩn: Social Computing là loại điện toán mô tả sự tương tác giữa máy tính và hành vi xã hội con người."
+    },
+    {
+      "id": "s1-mc2",
+      "type": "mc",
+      "question": "Starbucks nổi tiếng với Social Commerce NGOẠI TRỪ điều nào?",
+      "options": [
+        "A. Có 'super influencers' trên mạng xã hội",
+        "B. Cá nhân hóa trải nghiệm khách hàng",
+        "C. Các chiến dịch không nhất quán và không đúng thời điểm",
+        "D. Cross-promotion trên nhiều nền tảng xã hội"
+      ],
+      "correct": "C",
+      "explanation": "Starbucks nổi tiếng về sự nhất quán trong chiến lược SC. 'Untimely and inconsistent' là điều KHÔNG phải đặc điểm của Starbucks."
+    },
+    {
+      "id": "s1-tf1",
+      "type": "tf",
+      "question": "Social computing is a type of computing that includes an interaction of computers and social behavior.",
+      "correct": "A",
+      "explanation": "Đúng. Đây là định nghĩa chuẩn của Social Computing theo giáo trình Turban."
+    },
+    {
+      "id": "s1-tf2",
+      "type": "tf",
+      "question": "Vendors get free word-of-mouth marketing is one of the retailers' benefits from social commerce.",
+      "correct": "A",
+      "explanation": "Đúng. WoM (Word of Mouth) marketing miễn phí là một trong những lợi ích chính mà SC mang lại cho doanh nghiệp."
+    }
+  ]
+}

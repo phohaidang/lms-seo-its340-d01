@@ -1,0 +1,102 @@
+{
+  "session": 2,
+  "chapter": "Ch.2 §2.1",
+  "title": "Hành trình khách hàng & Search Intent | ITS340 SEO",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s2-mc1",
+      "type": "mc",
+      "question": "Linh, 28 tuổi, marketer ở Quận 3, sáng cần caffeine, trưa cần chỗ yên tĩnh để làm việc, weekend muốn khám phá hạt cà phê mới. Theo nguyên tắc SEO, đây là mô tả nào dưới đây?",
+      "options": [
+        "A. Người yêu cà phê — vô dụng, quá rộng",
+        "B. Nhân khẩu học: người 25–40 tuổi, thu nhập trung-cao ở SG",
+        "C. Persona dùng được — cụ thể, có JTBD và behavior search thực tế",
+        "D. Phân khúc thị trường B2C cho cà phê specialty"
+      ],
+      "correct": "C",
+      "explanation": "Persona dùng được cho SEO phải cụ thể đến mức trả lời câu 'Khi gặp vấn đề X, người này gõ gì lên Google?'. Linh có tên, tuổi, nghề, vị trí địa lý, và các nhu cầu cụ thể theo thời gian trong ngày — từ đó có thể dự đoán search queries của cô."
+    },
+    {
+      "id": "s2-mc2",
+      "type": "mc",
+      "question": "Query 'cách pha V60 cho người mới' và query 'quán cà phê yên tĩnh gần Q.3 để làm việc' — hai query này thuộc loại Search Intent nào?",
+      "options": [
+        "A. Cả hai đều là Informational intent",
+        "B. Cái thứ nhất Informational, cái thứ hai Local + Need-based (không phải 4 loại cổ điển)",
+        "C. Cái thứ nhất Informational, cái thứ hai Commercial intent",
+        "D. Cả hai đều là Transactional intent"
+      ],
+      "correct": "B",
+      "explanation": "Query thứ nhất rõ ràng là học hỏi (I). Query thứ nhất là local (có tín hiệu địa lý Q.3) kết hợp với need-based (cần chỗ làm việc), không phải cơ bản INCT mà là một biến thể — đây là lý do GEO bổ sung thêm Local Intent và concept 'Need-based'."
+    },
+    {
+      "id": "s2-mc3",
+      "type": "mc",
+      "question": "Vì sao buổi 2 chuyển từ mô hình AIDA sang STDC (See–Think–Do–Care)?",
+      "options": [
+        "A. Vì AIDA cũ, STDC mới hơn",
+        "B. Vì AIDA tuyến tính, nhưng hành vi search không tuyến tính — STDC bám vào trạng thái khách hàng",
+        "C. Vì STDC có 4 bước giống 4 loại intent (I/N/C/T)",
+        "D. Vì AIDA không áp dụng được cho doanh nghiệp nhỏ như Hạt Mộc"
+      ],
+      "correct": "B",
+      "explanation": "AIDA (Awareness → Interest → Desire → Action) tuyến tính, giả sử khách hàng đi từ A → D; nhưng trên thực tế, người dùng nhảy qua lại giữa các kênh. STDC phản ánh trạng thái (See = có quan tâm, Think = cân nhắc, Do = sẵn sàng mua, Care = gắn bó) — phù hợp với cách tìm kiếm không tuần tự."
+    },
+    {
+      "id": "s2-mc4",
+      "type": "mc",
+      "question": "Prompt 'Mình đang muốn tặng quà sinh nhật cho sếp mê cà phê specialty, gợi ý 3 món dưới 1 triệu' có 3 đặc điểm của Prompt Intent. Điểm khác biệt chính so với search query thông thường là gì?",
+      "options": [
+        "A. Prompt dài hơn, nhưng intent vẫn giống search query",
+        "B. Prompt chứa context cá nhân, ràng buộc tài chính, và mong AI khuyên — không chỉ liệt kê",
+        "C. Prompt dành cho AI, search query dành cho Google, khác nhau hoàn toàn",
+        "D. Prompt có syntax phức tạp, search query đơn giản hơn"
+      ],
+      "correct": "B",
+      "explanation": "3 đặc điểm của Prompt Intent là: (1) Conversational — câu dài, đầy đủ ngữ pháp; (2) Context-rich — chứa thông tin cá nhân, ràng buộc, sở thích; (3) Synthesis-seeking — mong AI tổng hợp/khuyên chứ không chỉ thông tin. Đây là lý do content phải trả lời được những câu hỏi phức tạp này — không chỉ trang sản phẩm."
+    },
+    {
+      "id": "s2-mc5",
+      "type": "mc",
+      "question": "Ma trận Persona × Customer Journey (STDC) × Search Intent dùng để làm gì trong quy trình SEO của Hạt Mộc?",
+      "options": [
+        "A. Để vẽ biểu đồ khách hàng và kiểm tra đa dạng",
+        "B. Để xây dựng 'bản đồ content' — xác định tất cả cơ hội content cần được sản xuất",
+        "C. Để dự báo doanh thu theo từng persona",
+        "D. Để so sánh đối thủ cạnh tranh"
+      ],
+      "correct": "B",
+      "explanation": "Ma trận 3 persona × 4 giai đoạn STDC = 12 ô. Mỗi ô 2–3 query/prompt → ~36 cơ hội content. Đây là 'bản đồ content' sẽ dùng cho buổi 3 (keyword research) và buổi 5 (sản xuất content). Không phải để dự báo doanh thu hay so sánh đối thủ."
+    }
+  ],
+  "discussion_questions": [
+    {
+      "id": "s2-tf1",
+      "type": "tf",
+      "question": "Cùng một persona (ví dụ: Linh, 28 tuổi) có thể tạo ra 5–7 truy vấn search/prompt khác nhau với intent hoàn toàn khác nhau tùy vào thời gian và bối cảnh trong ngày.",
+      "correct": true,
+      "explanation": "Bài giảng minh họa rõ: Linh sáng 7h tìm cách pha V60 (I), trưa 12h tìm quán yên tĩnh (Local+C), chiều 3h so sánh V60 vs Aeropress (C), tối 9h nhắn ChatGPT mua quà (Deep intent). Persona tĩnh không đủ — cần bản đồ intent động."
+    },
+    {
+      "id": "s2-tf2",
+      "type": "tf",
+      "question": "Search Intent (4 loại I/N/C/T) và Prompt Intent là hai khái niệm như nhau; chỉ khác là medium (Google vs ChatGPT).",
+      "correct": false,
+      "explanation": "Hai khái niệm KHÁC NHAU. Search Intent là gì người dùng tìm trên Google (đơn giản, 3 từ, tuyến tính). Prompt Intent là câu hỏi gõ vào AI (40+ từ, chứa context cá nhân, mong synthesis). Prompt Intent sâu hơn vì AI khơi gợi intent ẩn sâu hơn."
+    }
+  ],
+  "essays": [
+    {
+      "id": "s2-essay1",
+      "type": "essay",
+      "question": "Scenario: Anh, 35 tuổi, designer freelance ở Quận 1, là một workshop frequent visitor (đến Hạt Mộc mỗi tuần để học workshop pha cà phê). Hôm nay anh có 2 tình huống: (1) sáng định mua V60 hàng chính để dùng tại nhà nhưng chưa biết chọn loại nào; (2) chiều nhắn ChatGPT để hỏi: 'Tôi muốn thiết kế 1 bộ packaging cho cà phê specialty, có ai suggest những quán cà phê nước ngoài có packaging đẹp không, để mình tham khảo phong cách design?'\n\nVới mỗi tình huống, hãy:\n(a) Xác định loại Search Intent / Prompt Intent;\n(b) Xác định giai đoạn trong Customer Journey (STDC);\n(c) Đề xuất 1 nội dung mà Hạt Mộc nên sản xuất để \"catch\" được intent này.",
+      "sample_answer": "**Tình huống 1: Anh muốn mua V60**\n(a) Intent: Commercial (so sánh tính năng) kết hợp Transactional (sẵn sàng mua).\n(b) Journey: DO giai đoạn — Anh sẵn sàng giao dịch, chỉ cần thông tin để quyết định nhanh.\n(c) Nội dung đề xuất: Bài \"V60 vs Aeropress vs Chemex: Cách chọn dụng cụ pha cà phê theo phong cách của bạn\" — bao gồm bảng so sánh kỹ thuật, tác dụng, giá, thời gian pha. Có liên kết đến trang shop.\n\n**Tình huống 2: Anh nhắn ChatGPT tham khảo packaging**\n(a) Intent: Prompt Intent — Conversational (40+ từ), Context-rich (bối cảnh làm designer), Synthesis-seeking (muốn ý kiến & gợi ý, không chỉ danh sách).\n(b) Journey: CARE — Anh đã là khách quen, đang gắn bó, mong tìm kiếm lợi nhuận tiếp theo (cộng tác, partnership tiềm năng).\n(c) Nội dung đề xuất: 2 bài:\n   - \"10 quán cà phê specialty lâu đời & có packaging iconic nhất châu Á\" (bao gồm ảnh, lịch sử design).\n   - \"Hạt Mộc Coffee x Collaborate: Cơ hội design packaging & merchandise cho specialty coffee\" — gọi cộng tác.\n\nCả hai content nên có schema markup, được AI cite dễ dàng.",
+      "rubric": {
+        "excellent": "10-9đ: Phân biệt rõ ràng I/N/C/T/Local và Prompt Intent; xác định đúng journey stage dựa trên behavior; đề xuất content phù hợp với intent + cơ hội kinh doanh Hạt Mộc; có viết content angle cụ thể.",
+        "acceptable": "8-6đ: Phân biệt được loại intent nhưng chưa sâu; journey stage đúng; nội dung đề xuất hợp lý nhưng chưa chi tiết. Hoặc: phân tích 1 tình huống tốt, tình huống kia chưa đầy đủ.",
+        "insufficient": "<6đ: Phân biệt intent không rõ (ví dụ gán sai loại); journey stage sai; nội dung đề xuất không liên quan hoặc chung chung. Hoặc: chỉ trả lời 1 tình huống."
+      }
+    }
+  ]
+}

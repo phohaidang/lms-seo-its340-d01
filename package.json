@@ -1,0 +1,44 @@
+{
+  "name": "lms-seo-its340-d01",
+  "version": "1.0.0",
+  "description": "Learning Management System — SEO - Tối ưu hóa công cụ tìm kiếm (ITS340)",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "server": "node --openssl-legacy-provider server/index.js",
+    "client": "npx vite client --port 5173",
+    "build": "npx vite build client --outDir ../dist",
+    "import:lessons": "node scripts/import-lessons.js",
+    "import:questions": "node scripts/import-questions.js",
+    "generate:ebook": "node scripts/generate-ebook.js",
+    "setup:sheets": "node scripts/setup-sheets.js",
+    "seed:admin": "node scripts/seed-admin.js",
+    "scaffold": "node scripts/scaffold-new-course.js",
+    "create:questions": "node scripts/create-questions.js",
+    "create:questions:add": "node scripts/create-questions.js --append",
+    "gen:quiz": "node scripts/generate-questions-ai.js",
+    "server:dev": "nodemon --openssl-legacy-provider --ignore data/ --ignore server/data/ server/index.js",
+    "sync": "node scripts/sync-deployments.js",
+    "sync:dry": "node scripts/sync-deployments.js --dry-run"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "docx": "^9.6.1",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.0",
+    "googleapis": "^144.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.1.1",
+    "pdfkit": "^0.15.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.14",
+    "vite": "^6.0.0"
+  }
+}

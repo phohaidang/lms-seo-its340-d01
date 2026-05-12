@@ -1,0 +1,68 @@
+{
+  "session": 1,
+  "chapter": "Ch.1",
+  "title": "Buổi 1 — Tổng quan SEO & Thuật toán Google",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s1-mc1",
+      "type": "mc",
+      "question": "Khái niệm GEO (Generative Engine Optimization) khác biệt căn bản như thế nào so với SEO truyền thống?",
+      "options": [
+        "A. GEO tập trung vào việc đẩy website lên vị trí Top 1 trên trang kết quả tìm kiếm của Google.",
+        "B. GEO tập trung vào việc tối ưu để thông tin thương hiệu được AI trích dẫn và trả lời trực tiếp cho người dùng.",
+        "C. GEO là kỹ thuật chạy quảng cáo trả phí trên các nền tảng chatbot như ChatGPT hay Gemini.",
+        "D. GEO chỉ quan tâm đến việc tối ưu hóa từ khóa dài (long-tail keywords) để tăng tỉ lệ click."
+      ],
+      "correct": "B"
+    },
+    {
+      "id": "s1-mc2",
+      "type": "mc",
+      "question": "Hiện tượng \"Zero-click search\" (chiếm khoảng 65% lượt tìm kiếm hiện nay) phản ánh xu hướng dịch chuyển nào của Google?",
+      "options": [
+        "A. Người dùng không còn tin tưởng vào các kết quả tìm kiếm trên website nữa.",
+        "B. Google đang chuyển đổi từ một \"bộ máy tìm kiếm\" thành \"bộ máy trả lời\" cung cấp thông tin ngay lập tức.",
+        "C. Nội dung website hiện nay quá sơ sài khiến người dùng không muốn nhấn vào xem chi tiết.",
+        "D. Người dùng có xu hướng chuyển sang tìm kiếm trên TikTok và Facebook thay vì Google."
+      ],
+      "correct": "B"
+    },
+    {
+      "id": "s1-mc3",
+      "type": "mc",
+      "question": "Trong cấu trúc E-E-A-T (2026), yếu tố \"Experience\" (Kinh nghiệm thực tế) được nhấn mạnh nhằm mục đích gì?",
+      "options": [
+        "A. Để xác minh website đã hoạt động được bao nhiêu năm trong ngành.",
+        "B. Để ưu tiên các website có tốc độ tải trang nhanh và trải nghiệm người dùng (UX) tốt.",
+        "C. Để phân biệt nội dung có chiều sâu, mang tính trải nghiệm cá nhân của con người với nội dung do AI tự tổng hợp hàng loạt.",
+        "D. Để kiểm tra xem doanh nghiệp có đầy đủ giấy phép kinh doanh và chứng chỉ chuyên môn hay không."
+      ],
+      "correct": "C"
+    },
+    {
+      "id": "s1-mc4",
+      "type": "mc",
+      "question": "Tại sao quán \"Hạt Mộc Coffee\" trong Case Study dù đã làm SEO tốt nhưng vẫn không được ChatGPT gợi ý khi khách hàng hỏi về \"Specialty Coffee tại Quận 3\"?",
+      "options": [
+        "A. Vì website của quán chưa cài đặt các công cụ chatbot AI để tương tác với khách.",
+        "B. Vì các mô hình AI (LLMs) ưu tiên trích dẫn những thương hiệu có độ phủ thông tin rộng và uy tín trong dữ liệu đào tạo hoặc nguồn tin cậy.",
+        "C. Vì quán chưa đăng ký tài khoản doanh nghiệp với OpenAI (đơn vị sở hữu ChatGPT).",
+        "D. Vì ChatGPT bị lỗi không cập nhật các địa điểm mới mở dưới 1 năm."
+      ],
+      "correct": "B"
+    },
+    {
+      "id": "s1-mc5",
+      "type": "mc",
+      "question": "Vị trí \"AI Overview\" (Vị trí #0) trên Google mang lại tác động kép nào cho doanh nghiệp?",
+      "options": [
+        "A. Chỉ mang lại tác động tiêu cực vì nó làm giảm tỉ lệ người dùng click vào website.",
+        "B. Làm tăng lượng truy cập vào website lên gấp 10 lần so với vị trí Top 1 truyền thống.",
+        "C. Có thể làm giảm traffic trực tiếp nhưng lại tăng mạnh uy tín và nhận diện thương hiệu nếu được AI trích dẫn nguồn.",
+        "D. Không có tác động gì vì người dùng thường có thói quen cuộn qua phần tóm tắt của AI."
+      ],
+      "correct": "C"
+    }
+  ]
+}

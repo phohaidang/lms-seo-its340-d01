@@ -1,0 +1,169 @@
+{
+  "chapter": 4,
+  "title": "Chiến lược, Triển khai & Tương lai SC",
+  "sessions": [7, 8],
+  "scqa": {
+    "situation": "SV đã học toàn bộ 'phần kỹ thuật' của SC: công cụ, lý thuyết NTD, marketing, social shopping, CRM, social enterprise. Bây giờ cần trả lời câu hỏi quan trọng nhất: 'Làm sao biết có HIỆU QUẢ không?' và 'Triển khai thế nào cho an toàn?'",
+    "complication": "Nhiều DN VN chạy SC theo cảm tính — không có chiến lược, không tính ROI. Khi CEO hỏi 'ROI bao nhiêu?' không trả lời được. Đồng thời, triển khai SC còn gặp mặt tối: scam, phishing, khủng hoảng truyền thông, vấn đề pháp lý, nhân viên kháng cự thay đổi.",
+    "question": "Quy trình lập chiến lược SC? ROI tính ra sao? Analytics công cụ nào? Và khi triển khai — bảo mật, pháp lý, đạo đức, change management xử lý thế nào?",
+    "answer": "Strategy-Performance Cycle + Cost-Benefit Analysis + Hype Cycle + Web/Social/Sentiment Analytics + Security (social engineering, phishing) + Legal/Privacy + Change Management + BPR + CSFs + Tương lai: AI, chatbot, live commerce 2.0."
+  },
+  "concepts": [
+    {
+      "id": "c4-strategy-cycle",
+      "term": "Strategy-Performance Cycle",
+      "definition": "Chu trình lặp lại: Strategic Planning (5 giai đoạn) → Implementation → Assessment → Performance Improvement → quay lại.",
+      "key_points": [
+        "5 giai đoạn: Initiation → Formulation → Implementation → Assessment → Improvement",
+        "CYCLIC — không làm 1 lần, phải liên tục đánh giá và điều chỉnh",
+        "Strategy Map: biểu đồ trực quan thể hiện chiến lược"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-roi", "c4-hype-cycle"]
+    },
+    {
+      "id": "c4-roi",
+      "term": "ROI & Cost-Benefit Analysis",
+      "definition": "Return on Investment = Lợi nhuận / Chi phí. Cost-Benefit Analysis so sánh tangible (hữu hình) và intangible (vô hình) costs vs benefits.",
+      "key_points": [
+        "ROI trong SC khó tính chính xác: tác động gián tiếp, độ trễ thời gian",
+        "Tangible: chi phí phần mềm, nhân sự (dễ đo)",
+        "Intangible: brand awareness, loyalty, employee morale (khó đo nhưng quan trọng)"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-strategy-cycle", "c4-analytics"]
+    },
+    {
+      "id": "c4-hype-cycle",
+      "term": "Gartner Hype Cycle",
+      "definition": "Mô hình đánh giá độ trưởng thành và tính áp dụng của công nghệ qua 5 giai đoạn.",
+      "key_points": [
+        "1. Technology Trigger → 2. Peak of Inflated Expectations → 3. Trough of Disillusionment → 4. Slope of Enlightenment → 5. Plateau of Productivity",
+        "DN khôn ngoan đầu tư ở giai đoạn 4 (Slope of Enlightenment)",
+        "TikTok Shop: giai đoạn 5 | AR shopping: giai đoạn 3 | Metaverse: giai đoạn 3"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-strategy-cycle", "c4-future-sc"]
+    },
+    {
+      "id": "c4-analytics",
+      "term": "Web Analytics, Social Analytics & Sentiment Analysis",
+      "definition": "3 tầng phân tích dữ liệu: Web Analytics (website), Social Media Analytics (MXH), Sentiment Analysis (cảm xúc/ý kiến).",
+      "key_points": [
+        "Web Analytics: page views, bounce rate, conversion (Google Analytics)",
+        "Social Analytics: mentions, engagement, reach, share of voice",
+        "Sentiment Analysis (Opinion Mining): phân tích positive/negative/neutral từ conversations",
+        "Social Intelligence: rút ra giá trị ẩn từ tương tác xã hội"
+      ],
+      "case_study": {
+        "title": "Del Monte — Market Research qua MXH",
+        "context": "Del Monte nghiên cứu cải thiện thức ăn cho chó bằng cách tham gia cộng đồng yêu chó trên MXH — hỏi ý kiến, theo dõi thảo luận.",
+        "analysis": "Nhanh hơn, rẻ hơn, sâu hơn focus group truyền thống. Sản phẩm mới thành công vì được co-design.",
+        "lesson_learned": "MXH là kho dữ liệu vàng — KH tự nguyện chia sẻ insight miễn phí."
+      },
+      "related_concepts": ["c4-roi", "c4-kpi"]
+    },
+    {
+      "id": "c4-kpi",
+      "term": "KPI, Balanced Scorecard & Dashboard",
+      "definition": "KPI = chỉ số đo hiệu quả then chốt. Balanced Scorecard = đo 4 góc nhìn (Financial, Customer, Internal Process, Learning). Dashboard = bảng trực quan hiển thị dữ liệu.",
+      "key_points": [
+        "KPIs phải GẮN VỚI mục tiêu kinh doanh, không chỉ vanity metrics",
+        "Balanced Scorecard: cân bằng tài chính và phi tài chính",
+        "Dashboards: Hootsuite, Sprout Social, Google Data Studio"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-analytics", "c4-strategy-cycle"]
+    },
+    {
+      "id": "c4-security",
+      "term": "Security & Fraud Prevention",
+      "definition": "Bảo mật trong SC: Social Engineering (tâm lý lừa đảo), Social Phishing (lấy thông tin bí mật), và các mối đe dọa khác.",
+      "key_points": [
+        "Social Engineering: giả danh admin, lừa tiết lộ thông tin",
+        "Phishing: email/website giả lấy password, thẻ tín dụng",
+        "Phòng ngừa: 2FA, đào tạo nhân viên, policy mật khẩu"
+      ],
+      "case_study": {
+        "title": "Domino's Pizza — Khủng hoảng YouTube 2009",
+        "context": "2 nhân viên quay video phản cảm về chế biến thức ăn → viral hàng triệu views → khủng hoảng toàn cầu.",
+        "analysis": "CEO xin lỗi TRÊN YouTube (cùng kênh), sa thải nhân viên, mở rộng social media policy. Được đánh giá 'high marks'.",
+        "lesson_learned": "Khủng hoảng MXH: phản hồi NHANH + ĐÚNG KÊNH + MINH BẠCH + CHÂN THÀNH. Cần crisis response plan SẴN."
+      },
+      "related_concepts": ["c4-legal-ethics", "c4-change-management"]
+    },
+    {
+      "id": "c4-legal-ethics",
+      "term": "Legal, Privacy & Ethics",
+      "definition": "Vấn đề pháp lý: đăng nội dung không phù hợp, vi phạm bản quyền, privacy. Ethics: fake review, dark patterns, cyberbullying.",
+      "key_points": [
+        "Privacy = quyền không bị xâm nhập đời sống cá nhân",
+        "Cyberbullying = bắt nạt qua công nghệ điện tử",
+        "Giá trị cá nhân là yếu tố chính trong đạo đức SC",
+        "DN cần policy rõ ràng về content, privacy, crisis response"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-security", "c4-change-management"]
+    },
+    {
+      "id": "c4-change-management",
+      "term": "Change Management & BPR",
+      "definition": "Change Management: chuyển đổi tổ chức từ trạng thái hiện tại sang mong muốn. BPR (Business Process Reengineering): thiết kế lại toàn diện quy trình.",
+      "key_points": [
+        "Nhân viên kháng cự thay đổi — cần đào tạo + communication",
+        "CSF (Critical Success Factors): top management support, clear strategy, skilled team",
+        "SME có lợi thế: linh hoạt, chi phí SC thấp, gần KH"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-security", "c4-future-sc"]
+    },
+    {
+      "id": "c4-future-sc",
+      "term": "Tương lai SC (2025-2030)",
+      "definition": "Xu hướng: AI Chatbot, Voice Commerce, Live Commerce 2.0, Sustainable SC, AR/VR Shopping, Creator Economy.",
+      "key_points": [
+        "AI: chatbot thay thế CS, personalized recommendation",
+        "Live Commerce 2.0: livestream + AI + AR try-on + gamification realtime",
+        "Creator Economy: nano/micro-influencer trở thành kênh bán hàng chính",
+        "Sustainable SC: người tiêu dùng quan tâm ESG"
+      ],
+      "case_study": null,
+      "related_concepts": ["c4-hype-cycle", "c4-strategy-cycle"]
+    }
+  ],
+  "tests": {
+    "level_1": {
+      "name": "🎯 Level 1: Nắm rõ khái niệm",
+      "description": "Trắc nghiệm — Kiểm tra nhớ đúng định nghĩa",
+      "bloom_level": "Remember / Understand",
+      "questions": [
+        { "id": "L1-c4-q1", "type": "mc", "concept_ref": "c4-strategy-cycle", "question": "Strategic Planning gồm mấy giai đoạn?", "options": ["A. 3 giai đoạn", "B. 5 giai đoạn", "C. 7 giai đoạn", "D. 10 giai đoạn"], "correct": "B" },
+        { "id": "L1-c4-q2", "type": "mc", "concept_ref": "c4-hype-cycle", "question": "DN khôn ngoan nên đầu tư công nghệ ở giai đoạn nào của Hype Cycle?", "options": ["A. Technology Trigger", "B. Peak of Inflated Expectations", "C. Trough of Disillusionment", "D. Slope of Enlightenment"], "correct": "D" },
+        { "id": "L1-c4-q3", "type": "mc", "concept_ref": "c4-analytics", "question": "Sentiment Analysis phân tích điều gì?", "options": ["A. Số lượng followers", "B. Thái độ/ý kiến positive/negative/neutral", "C. Doanh thu bán hàng", "D. Chi phí quảng cáo"], "correct": "B" },
+        { "id": "L1-c4-q4", "type": "mc", "concept_ref": "c4-security", "question": "Social Phishing là gì?", "options": ["A. Câu cá trên MXH", "B. Marketing qua MXH", "C. Lừa đảo lấy thông tin bí mật từ người dùng", "D. Chạy quảng cáo trên Facebook"], "correct": "C" },
+        { "id": "L1-c4-q5", "type": "mc", "concept_ref": "c4-change-management", "question": "BPR là viết tắt của gì?", "options": ["A. Brand Performance Review", "B. Business Process Reengineering", "C. Budget Planning Report", "D. Business Partner Relations"], "correct": "B" },
+        { "id": "L1-c4-q6", "type": "mc", "concept_ref": "c4-legal-ethics", "question": "Privacy trong SC nghĩa là gì?", "options": ["A. Bảo mật hệ thống", "B. Quyền được để yên, không bị xâm nhập đời sống cá nhân", "C. Mật khẩu mạnh", "D. Firewall"], "correct": "B" },
+        { "id": "L1-c4-q7", "type": "mc", "concept_ref": "c4-roi", "question": "Intangible benefits trong SC bao gồm gì?", "options": ["A. Doanh thu bán hàng trực tiếp", "B. Chi phí phần mềm", "C. Brand awareness, loyalty, employee morale", "D. Số lượng sản phẩm bán được"], "correct": "C" }
+      ]
+    },
+    "level_2": {
+      "name": "📝 Level 2: Giải thích",
+      "description": "Tự luận — Giải thích bằng lời của mình",
+      "bloom_level": "Understand / Analyze",
+      "questions": [
+        { "id": "L2-c4-q1", "type": "essay", "concept_ref": "c4-hype-cycle", "question": "Giải thích 5 giai đoạn của Gartner Hype Cycle. Cho ví dụ một công nghệ SC hiện đang ở giai đoạn 3 (Trough of Disillusionment) và giải thích tại sao.", "rubric": "Cần: (1) 5 giai đoạn đầy đủ, (2) Ví dụ cụ thể (NFT/Metaverse), (3) Phân tích tại sao đang ở giai đoạn đó", "max_words": 350 },
+        { "id": "L2-c4-q2", "type": "essay", "concept_ref": "c4-security", "question": "So sánh Social Engineering và Social Phishing. Cho 2 ví dụ phổ biến ở Việt Nam và cách phòng tránh.", "rubric": "Cần: (1) Định nghĩa cả hai, (2) 2 ví dụ VN cụ thể, (3) 3 biện pháp phòng ngừa", "max_words": 300 },
+        { "id": "L2-c4-q3", "type": "essay", "concept_ref": "c4-analytics", "question": "Phân biệt Web Analytics, Social Media Analytics, và Sentiment Analysis. Cho ví dụ công cụ cho mỗi loại.", "rubric": "Cần: (1) Định nghĩa 3 loại, (2) Sự khác biệt chính, (3) 1 công cụ cho mỗi loại", "max_words": 300 }
+      ]
+    },
+    "level_3": {
+      "name": "🚀 Level 3: Vận dụng",
+      "description": "Lên kế hoạch thực tế",
+      "bloom_level": "Apply / Create",
+      "questions": [
+        { "id": "L3-c4-q1", "type": "essay", "question": "Bạn là CMO startup mỹ phẩm thuần chay VN (ngân sách 200 triệu/năm, target nữ 22-35). Hãy lập kế hoạch chiến lược SC 1 năm gồm: (1) Strategy Map (mục tiêu financial → customer → process), (2) Phân bổ ngân sách Owned/Paid/Earned, (3) 5 KPIs cốt lõi, (4) ROI dự kiến (tangible + intangible), (5) Quy trình monitoring + điều chỉnh.", "rubric": "Cần: (1) Strategy Map rõ ràng, (2) Budget allocation hợp lý, (3) KPIs SMART, (4) ROI có cả tangible + intangible, (5) Review cycle cụ thể", "max_words": 600 },
+        { "id": "L3-c4-q2", "type": "essay", "question": "Xây dựng Social Commerce Policy cho một shop thời trang online (15 nhân viên, bán trên TikTok Shop + Shopee). Policy cần có: (1) Security (2FA, xử lý hack), (2) Content Guidelines, (3) Privacy Policy, (4) Crisis Response Plan (quy trình 24 giờ), (5) Employee Social Media Guidelines.", "rubric": "Cần: (1) 5 phần đầy đủ, (2) Cụ thể và khả thi cho SME, (3) Crisis response có timeline + người phụ trách, (4) Employee guidelines rõ ràng", "max_words": 600 }
+      ]
+    }
+  }
+}

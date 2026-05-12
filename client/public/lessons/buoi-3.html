@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buổi 3 — Nghiên cứu từ khoá | ITS340 SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --paper: #F7F2E7;
+    --paper-shade: #EFE8D6;
+    --ink: #1B1714;
+    --ink-soft: #4A413A;
+    --rule: #C8BCA3;
+    --oxblood: #7A1F1F;
+    --oxblood-soft: #9B3838;
+    --gold: #B8893A;
+    --gold-soft: #D4A85F;
+    --green: #2F4A36;
+    --warm-gray: #8B7E6F;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+    background-image: 
+        radial-gradient(ellipse at top left, rgba(184,137,58,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(122,31,31,0.03) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.frame {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 48px 120px;
+    position: relative;
+}
+
+@media (max-width: 720px) {
+    .frame { padding: 40px 24px 80px; }
+    body { font-size: 16px; }
+}
+
+/* ===== Hero / Cover ===== */
+.cover {
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.cover-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    font-family: 'DM Mono', 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.cover-meta-left { line-height: 1.9; }
+.cover-meta-right { text-align: right; line-height: 1.9; }
+
+.cover-meta strong {
+    color: var(--oxblood);
+    font-weight: 600;
+}
+
+.session-roman {
+    font-family: 'Cormorant Garamond', 'Garamond', serif;
+    font-size: 220px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.9;
+    color: var(--gold);
+    margin-bottom: 0;
+    letter-spacing: -0.04em;
+    opacity: 0.9;
+}
+
+.session-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-bottom: 16px;
+}
+
+.session-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 24px 0 32px;
+    letter-spacing: -0.02em;
+    max-width: 720px;
+}
+
+@media (max-width: 720px) {
+    .session-roman { font-size: 140px; }
+    .session-title { font-size: 36px; }
+}
+
+.session-subtitle {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    max-width: 640px;
+    margin-bottom: 40px;
+}
+
+.cover-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0;
+}
+
+.cover-stat {
+    text-align: left;
+}
+
+.cover-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--oxblood);
+    line-height: 1;
+}
+
+.cover-stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+    .cover-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Section ===== */
+section {
+    margin-bottom: 72px;
+    scroll-margin-top: 40px;
+}
+
+.section-num {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.section-num::before {
+    content: "§ ";
+    color: var(--oxblood);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 28px;
+    letter-spacing: -0.015em;
+    max-width: 720px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--oxblood);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+p { margin-bottom: 18px; max-width: 720px; }
+
+p.lede {
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+p.lede::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    float: left;
+    line-height: 0.85;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: var(--oxblood);
+    font-style: normal;
+    font-weight: 500;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 28px;
+    max-width: 720px;
+}
+
+li { margin-bottom: 8px; padding-left: 6px; }
+
+ul li::marker { color: var(--gold); }
+ol li::marker { color: var(--oxblood); font-weight: 600; }
+
+strong { color: var(--ink); font-weight: 700; }
+em { color: var(--ink-soft); }
+
+a {
+    color: var(--oxblood);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-soft);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+/* ===== SCQA blocks ===== */
+.scqa {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: var(--paper-shade);
+    border-left: 3px solid var(--oxblood);
+    position: relative;
+}
+
+.scqa-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--gold);
+    font-style: italic;
+}
+
+.scqa-body { padding-top: 4px; }
+
+.scqa-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.scqa-content { font-size: 16px; line-height: 1.7; }
+.scqa-content p { margin-bottom: 10px; }
+.scqa-content p:last-child { margin-bottom: 0; }
+
+/* ===== Blockquote / Pull quote ===== */
+blockquote {
+    margin: 32px 0;
+    padding: 0 0 0 32px;
+    border-left: 3px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 720px;
+}
+
+blockquote::before {
+    content: "❝";
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--oxblood);
+    margin-right: 8px;
+    font-size: 28px;
+    line-height: 0;
+    vertical-align: -8px;
+}
+
+/* ===== Tiết block — kịch bản từng tiết ===== */
+.tiet {
+    margin: 36px 0;
+    background: #FFFEFB;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(27, 23, 20, 0.04);
+}
+
+.tiet-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 20px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tiet-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.tiet-num::before { content: "§ "; }
+
+.tiet-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    flex: 1;
+    line-height: 1.3;
+    color: var(--paper);
+    letter-spacing: -0.005em;
+}
+
+.tiet-duration {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+}
+
+.tiet-body { padding: 28px 32px; }
+
+.tiet-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px dashed var(--rule);
+}
+
+.tiet-row:last-child { border-bottom: none; }
+
+.tiet-row-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--oxblood);
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.tiet-row-content {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.tiet-row-content p { margin-bottom: 10px; }
+.tiet-row-content p:last-child { margin-bottom: 0; }
+.tiet-row-content ol, .tiet-row-content ul { margin-bottom: 10px; padding-left: 22px; }
+.tiet-row-content li { font-size: 15px; }
+
+@media (max-width: 720px) {
+    .tiet-row { grid-template-columns: 1fr; gap: 8px; }
+    .tiet-body { padding: 20px; }
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+table thead {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+}
+
+table th {
+    padding: 12px 14px;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    vertical-align: bottom;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--rule);
+}
+
+table tbody tr:last-child {
+    border-bottom: 2px solid var(--ink);
+}
+
+table td {
+    padding: 14px;
+    vertical-align: top;
+    color: var(--ink);
+}
+
+table td:first-child {
+    font-weight: 600;
+    color: var(--oxblood);
+}
+
+/* ===== Cards / Callouts ===== */
+.callout {
+    background: var(--paper-shade);
+    border-radius: 2px;
+    padding: 24px 28px;
+    margin: 28px 0;
+    border-left: 3px solid var(--gold);
+}
+
+.callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.callout-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.callout p { margin-bottom: 8px; font-size: 15.5px; }
+.callout p:last-child { margin-bottom: 0; }
+
+.callout.danger {
+    border-left-color: var(--oxblood);
+    background: rgba(122, 31, 31, 0.04);
+}
+.callout.danger .callout-label { color: var(--oxblood); }
+
+.callout.note {
+    border-left-color: var(--green);
+}
+.callout.note .callout-label { color: var(--green); }
+
+/* ===== Story / Persona Box ===== */
+.persona {
+    border: 1px solid var(--rule);
+    background: linear-gradient(135deg, rgba(184,137,58,0.05) 0%, rgba(122,31,31,0.03) 100%);
+    padding: 28px 32px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.persona::before {
+    content: "";
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+    border-radius: 1px;
+    transform: translate(4px, 4px);
+    z-index: -1;
+}
+
+.persona-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.persona p {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-style: italic;
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 100%;
+}
+
+/* ===== Numbered list with circles ===== */
+.steps {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+    max-width: 720px;
+}
+
+.steps > li {
+    counter-increment: step;
+    padding-left: 56px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--oxblood);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--oxblood);
+    background: var(--paper);
+}
+
+/* ===== Tag / Pill ===== */
+.tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.tag.gold { border-color: var(--gold-soft); color: var(--oxblood); background: rgba(184,137,58,0.08); }
+
+/* ===== Story map (diagram) ===== */
+.story-map {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 32px 36px;
+    margin: 32px 0;
+    border-radius: 2px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-x: auto;
+}
+
+.story-map pre {
+    color: var(--gold-soft);
+    font-family: inherit;
+    white-space: pre;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 100px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--warm-gray);
+    text-align: center;
+    line-height: 1.8;
+}
+
+footer .ornament {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--gold);
+    letter-spacing: 0.4em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* ===== TOC sidebar (navigation) ===== */
+.nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.nav-pill {
+    padding: 8px 14px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 1px;
+}
+
+.nav-pill:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+/* ===== Highlight box for key concepts ===== */
+.concept {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 24px 0;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.concept-formula {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.concept-formula .accent { color: var(--oxblood); font-weight: 600; }
+.concept-formula .gold { color: var(--gold); font-weight: 600; }
+
+/* ===== Print ===== */
+@media print {
+    body { 
+        background: white; 
+        font-size: 12pt;
+        background-image: none;
+    }
+    .frame { padding: 0; max-width: 100%; }
+    .session-roman { font-size: 100pt; }
+    .session-title { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    h3 { font-size: 14pt; }
+    .tiet { break-inside: avoid; box-shadow: none; }
+    .tiet-header { background: #1B1714 !important; -webkit-print-color-adjust: exact; }
+    section { break-inside: avoid-page; }
+}
+</style>
+</head>
+<body>
+<div class="frame">
+
+<header class="cover">
+    <div class="cover-meta">
+        <div class="cover-meta-left">
+            ITS340 · Phân tích & Tối ưu Bộ máy Tìm kiếm<br>
+            Khoa HTTT Quản lý — Đại học Ngân hàng TP.HCM<br>
+            <strong>Học liệu điện tử</strong> · Cập nhật 2026
+        </div>
+        <div class="cover-meta-right">
+            Buổi 3 / 6<br>
+            05 tiết · 250 phút<br>
+            <strong>Phiên bản SEO + GEO</strong>
+        </div>
+    </div>
+    
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:280px;">
+            <div class="session-label">Buổi học · Session</div>
+            <h1 class="session-title">Nghiên cứu từ khoá</h1>
+            <p class="session-subtitle">Từ keyword đến prompt — biến 36 ô intent thành 80+ cơ hội content cụ thể, có thể đo lường.</p>
+        </div>
+        <div class="session-roman">III</div>
+    </div>
+    
+    <div class="cover-stats">
+        <div class="cover-stat">
+            <div class="cover-stat-value">05</div>
+            <div class="cover-stat-label">Tiết học</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">SCQA</div>
+            <div class="cover-stat-label">Khung tài liệu</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">B2C</div>
+            <div class="cover-stat-label">Local · Café</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">2026</div>
+            <div class="cover-stat-label">Phiên bản</div>
+        </div>
+    </div>
+    
+    <nav class="nav-pills" style="margin-top:32px;"><a class="nav-pill" href="buoi-2.html">← Buổi 2</a>
+<a class="nav-pill" href="#muc-tieu">Mục tiêu</a>
+<a class="nav-pill" href="#tai-lieu">Tài liệu SCQA</a>
+<a class="nav-pill" href="#kich-ban">Kịch bản</a>
+<a class="nav-pill" href="#bai-tap">Bài tập</a>
+<a class="nav-pill" href="#hoc-lieu">Học liệu</a>
+<a class="nav-pill" href="buoi-4.html">Buổi 4 →</a></nav>
+</header>
+
+<section id="muc-tieu">
+    <div class="section-num">Phần I</div>
+    <h2>Mục tiêu buổi học</h2>
+    
+<p class="lede">36 ô intent từ Buổi 2 — giờ phải biến thành danh sách từ khoá thực sự, có volume, có CPC, có competition. Đây là cái Phương sẽ trả tiền cho freelancer mà không có được nếu không hiểu intent.</p>
+
+<h3>Chuẩn đầu ra (CLO mapping)</h3>
+<ul>
+    <li><strong>CLO1 + CLO2.</strong> Áp dụng được công cụ và quy trình để xây dựng danh sách từ khoá đầy đủ cho 1 doanh nghiệp.</li>
+    <li><strong>Bổ sung GEO.</strong> Mở rộng "keyword" thành "<em>keyword + prompt</em>" — bao gồm long-tail conversational queries và question-based queries (mỏ vàng cho AI cite).</li>
+</ul>
+
+<div class="nav-pills" style="margin-top:24px;">
+    <span class="tag gold">CLO1 · CLO2</span>
+    <span class="tag">Ch.2.2-2.4 Giáo trình</span>
+    <span class="tag">Keyword Research</span>
+    <span class="tag">6 thuộc tính</span>
+    <span class="tag gold">Prompt Research</span>
+    <span class="tag">Long-tail</span>
+</div>
+
+</section><section id="ket-noi">
+    <div class="section-num">Phần II</div>
+    <h2>Kết nối với Buổi 2 (3 phút mở bài)</h2>
+    
+<blockquote>Buổi trước có ma trận intent với ~36 ô. Hôm nay biến từng ô đó thành danh sách từ khoá thực sự — có volume, có CPC, có competition. Đây là cái Phương sẽ trả tiền cho freelancer mà không có được nếu không hiểu intent.</blockquote>
+<p>GV thu ma trận Persona × Journey × Intent của các nhóm — chấm nhanh bằng mắt, ghi 2–3 nhóm xuất sắc lên bảng để cả lớp tham khảo.</p>
+
+</section><section id="tai-lieu">
+    <div class="section-num">Phần III</div>
+    <h2>Tài liệu điện tử — khung SCQA</h2>
+    <div class="scqa">
+    <div class="scqa-letter">S</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Situation — Cái sinh viên đã biết</div>
+        <div class="scqa-content">
+<p>Sinh viên đã quen thuật ngữ "từ khoá" (keyword) qua đời sống số hằng ngày — gõ Google, dán hashtag Instagram, đọc báo cáo SEO. Hiểu lờ mờ là từ khoá có "lượng tìm kiếm".</p>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">C</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Complication — Cái không khớp</div>
+        <div class="scqa-content">
+<p>Trong SEO, "từ khoá" có 6 thuộc tính phải đo (giáo trình ghi rõ); và trong GEO, ta phải mở rộng thêm vài chiều: long-tail, question-based, conversational. Lập danh sách kiểu cũ — chỉ dùng Google Keyword Planner, lấy 50 keyword volume cao — thường <strong>thua ngay từ vạch xuất phát</strong> vì:</p>
+<ul>
+    <li>Volume cao = cạnh tranh khốc liệt, quán nhỏ không thắng được</li>
+    <li>Bỏ sót long-tail (queries dài, ít volume nhưng intent cực rõ)</li>
+    <li>Không catch được câu hỏi mà người ta gõ vào ChatGPT</li>
+</ul>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">Q</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Question — Câu hỏi định hướng</div>
+        <div class="scqa-content">
+<blockquote>Quy trình nào để Phương — không có ngân sách Ahrefs/Semrush 99 USD/tháng — vẫn ra được danh sách 100–200 keyword/prompt đúng và khả thi?</blockquote>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">A</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Answer — Định hướng giải đáp</div>
+        <div class="scqa-content">
+<p><strong>Quy trình 5 bước</strong>, kết hợp công cụ free (Google Keyword Planner, Google Trends, Google Search, AnswerThePublic, People Also Ask, Reddit/Quora) với việc khai thác chính ChatGPT để mining prompt — kỹ năng mới mà giáo trình cũ chưa có.</p>
+</div>
+    </div>
+</div>
+</section><section id="kich-ban">
+    <div class="section-num">Phần IV</div>
+    <h2>Kịch bản giảng dạy — 5 tiết</h2>
+    <div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 1</div>
+        <div class="tiet-title">6 thuộc tính của một từ khoá (giáo trình, làm chặt)</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–10'</div><div class="tiet-row-content"><p><strong>Bài tập kích hoạt.</strong> GV viết 5 keyword lên bảng:</p>
+<ul>
+    <li>cà phê</li>
+    <li>cà phê specialty</li>
+    <li>cà phê specialty quận 3</li>
+    <li>hạt mộc coffee menu</li>
+    <li>cách pha v60 hạt cầu đất</li>
+</ul>
+<p>Hỏi: <em>"Theo các em, từ nào dễ rank? Từ nào volume cao nhất?"</em> Lớp đoán. GV chưa chốt.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">10–40'</div><div class="tiet-row-content"><p><strong>6 thuộc tính</strong> (theo giáo trình + bổ sung):</p>
+<ol class="steps">
+    <li><strong>Tính liên quan (Relevance)</strong> — keyword có khớp business không?</li>
+    <li><strong>Khối lượng truy vấn (Search Volume)</strong> — bao nhiêu lượt search/tháng?</li>
+    <li><strong>Mức độ cạnh tranh (Competition / Keyword Difficulty)</strong> — bao nhiêu domain mạnh đang rank?</li>
+    <li><strong>Giá trị thương mại (CPC)</strong> — Google Ads trả bao nhiêu cho click này? Đại diện cho intent mua.</li>
+    <li><strong>Độ dài (Head vs Long-tail)</strong> — head term 1–2 từ, long-tail 3+ từ. Long-tail volume thấp nhưng conversion cao hơn.</li>
+    <li><strong>Loại intent</strong> — I/N/C/T/Local (đã học buổi 2).</li>
+</ol></div></div>
+<div class="tiet-row"><div class="tiet-row-time">40–50'</div><div class="tiet-row-content"><p>Quay lại 5 keyword đầu giờ — phân loại theo 6 thuộc tính.</p>
+<div class="callout">
+    <div class="callout-label">Kết luận chiến lược</div>
+    <p>Hạt Mộc <strong>không nên đua</strong> "cà phê" (head term, cạnh tranh cực cao, intent mơ hồ); <strong>nên đua</strong> "cà phê specialty quận 3" và "cách pha v60 hạt cầu đất" (long-tail, intent rõ, cạnh tranh vừa).</p>
+</div></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 2</div>
+        <div class="tiet-title">Phân loại từ khoá theo cấu trúc danh sách</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–25'</div><div class="tiet-row-content"><p>Theo giáo trình, một bộ keyword cho 1 chủ đề có 3 lớp:</p>
+<table>
+<thead><tr><th>Lớp</th><th>Vai trò</th><th>Ví dụ</th></tr></thead>
+<tbody>
+<tr><td><strong>(a) Core/Seed</strong></td><td>1–3 keyword đại diện cho topic</td><td>"cà phê specialty quận 3"</td></tr>
+<tr><td><strong>(b) Đồng nghĩa / variant</strong></td><td>cách gọi khác</td><td>"cà phê đặc sản quận 3", "specialty coffee quận 3 sài gòn"</td></tr>
+<tr><td><strong>(c) Bổ trợ (Supporting / LSI)</strong></td><td>từ khái niệm cùng ngữ cảnh</td><td>"barista quận 3", "v60 quận 3", "cà phê arabica quận 3"</td></tr>
+</tbody>
+</table>
+<p><strong>Demo:</strong> GV vẽ 1 cluster 3 lớp ngay trên bảng.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">25–50'</div><div class="tiet-row-content"><p><strong>Thêm 2 lớp mới cho GEO</strong> (không có trong giáo trình):</p>
+<table>
+<thead><tr><th>Lớp</th><th>Vai trò</th><th>Ví dụ</th></tr></thead>
+<tbody>
+<tr><td><strong>(d) Question keywords</strong></td><td>câu hỏi nguyên dạng — AI thường ưu tiên cite</td><td>"quán cà phê nào ngon nhất quận 3", "specialty coffee là gì"</td></tr>
+<tr><td><strong>(e) Comparative keywords</strong></td><td>so sánh — intent commercial investigation, AI hay được hỏi dạng này</td><td>"hạt mộc vs the workshop", "v60 vs chemex"</td></tr>
+</tbody>
+</table>
+<p><strong>Bài tập:</strong> cho 1 core keyword <em>"cà phê specialty quận 3"</em>, lập 5 lớp với 3 ví dụ mỗi lớp. Mỗi nhóm 1 bảng, treo lên bảng.</p></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 3</div>
+        <div class="tiet-title">Quy trình 5 bước nghiên cứu từ khoá (Demo trực tiếp)</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–50'</div><div class="tiet-row-content"><p>GV thao tác trên màn hình, SV quan sát và ghi chép. Mỗi bước demo trên Hạt Mộc.</p>
+<table>
+<thead><tr><th>Bước</th><th>Công cụ</th><th>GV demo</th></tr></thead>
+<tbody>
+<tr>
+    <td>1. Brainstorm seed keywords</td>
+    <td>Bút giấy + ma trận Buổi 2</td>
+    <td>GV đọc lại ma trận, gom 10 seed keywords.</td>
+</tr>
+<tr>
+    <td>2. Mở rộng bằng Google free tools</td>
+    <td>Keyword Planner, Trends, Autocomplete, "People Also Ask", "Related searches"</td>
+    <td>Search "cà phê specialty" — chụp PAA, related searches.</td>
+</tr>
+<tr>
+    <td>3. Khai thác câu hỏi cộng đồng</td>
+    <td>AnswerThePublic, Reddit (r/coffee_vn, r/Coffee), Quora, group FB "Cà phê specialty Việt Nam"</td>
+    <td>Mở AnswerThePublic, gõ "specialty coffee", show wheel of questions.</td>
+</tr>
+<tr>
+    <td><strong>4. Mining prompts từ AI</strong> <span class="tag gold">mới</span></td>
+    <td>ChatGPT / Claude</td>
+    <td>Hỏi: "Người dùng Việt Nam thường hỏi gì về specialty coffee? Liệt kê 30 prompt phổ biến." So sánh với KW Planner — thường lộ ra 5–10 query mà KW Planner không có.</td>
+</tr>
+<tr>
+    <td>5. Phân loại + Lập bảng</td>
+    <td>Google Sheet / Excel</td>
+    <td>Cột: keyword | volume | CPC | difficulty | intent | journey stage | persona</td>
+</tr>
+</tbody>
+</table>
+<div class="callout note">
+    <div class="callout-label">Điểm chốt</div>
+    <p>Bước 4 là cái đề cương cũ chưa có. Đây là <strong>Prompt Research</strong> — kỹ năng mới cần thiết của 2026.</p>
+</div></div></div></div>
+</div><div style="text-align:center; margin:24px 0; color:var(--gold); font-family:Cormorant Garamond, serif; font-size:24px; letter-spacing:0.3em;">— ☕ NGHỈ GIẢI LAO 15' —</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 4</div>
+        <div class="tiet-title">Long-tail &amp; Conversational queries — Mỏ vàng cho doanh nghiệp nhỏ</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–15'</div><div class="tiet-row-content"><p><strong>Đường cong Long-tail.</strong> GV vẽ biểu đồ trên bảng:</p>
+<div class="story-map"><pre>Volume
+  ▲
+  │ ●  Head terms (cao, cạnh tranh khốc liệt)
+  │  ●●
+  │   ●●●
+  │     ●●●●●
+  │         ●●●●●●●●●●●  Long-tail (mỏ vàng cho quán nhỏ)
+  └─────────────────────────────►
+                        Số lượng keyword</pre></div>
+<p>Phần "đầu" (head) ngắn nhưng cao; phần "đuôi" (tail) dài và thấp. <strong>Tổng volume phần đuôi thường lớn hơn phần đầu</strong> — và cạnh tranh thấp hơn nhiều. Đây là chiến trường của Hạt Mộc.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">15–35'</div><div class="tiet-row-content"><p><strong>5 dấu hiệu nhận biết long-tail vàng:</strong></p>
+<ol class="steps">
+    <li>≥ 4 từ</li>
+    <li>Có tín hiệu intent rõ (mua/so sánh/hướng dẫn)</li>
+    <li>Có tín hiệu local hoặc niche</li>
+    <li>Volume thấp (50–500/tháng) nhưng dương</li>
+    <li>Top 10 SERP còn yếu — có forum, blog cá nhân, không phải toàn brand lớn</li>
+</ol>
+<p><strong>Ví dụ áp dụng cho Hạt Mộc:</strong></p>
+<blockquote>"quán cà phê specialty pha thủ công có wifi quận 3" — 5 dấu hiệu trên đầy đủ.</blockquote></div></div>
+<div class="tiet-row"><div class="tiet-row-time">35–50'</div><div class="tiet-row-content"><p><strong>Conversational queries cho GEO.</strong></p>
+<p>Theo nghiên cứu GEO 2024–2025, AI engines ưu tiên content có cấu trúc câu trả lời trực tiếp trong 40–60 từ đầu, mật độ thông tin cao với thống kê mỗi 150–200 từ, và schema markup đúng cách. Câu hỏi conversational là điểm tựa cho dạng content này.</p>
+<p><strong>SV thực hành:</strong> chuyển 5 keyword ngắn thành 5 câu hỏi conversational.</p>
+<table>
+<thead><tr><th>Keyword ngắn</th><th>Câu hỏi conversational</th></tr></thead>
+<tbody>
+<tr><td>"v60 hario"</td><td>"V60 Hario có phù hợp cho người mới bắt đầu pha cà phê tại nhà không?"</td></tr>
+<tr><td>"cà phê specialty quận 3"</td><td>"Có quán cà phê specialty nào ở quận 3 phù hợp để vừa làm việc vừa thưởng thức cà phê pha thủ công không?"</td></tr>
+</tbody>
+</table></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 5</div>
+        <div class="tiet-title">Workshop — Lập keyword &amp; prompt list cho Hạt Mộc</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–10'</div><div class="tiet-row-content"><p>GV phát Google Sheet template với 9 cột:</p>
+<ul>
+    <li>Keyword/Prompt</li>
+    <li>Loại (5 lớp ở tiết 2)</li>
+    <li>Persona</li>
+    <li>Journey Stage</li>
+    <li>Intent</li>
+    <li>Volume ước</li>
+    <li>Difficulty ước</li>
+    <li>Priority (1-3)</li>
+    <li>Content type đề xuất</li>
+</ul></div></div>
+<div class="tiet-row"><div class="tiet-row-time">10–45'</div><div class="tiet-row-content"><p><strong>Mỗi nhóm phải nộp ≥ 80 keyword/prompt</strong> từ ma trận buổi 2, phân bổ:</p>
+<table>
+<thead><tr><th>Lớp</th><th>Số lượng tối thiểu</th></tr></thead>
+<tbody>
+<tr><td>Core / variant</td><td>20</td></tr>
+<tr><td>Supporting</td><td>30</td></tr>
+<tr><td>Question keywords</td><td>20</td></tr>
+<tr><td>Comparative</td><td>10</td></tr>
+</tbody>
+</table>
+<p>GV đi từng nhóm. Yêu cầu mỗi nhóm phải có:</p>
+<ul>
+    <li>≥ 5 keyword chứa "quận 3" hoặc "saigon" (local)</li>
+    <li>≥ 5 keyword về kỹ thuật pha (V60/Aeropress/espresso)</li>
+</ul>
+<p>Vì đây là 2 trục differentiation của Hạt Mộc.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">45–50'</div><div class="tiet-row-content"><p>2 nhóm chia sẻ <strong>keyword "đắc địa nhất"</strong> — keyword họ tin sẽ rank được trong 3 tháng và mang khách thật. Cả lớp tranh luận.</p></div></div></div>
+</div>
+</section><section id="bai-tap">
+    <div class="section-num">Phần V</div>
+    <h2>Bài tập về nhà</h2>
+    
+<h3>Cá nhân — Thông báo trước</h3>
+<div class="callout danger">
+    <div class="callout-label">Đánh giá quá trình 1 · 20%</div>
+    <div class="callout-title">Bài tập cá nhân sẽ giao chính thức sau Chương 3 (Buổi 5)</div>
+    <p>Theo rubric đề cương: 3 yêu cầu — Persona, Keyword research, Tối ưu trang đích. Hôm nay GV chỉ thông báo trước để SV chuẩn bị tinh thần.</p>
+</div>
+
+<h3>Nhóm — Hoàn thiện danh sách keyword</h3>
+<div class="callout">
+    <div class="callout-label">Chuẩn bị Buổi 4</div>
+    <div class="callout-title">Keyword/Prompt list ≥ 80 mục</div>
+    <p>Hoàn thiện danh sách 80+ keyword/prompt, phân loại theo 5 lớp, gắn priority. Nộp đầu Buổi 4.</p>
+</div>
+
+</section><section id="hoc-lieu">
+    <div class="section-num">Phần VI</div>
+    <h2>Học liệu</h2>
+    
+<h3>Bắt buộc</h3>
+<ul>
+    <li>McDonald, Jason. <em>SEO Workbook</em>, 2021. <strong>Chương 2 mục 2.2, 2.3, 2.4.</strong></li>
+    <li>File mẫu <em>bảng từ khoá</em> trong project knowledge (link Google Drive).</li>
+</ul>
+
+<h3>Bổ sung 2026</h3>
+<ul>
+    <li>Search Engine Land — <em>How to do prompt research for GEO</em>.</li>
+    <li>Frase.io — <em>Question keyword research guide</em>.</li>
+    <li>AnswerThePublic — công cụ free tìm câu hỏi cộng đồng.</li>
+</ul>
+
+</section>
+
+<footer>
+    <div class="ornament">⁂ · ⁂ · ⁂</div>
+    Phân tích & Tối ưu hoá Bộ máy Tìm kiếm · ITS340<br>
+    Khoa Hệ thống Thông tin Quản lý — Trường Đại học Ngân hàng TP. Hồ Chí Minh<br>
+    Buổi 3 of 6 · Phiên bản SEO + GEO · 2026
+</footer>
+
+</div>
+</body>
+</html>

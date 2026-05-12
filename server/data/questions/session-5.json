@@ -1,0 +1,102 @@
+{
+  "session": 5,
+  "chapter": "Ch.3",
+  "title": "On-Page SEO + Nội dung cho AI trích dẫn | ITS340 SEO",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s5-mc1",
+      "type": "mc",
+      "question": "9 thẻ HTML cốt lõi của on-page SEO không bao gồm cái nào?",
+      "options": [
+        "A. <title>, <meta description>, URL, <h1>, <h2>/<h3>, body content, internal link, image alt text, schema markup",
+        "B. <title>, <meta keywords>, <meta description>, <h1>, body content, internal link, image alt text",
+        "C. <title>, <meta description>, URL, <h1>, <h2>, body, internal link, image alt, schema — nhưng thiếu <meta keywords>",
+        "D. <title>, <meta description>, URL, <h1>, <h2>/<h3>, body, link, alt text — không kể <meta keywords>"
+      ],
+      "correct": "C",
+      "explanation": "Buổi 5 Tiết 1 liệt kê 9 thẻ: (1) Title, (2) Meta description, (3) URL, (4) H1, (5) H2/H3, (6) Body, (7) Internal link, (8) Image alt, (9) Schema. <meta keywords> **không còn dùng** — Google từ lâu đã bỏ qua nó. Đáp án C ghi đầy đủ 9 cái nhưng chắp thêm <meta keywords> là sai."
+    },
+    {
+      "id": "s5-mc2",
+      "type": "mc",
+      "question": "5 quy tắc tối ưu trang đích — cái nào KHÔNG phải là 'lực bắt buộc'?",
+      "options": [
+        "A. Core keyword trong <title> (≤ 80 ký tự)",
+        "B. Core keyword trong <meta description> (≤ 300 ký tự)",
+        "C. Core keyword trong <h1>",
+        "D. Core keyword trong URL — nếu URL chứa keyword thì đẹp, nhưng không bắt buộc vì có thể change URL sau"
+      ],
+      "correct": "D",
+      "explanation": "5 quy tắc tối ưu trang đích: (1) xác định core keyword, (2) core keyword trong title, (3) core keyword trong meta description, (4) core keyword trong h1, (5) core keyword trong paragraph đầu. URL có keyword là **tốt nhưng không bắt buộc**. Thực tế, change URL sau sẽ gây 301 redirect — rủi ro hơn lợi."
+    },
+    {
+      "id": "s5-mc3",
+      "type": "mc",
+      "question": "Nguyên tắc 'Chunkable paragraphs' trong 5 nguyên tắc viết GEO-friendly — mục đích là gì?",
+      "options": [
+        "A. Để chia nhỏ bài thành đoạn ngắn, dễ đọc trên mobile",
+        "B. Mỗi đoạn phải đứng độc lập có nghĩa — vì AI cắt content thành chunks, vector hoá, retrieve. Đoạn dùng tham chiếu kiểu 'như ở trên' mất ngữ cảnh khi bị cắt",
+        "C. Để tránh bị phạt Helpful Content Update",
+        "D. Để tăng word count mà không thêm từ — lặp lại ý nhiều lần"
+      ],
+      "correct": "B",
+      "explanation": "Buổi 5 Tiết 3 trình bày: AI tokenize HTML, push vào vector space, retrieve những chunks liên quan tới câu hỏi người dùng, rồi lắp ráp. Nếu chunk 1 viết 'như đã nói ở phần trước', nhưng chunk đó được retrieve mà không có phần trước → mất ý. Chunkable = mỗi đoạn lặp lại định danh, đứng độc lập."
+    },
+    {
+      "id": "s5-mc4",
+      "type": "mc",
+      "question": "'Fact density' — thống kê mỗi 150–200 từ — lợi ích cho GEO là gì?",
+      "options": [
+        "A. Tránh bị Google phạt vì có quá nhiều số",
+        "B. Dễ dàng tính toán word count cho bài",
+        "C. Nghiên cứu GEO: 'Statistics Addition' cải thiện performance 22-37% so với baseline. AI ưu tiên content có thống kê cụ thể (con số, tỷ lệ, năm) hơn chỉ nhận định chung chung",
+        "D. Không ảnh hưởng gì đến AI, chỉ tốt cho SEO truyền thống"
+      ],
+      "correct": "C",
+      "explanation": "Buổi 5 Tiết 3: Fact density (thêm thống kê mỗi 150-200 từ) là nguyên tắc GEO. Bài giảng trích dẫn: 'Nghiên cứu GEO 2024-2025: phương pháp Statistics Addition cải thiện performance 22-37% so với baseline'. Vì AI mô hình hóa content, thống kê cụ thể → dễ token hoá, dễ retrieve, dễ cite."
+    },
+    {
+      "id": "s5-mc5",
+      "type": "mc",
+      "question": "Tại sao schema markup quan trọng cho local business như Hạt Mộc?",
+      "options": [
+        "A. Để Google hiểu Hạt Mộc là gì — LocalBusiness / CafeOrCoffeeShop + address + hours + phone",
+        "B. Để tăng keyword density",
+        "C. Để tránh bị duplicate content",
+        "D. Để internal link có giá trị hơn"
+      ],
+      "correct": "A",
+      "explanation": "Buổi 5 Tiết 4: schema markup là JSON-LD mô tả 'tôi là gì' cho crawler. Hạt Mộc cần 3 loại: (1) LocalBusiness/CafeOrCoffeeShop (tên, địa chỉ, giờ, phone, geo, ảnh), (2) Product (cho SKU), (3) FAQPage. Schema giúp Google parse nhanh, dễ show rich snippet, và theo đó, dễ cho AI cite."
+    }
+  ],
+  "discussion_questions": [
+    {
+      "id": "s5-tf1",
+      "type": "tf",
+      "question": "Image alt text nên nhồi keyword — ví dụ: 'v60 hario kính specialty coffee pha thủ công hạt mộc' — để tăng keyword density cho SEO.",
+      "correct": false,
+      "explanation": "Sai. Buổi 5 Tiết 1 quy tắc alt text: 'Mô tả ảnh, không nhồi keyword'. Ví dụ xấu: 'v60 hario kính...' (nhồi keyword). Ví dụ tốt: 'Barista Hạt Mộc đang pour V60 bằng ấm cổ ngỗng' (mô tả thật, có ngữ cảnh, dễ được AI cite/dùng trong alt text accessibility)."
+    },
+    {
+      "id": "s5-tf2",
+      "type": "tf",
+      "question": "Direct answer trong 40–60 từ đầu của bài là một trong 5 nguyên tắc viết GEO-friendly, vì AI ưu tiên content có cấu trúc câu trả lời trực tiếp.",
+      "correct": true,
+      "explanation": "Đúng. Buổi 5 Tiết 3: 5 nguyên tắc, nguyên tắc 1 là 'Direct answer trong 40–60 từ đầu'. Vì lý do gì? Buổi 5 giải thích: 'AI ưu tiên content có cấu trúc câu trả lời trực tiếp' — không vòng vo 'trong những năm gần đây...'."
+    }
+  ],
+  "essays": [
+    {
+      "id": "s5-essay1",
+      "type": "essay",
+      "question": "Scenario: Bạn nhận 2 draft bài từ freelancer, cả 2 đều viết cho cluster 'Cách pha V60 cho người mới'.\n\n**Draft A:**\n---\n<title>Cách Pha V60 Cho Người Mới | Hạt Mộc Coffee\n<h1>Cách Pha V60 Cho Người Mới — Hướng Dẫn Đầy Đủ\n<h2>V60 Là Gì?\nV60 là một dụng cụ pha cà phê pour-over có hình nón 60 độ...\n<h2>Chuẩn Bị\n- Cà phê (20g)\n- Nước (300ml)\n- Ấm gồng/ấm đổ\n<h2>Bước 1–5 (mỗi bước có H3 và 50–100 từ hướng dẫn)\n<h2>Các Lỗi Thường Gặp\n<h2>Tại Sao V60 Lại Tốt\n<h2>FAQ (5 Q&A, mỗi Q&A 2–3 câu)\nTotal: 1800 từ, 8 ảnh, schema FAQPage, schema HowTo\n\n**Draft B:**\n---\n<title>Cách Pha V60 Như Thế Nào\n<h1>V60 — Hướng Dẫn Pha\nNhư đã nói ở bài trước, V60 là pour-over...\n<h2>Chuẩn Bị Dụng Cụ\n(list dụng cụ)\n<h2>Quy Trình\n(5 bước, mỗi bước 1 dòng)\n<h2>Mẹo\n(list mẹo)\n<h2>Câu Hỏi Hay Gặp\n(5 Q&A, mỗi Q&A 1 dòng)\nTotal: 900 từ, 0 ảnh, không có schema, không có thống kê\n\nYêu cầu:\n(1) Theo 5 quy tắc tối ưu trang đích — cái nào Draft A tốt hơn? Cái nào Draft B tốt hơn?\n(2) Theo 5 nguyên tắc viết GEO-friendly — phân tích từng nguyên tắc, draft nào tốt hơn?\n(3) Verdict: bài nào bạn sẽ chấp nhận? Tại sao? Nếu phải edit Draft B, sửa gì?",
+      "sample_answer": "**Phần 1: 5 Quy Tắc Tối Ưu Trang Đích**\n\n1. **Xác định core keyword**: 'Cách pha V60 cho người mới'\n   - Draft A: Title + H1 đều chứa core keyword → ✓\n   - Draft B: Title + H1 cũng chứa, nhưng Title quá ngắn (3 từ) → ✓ nhưng yếu\n\n2. **Core keyword trong Title (≤80 ký tự)**\n   - Draft A: 'Cách Pha V60 Cho Người Mới | Hạt Mộc Coffee' (50 ký tự) → ✓ tốt\n   - Draft B: 'Cách Pha V60 Như Thế Nào' (25 ký tự) → ✓ nhưng ngắn, không có brand\n\n3. **Core keyword trong Meta description (≤300 ký tự)**\n   - Draft A: Giả định: 'Hướng dẫn chi tiết cách pha V60 cho người mới. Học từng bước, từ chuẩn bị đến đổ nước. Mẹo từ barista Hạt Mộc.' → ✓\n   - Draft B: Không ghi, giả định: 'Hướng dẫn pha V60 đơn giản.' → ✓ nhưng quá ngắn\n\n4. **Core keyword trong H1**\n   - Draft A: 'Cách Pha V60 Cho Người Mới — Hướng Dẫn Đầy Đủ' → ✓ tốt\n   - Draft B: 'V60 — Hướng Dẫn Pha' → ✓ nhưng không đầy đủ\n\n5. **Core keyword trong paragraph đầu tiên**\n   - Draft A: Giả định đoạn 1 bắt đầu: 'V60 là một dụng cụ pha cà phê pour-over...' → ✓\n   - Draft B: 'Như đã nói ở bài trước, V60 là pour-over...' → ✗ lực cập, không trả lời thẳng\n\n**Verdict tiêu chí này: Draft A thắng rõ ràng (tất cả 5 cái tuân theo quy tắc; Draft B gây phân tán).**\n\n**Phần 2: 5 Nguyên Tắc Viết GEO-Friendly**\n\n1. **Direct answer trong 40–60 từ đầu**\n   - Draft A: Paragraph 1 mở là 'V60 là một dụng cụ pha cà phê pour-over có hình nón 60 độ...' (định nghĩa thẳng) → ✓\n   - Draft B: 'Như đã nói ở bài trước, V60 là pour-over...' (tham chiếu bài khác, không trả lời độc lập) → ✗\n\n2. **Chunkable paragraphs — mỗi đoạn độc lập có nghĩa**\n   - Draft A: Mỗi H2 = 1 section độc lập (Chuẩn Bị, Bước 1, Lỗi Thường Gặp) → ✓\n   - Draft B: Cũng có section, nhưng H2 'Quy Trình' liên tục nói 'đổ nước ở bước 3 như ở bước 2' → tham chiếu nội bộ, dễ mất ngữ cảnh khi cắt chunk → ✗\n\n3. **Fact density — thống kê mỗi 150–200 từ**\n   - Draft A: Có mẹo '20g cà phê + 300ml nước (tỷ lệ 1:15)', 'đợi 30 giây bloom', 'nhiệt độ nước 90–95°C' → ✓\n   - Draft B: Toàn list, không có con số cụ thể (chỉ nói 'đun nước nóng', 'để cà phê') → ✗\n\n4. **Cite authoritative sources**\n   - Draft A: Giả định có đoạn 'Theo SCA (Specialty Coffee Association), tỷ lệ cà phê:nước tiêu chuẩn...' → ✓\n   - Draft B: Không cite → ✗\n\n5. **Q&A / FAQ block cuối bài**\n   - Draft A: 5 Q&A, mỗi answer 2–3 câu, có schema FAQPage → ✓\n   - Draft B: 5 Q&A, nhưng mỗi answer chỉ 1 dòng, không rõ, không schema → ✗\n\n**Verdict tiêu chí này: Draft A thắng hoàn toàn (5/5 nguyên tắc; Draft B 1/5).**\n\n**Phần 3: Verdict & Hướng Edit**\n\n**Bạn sẽ chấp nhận: Draft A** — Nó tuân theo 5 quy tắc tối ưu trang đích + 5 nguyên tắc GEO-friendly. Có đủ schema, ảnh, word count (1800 > 900).\n\n**Nếu phải edit Draft B để dùng được (vì biết freelancer này giá rẻ):**\n1. Mở lại Title + H1 — chèn keyword đầy đủ\n2. Viết lại paragraph 1 — bỏ 'như đã nói ở bài trước', bắt đầu với định nghĩa thẳng\n3. Thêm con số: tỷ lệ nước/cà phê, nhiệt độ, thời gian\n4. Mỗi H2 viết lại đầy đủ, không dùng 'ở bước X' — mỗi phần lặp lại H2 title\n5. Expand FAQ từ 1 dòng → 2–3 câu\n6. Thêm 8 ảnh (bước 1-5 + setup + result)\n7. Thêm schema FAQPage + HowTo\n\n**Effort: Edit Draft B ~ 4–5 giờ làm lại. Draft A: chỉ cần review, có thể publish ngay.** → Chọn Draft A.\n\n**Kết luận:** Draft A là mô hình của bài 'Chunkable + GEO-friendly'. Draft B thiếu kiến thức bài buổi 5, nên chỉ phù hợp cho blog truyền thống, không phù hợp AI era.",
+      "rubric": {
+        "excellent": "10-9đ: (1) Phân tích rõ 5 quy tắc, chỉ ra Draft A tốt ở từng điểm; (2) Phân tích rõ 5 nguyên tắc GEO, chỉ ra Draft A/B tốt/xấu ở từng nguyên tắc; (3) Verdict chính xác (chọn Draft A) + giải thích tại sao + nếu edit Draft B thì sửa gì cụ thể.",
+        "acceptable": "8-6đ: (1) Phân tích 5 quy tắc nhưng chưa sâu / bỏ sót 1-2 quy tắc; (2) Phân tích 3-4 nguyên tắc GEO; (3) Verdict đúng nhưng lý giải chưa đầy đủ.",
+        "insufficient": "<6đ: (1) Phân tích sai hoặc bỏ sót >2 quy tắc; (2) Phân tích <3 nguyên tắc hoặc sai; (3) Verdict sai (chọn Draft B)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "session": 6,
+  "chapter": "Ch.4 + Ch.5",
+  "title": "Thuật toán, Off-Page Authority & Tổng kết | ITS340 SEO",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s6-mc1",
+      "type": "mc",
+      "question": "Thuật toán Panda (2011) phạt cái gì chính?",
+      "options": [
+        "A. Phạt link spam và mạng backlink xấu",
+        "B. Phạt nội dung mỏng, copy, farm content viết để công cụ tìm kiếm",
+        "C. Phạt keyword stuffing và hidden text",
+        "D. Phạt site không mobile-friendly"
+      ],
+      "correct": "B",
+      "explanation": "Buổi 6 Tiết 1: Panda phạt nội dung mỏng, copy, farm content. Bài học cho Hạt Mộc: không copy mô tả hạt từ web nhà cung cấp — viết lại bằng trải nghiệm pha thử thật."
+    },
+    {
+      "id": "s6-mc2",
+      "type": "mc",
+      "question": "Sự khác biệt cốt lõi giữa Penguin (2012) và Panda (2011) là gì?",
+      "options": [
+        "A. Panda phạt nội dung, Penguin phạt link",
+        "B. Panda phạt mobile-friendliness, Penguin phạt caching",
+        "C. Cả hai đều phạt nội dung, nhưng Penguin cực kỳ cứng rắn hơn",
+        "D. Panda toàn cầu, Penguin chỉ VN"
+      ],
+      "correct": "A",
+      "explanation": "Buổi 6 Tiết 1: Panda (2011) phạt nội dung mỏng, farm. Penguin (2012) phạt link spam, mua link, mạng PBN. Hai khía cạnh khác nhau của chất lượng web."
+    },
+    {
+      "id": "s6-mc3",
+      "type": "mc",
+      "question": "Helpful Content Update (2022 → merged vào core update 2024) phạt bài viết nào?",
+      "options": [
+        "A. Bài viết copy từ competitor",
+        "B. Bài viết mà tác giả không có trải nghiệm thực tế",
+        "C. Bài viết có tỷ lệ cao content 'viết cho công cụ tìm kiếm' thay vì cho người",
+        "D. Bài viết không có tối ưu on-page"
+      ],
+      "correct": "C",
+      "explanation": "Buổi 6 Tiết 2: Helpful Content Update là 'bước ngoặt lớn nhất từ Panda'. Phạt site có tỷ lệ cao content viết **cho công cụ tìm kiếm** thay vì cho người. Bài học: bỏ luôn dạng bài '10 quán cà phê quận 3' được scrape từ web khác; tự đi, tự ăn, tự viết."
+    },
+    {
+      "id": "s6-mc4",
+      "type": "mc",
+      "question": "MUM (2021) được Google mô tả như thế nào?",
+      "options": [
+        "A. Mạnh hơn BERT nhưng yếu hơn Transformer",
+        "B. Mạnh hơn BERT 1000 lần; hiểu đa ngôn ngữ + đa định dạng (ảnh + text + video cùng lúc)",
+        "C. Đặc biệt giỏi phân tích video, còn text thì chung chung",
+        "D. Chỉ dùng được cho tìm kiếm hình ảnh"
+      ],
+      "correct": "B",
+      "explanation": "Buổi 6 Tiết 2: MUM (Multitask Unified Model) — 'Mạnh hơn BERT 1000 lần'. Hiểu **đa ngôn ngữ + đa định dạng cùng lúc**. Có thể hiểu ảnh + text + video trong 1 truy vấn. Bài học cho Hạt Mộc: ảnh menu cần alt text chi tiết, video brewing cần transcript."
+    },
+    {
+      "id": "s6-mc5",
+      "type": "mc",
+      "question": "Trong AI era (AI Overview), điều gì thay đổi so với top 10 blue links truyền thống?",
+      "options": [
+        "A. Chỉ là thêm AI answer ở đầu, còn top 10 blue links vẫn thế",
+        "B. Top 0 không còn featured snippet, mà là AI-generated answer cite 3–5 nguồn. LLM chỉ cite trung bình 2-7 domains/response — ít hơn 10 blue links",
+        "C. AI Overview làm tăng traffic tổng thể vì có thêm kênh",
+        "D. Chỉ ảnh hưởng tới big brands, quán nhỏ không sao"
+      ],
+      "correct": "B",
+      "explanation": "Buổi 6 Tiết 2: AI Overview (2024) — 'Top 0 không còn featured snippet, mà là AI-generated answer cite 3–5 nguồn'. **Cuộc đua không còn 'top 10' — là 'top 3 được cite'**. LLM chỉ cite trung bình 2-7 domains/response, ít hơn 10 blue links. Hạt Mộc (quán nhỏ) cần focus lên 'top 3 được AI cite' chứ không phải top 10 rank."
+    }
+  ],
+  "discussion_questions": [
+    {
+      "id": "s6-tf1",
+      "type": "tf",
+      "question": "E-E-A-T mở rộng thêm chữ E thứ hai (Experience) — tức là tác giả phải có trải nghiệm thực tế liên quan chủ đề.",
+      "correct": true,
+      "explanation": "Đúng. Buổi 6 Tiết 2: E-E-A-T từ (Expertise-Authoritativeness-Trustworthiness) được mở rộng thành EE-A-T. Chữ E thứ hai = Experience (trải nghiệm thực tế). Bài học cho Hạt Mộc: tác giả bài blog phải là Phương (chủ quán, trải nghiệm 6 năm pha cà phê), không phải intern."
+    },
+    {
+      "id": "s6-tf2",
+      "type": "tf",
+      "question": "Social media (Facebook, Instagram) tạo nofollow links, nên không ảnh hưởng SEO. Vì vậy Hạt Mộc không cần invest vào social marketing.",
+      "correct": false,
+      "explanation": "Sai. Buổi 6 Tiết 3: 'Social không trực tiếp tạo backlink (nofollow), nhưng tạo **brand awareness gián tiếp**'. Brand awareness → người tự search (branded search tăng) → CTR Google tăng → ranking tăng. Ngoài ra, social tạo mention, share, khách tiếp cận qua social, dẫn tới review/listing tốt."
+    }
+  ],
+  "essays": [
+    {
+      "id": "s6-essay1",
+      "type": "essay",
+      "question": "Scenario: Hạt Mộc hoàn thành on-page (buổi 5) cho 12 cluster pages. GV hỏi: 'Giờ hãy thiết kế off-page strategy 6 tháng cho Hạt Mộc. Ngân sách: 5 triệu/tháng, không có agency, tự làm. Ai là đối tượng target? Chiến thuật cụ thể nào? KPI nào để đo lường thành công?'\n\nYêu cầu:\n(1) Phân loại 3 loại off-page mention (earned, review, community) — Hạt Mộc nên ưu tiên cái nào?\n(2) Lập 6 chiến thuật cụ thể (theo Buổi 6 Tiết 4) — ước tính effort/lợi nhuận cho từng cái.\n(3) Lập bảng KPI 6 tháng (theo Buổi 6 Tiết 5) — cái nào ưu tiên nhất cho AI era?",
+      "sample_answer": "**Phần 1: 3 Loại Off-Page Mention**\n\n**Earned mention (báo chí, Saigoneer, VnExpress travel)**\n- Khó: cần có câu chuyện đáng kể, phải qua journalist pitching\n- Lợi nhuận: cao (1 mention trên Saigoneer = 1000+ referral + authority tăng)\n- Ưu tiên: thấp lúc đầu (tháng 1-2), rồi cao dần (tháng 3-6)\n\n**Review mention (Google Maps, Foody, TripAdvisor, Riviu)**\n- Dễ: chỉ cần mời khách để review\n- Lợi nhuận: **vừa trung bình, vừa tổng hợp cao**. 1 review không lớn, nhưng 50 review chân thực > 10 backlink mua\n- Ưu tiên: **CAO nhất** (mục tiêu 50 review trong 6 tháng)\n\n**Community mention (Reddit, Quora, group FB, blog cá nhân)**\n- Dễ-trung: tham gia, trả lời, mention tự nhiên\n- Lợi nhuận: AI engines cite Reddit cực cao (top source 2025), mention tự nhiên trên group FB cũng tốt\n- Ưu tiên: **CAO** (mục tiêu: 10-15 mention/tháng từ community)\n\n**Verdict:** Ưu tiên ranking:\n1. **Review mention** (dễ, tổng hợp cao, AI cite)\n2. **Community mention** (dễ, AI cite cực cao)\n3. **Earned mention** (khó nhưng authority = long-term)\n\n---\n\n**Phần 2: 6 Chiến Thuật Cụ Thể (6 tháng, 5tr/tháng)**\n\n**Chiến Thuật 1: Mời 5 KOC/tháng (Key Opinion Customer — không KOL nổi tiếng)**\n- Đối tượng: Bạn thân có 1–5k follower, yêu cà phê, ở Q.1/3/7\n- Cách: Mời tới quán free (trà + bánh), khi khách hỏi → gợi ý 'có thể tag Hạt Mộc trong story nếu thích'\n- Effort: 1-2 giờ/tháng tìm kiếm + book quán\n- Chi phí: 500k (cà phê + bánh cho 5 lượt × 4 lần/tháng)\n- Lợi nhuận: Post tự nhiên, reach 1-5k, mention 1-2 mention/post = 5-10 mention/tháng\n- KPI: 5-10 mention từ KOC/tháng\n\n**Chiến Thuật 2: Reddit / Quora seeding hàng tuần**\n- Đối tượng: r/coffee_vn, Quora VN 'Cà phê', group FB 'Cà phê specialty SG'\n- Cách: Trả lời 2 câu hỏi/tuần (thực sự có giá trị, không spam). Đôi khi mention tên Hạt Mộc nếu phù hợp.\n- Ví dụ: 'Nên uống single origin hay blend?' → Trả lời chi tiết + 'Hạt Mộc có cả 2 loại, có thể thử'\n- Effort: 3 giờ/tuần\n- Chi phí: 0 (tự làm)\n- Lợi nhuận: High (Reddit là top source cho AI cite; 2 answer/tuần = ~8 mention/tháng, nhưng quality cao)\n- KPI: 8-10 mention từ community/tháng (quality > quantity)\n\n**Chiến Thuật 3: Google Review campaign (tự động qua Zalo/SMS)**\n- Đối tượng: Khách thân sau mỗi lần tới quán\n- Cách: Sau khoảng 2 tuần, gửi Zalo: 'Cảm ơn anh/chị đã ghé Hạt Mộc. Nếu quý khách thích, mình rất trân quý review trên Google [link]'\n- Effort: 1 giờ/tuần quản lý feedback\n- Chi phí: 0\n- Lợi nhuận: 1-2 review/tuần = 4-8 review/tháng. Target: 50 review trong 6 tháng = 8-9 review/tháng\n- KPI: 50 review sau 6 tháng (Rating 4.5+ stars)\n\n**Chiến Thuật 4: Local citation (NAP đồng nhất)**\n- Đối tượng: Google Business Profile, Foody, Riviu, TripAdvisor, Bing Places\n- Cách: Đầy đủ thông tin **NAP** (Name, Address, Phone) + ảnh menu + giờ + category\n- Effort: 2-3 giờ lần đầu, sau đó 30 phút/tháng update\n- Chi phí: 0 (hầu hết free)\n- Lợi nhuận: Local visibility tăng, Google Maps ranking tốt hơn, AI dễ cite thông tin business\n- KPI: Đầy đủ profile trên 5+ nền tảng, NAP đồng nhất 100%\n\n**Chiến Thuật 5: Monthly Workshop / Event (1 lần/tháng)**\n- Đối tượng: Khách thân + KOL cà phê + journalist ẩm thực\n- Cách: Tổ chức cupping miễn phí (1 buổi 2 giờ, 15 người), mời báo SG, blogger ẩm thực. Không spam promote, để họ tự mention\n- Ví dụ: Tháng 1: 'Cupping hạt Cầu Đất 2025', tháng 2: 'Workshop pha V60 cho newbie', v.v.\n- Effort: 10-15 giờ/tháng (chuẩn bị + tổ chức + follow-up)\n- Chi phí: 1-1.5tr (hạt + bánh + nước, không tính nhân công Phương)\n- Lợi nhuận: High (1 event = 3-5 mention từ attendees + potential 1 mention báo chí = 4-6 mention/tháng)\n- KPI: 1 event/tháng, tối thiểu 3 mention/event\n\n**Chiến Thuật 6: Storytelling — Phỏng vấn nông dân + feature story**\n- Đối tượng: Nông dân Cầu Đất, Đắk Lắk; Saigoneer, Hanoi Grapevine, Perfect Daily Grind\n- Cách: Phương tự phỏng vấn nông dân (1-2 lần/quý), viết bài kèm ảnh đẹp. Gửi cho Saigoneer, Hanoi Grapevine → high chance được pick up\n- Ví dụ: 'Chuyện về gia tộc nông dân Cầu Đất: 30 năm trồng specialty coffee' (2000 từ, 20 ảnh)\n- Effort: 20-30 giờ/quý (lên sơn, phỏng vấn, chỉnh sửa)\n- Chi phí: 2-3tr (transport, lunch nông dân)\n- Lợi nhuận: 1 feature trên Saigoneer = **authority cao**, cite lại nhiều, khách nhớ lâu = 10-20 mention/feature\n- KPI: 2 feature/6 tháng từ media lớn\n\n---\n\n**Tổng Effort & Chi Phí:**\n- Total chi phí: ~6 triệu (vừa vặn 5tr/tháng × 6 = 30tr) — phân bổ: KOC (0.5tr), Workshop (6tr), Storytelling (6tr), review campaign (0), community (0), citation (0.5tr), buffer (17tr cho các chi phí phát sinh)\n- Total effort: Phương + 1 intern = ~40-50 giờ/tuần (Phương 30 giờ, intern 10-20 giờ)\n\n---\n\n**Phần 3: KPI 6 Tháng**\n\n**KPI SEO Truyền Thống:**\n| KPI | Baseline (T0) | Target (T6) | Công thức |\n|-----|---|---|---|\n| Organic traffic | 200 visitor/tháng | 800 visitor/tháng | GSC impressions × CTR |\n| Ranking position (top 20 KW) | Trung bình #15 | Trung bình #8 | GSC average position |\n| Organic conversions | 2/tháng | 15/tháng | Google Analytics goal |\n| GSC impressions | 1000/tháng | 4000/tháng | GSC report |\n| CTR | 2% | 4% | GSC CTR |\n\n**KPI GEO Mới (AI Era) — ƯU TIÊN:**\n| KPI | Baseline (T0) | Target (T6) | Công thức |\n|-----|---|---|---|\n| **AI Citation Rate** | Không có | ≥ 5% (=5 cite/100 AI query) | Manual: hỏi ChatGPT 100 câu, count mentions |\n| **AI Overview impressions** | 0 | 50+ impression/tháng | GSC > Appearance > AI Overview |\n| **Brand Mention Growth** | 0 mention/tháng | 30+ mention/tháng | Google Alerts + manual track |\n| **Direct/Branded search** | 50/tháng | 200/tháng | GSC filtered branded terms |\n| **Review count** | 5 review | 50+ review | Google Maps, Foody |\n| **Community mention** | 0 | 30+ mention | Reddit, Quora, group FB |\n\n**KPI Tổng Hợp — Đánh Giá Quá Trình:**\nMỗi tháng:\n- T1-T2: Focus on-page + citation (nền tảng)\n- T2-T3: Ramp up review campaign + community\n- T3-T6: Maintained off-page, track mentions + AI cite\n\n**Chốt KPI quan trọng nhất cho AI era:**\n1. **AI Citation Rate** (khó nhất, impact cao) — đây là tương lai\n2. **Brand Mention Growth** (dễ, impact cao trên AI)\n3. **Review count** (dễ, impact vừa trên AI + local ranking)\n4. **Organic traffic** (truyền thống, nhưng vẫn cần)\n\n---\n\n**Kết Luận:**\nDùng combination off-page dễ (review + community) + medium (citation + KOC) + khó nhưng long-term (earned mention) = balanced strategy. KPI phải mix **SEO truyền thống** (traffic, ranking) + **GEO mới** (AI citation, mention) để thích ứng thế giới 2026.",
+      "rubric": {
+        "excellent": "10-9đ: (1) Phân loại 3 loại mention rõ ràng, ưu tiên logic (review + community > earned); (2) 6 chiến thuật cụ thể, mỗi cái có target, effort, chi phí, KPI rõ ràng; (3) Bảng KPI mix SEO truyền thống + GEO mới, ưu tiên đúng (AI Citation + Brand Mention).",
+        "acceptable": "8-6đ: (1) Phân loại đúng nhưng lý do chưa đầy đủ; (2) 4-5 chiến thuật, hoặc chi tiết từng chiến thuật chưa đủ (thiếu effort/KPI); (3) KPI có nhưng chưa balance SEO + GEO, hoặc target con số chưa realistic.",
+        "insufficient": "<6đ: (1) Phân loại sai hoặc bỏ sót loại; (2) <4 chiến thuật hoặc chiến thuật không cụ thể; (3) KPI không có hoặc sai lệch từ bài giảng."
+      }
+    }
+  ]
+}

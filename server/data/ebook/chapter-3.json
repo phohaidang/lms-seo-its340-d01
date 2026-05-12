@@ -1,0 +1,138 @@
+{
+  "chapter": 3,
+  "title": "Doanh nghiệp Xã hội & Ứng dụng SC Sáng tạo",
+  "sessions": [6],
+  "scqa": {
+    "situation": "Từ Buổi 1-5, SC được học chủ yếu dưới góc nhìn B2C — DN bán hàng cho NTD qua MXH. Nhưng SC không chỉ là bán hàng — nó còn thay đổi cách DN vận hành nội bộ và mở rộng ra nhiều lĩnh vực.",
+    "complication": "Nhiều SV nghĩ SC = 'bán hàng trên Facebook/TikTok'. Thực tế, SC đang thay đổi cách chính phủ phục vụ công dân, cách DN giao dịch B2B, cách ngành giải trí vận hành, và tạo ra mô hình kinh doanh mới. DN truyền thống dùng email + meeting — chậm, phân mảnh. Gen Z quen MXH nhưng đến công ty lại dùng email.",
+    "question": "Social Enterprise là gì? DN dùng MXH nội bộ như thế nào? Gamification, E-Gov, B2B Social, P2P — SC ứng dụng ở đâu ngoài B2C?",
+    "answer": "Social Enterprise = DN sử dụng MXH cho mọi hoạt động. Mở rộng qua 6 lĩnh vực: Social Government, B2B Social, Social Entertainment, Gamification, Social Games, P2P Activities."
+  },
+  "concepts": [
+    {
+      "id": "c3-social-enterprise",
+      "term": "Social Enterprise",
+      "definition": "Sử dụng công cụ MXH trong tổ chức với mục tiêu thương mại hoặc phi lợi nhuận — tuyển dụng, KM, collaboration.",
+      "key_points": [
+        "Lý do chuyển đổi: xây quan hệ tốt hơn, tuyển dụng hiệu quả, giảm chi phí",
+        "Business SNS: LinkedIn, Xing (public)",
+        "Enterprise SNS: Yammer, Slack, Teams (private, behind firewall)"
+      ],
+      "case_study": {
+        "title": "CEMEX Shift — MXH nội bộ biến đổi tổ chức",
+        "context": "CEMEX (công ty xi măng Mexico) triển khai Shift — mạng xã hội nội bộ giúp 45,000 nhân viên kết nối, chia sẻ tri thức, giải quyết vấn đề nhanh hơn.",
+        "analysis": "Shift kết hợp: knowledge management + social collaboration + crowdsourcing nội bộ.",
+        "lesson_learned": "Enterprise SNS không chỉ là 'Facebook nội bộ' — nó BIẾN ĐỔI cách tổ chức vận hành."
+      },
+      "related_concepts": ["c3-knowledge-management", "c3-social-collaboration"]
+    },
+    {
+      "id": "c3-knowledge-management",
+      "term": "Knowledge Management (KM)",
+      "definition": "Quy trình thu thập, lưu trữ, cập nhật, phân phối và sử dụng tri thức trong tổ chức.",
+      "key_points": [
+        "MXH hỗ trợ KM qua: wiki nội bộ, Q&A forums, expert networks",
+        "94% nhà tuyển dụng Mỹ dùng LinkedIn",
+        "Social recruiting: virtual job fairs, chi phí thấp, hiệu quả cao"
+      ],
+      "case_study": null,
+      "related_concepts": ["c3-social-enterprise", "c3-social-collaboration"]
+    },
+    {
+      "id": "c3-social-collaboration",
+      "term": "Social Collaboration",
+      "definition": "Hợp tác giữa cá nhân trong và giữa các cộng đồng nhờ công cụ MXH — wikis, blogs, forums, crowdsourcing nội bộ.",
+      "key_points": [
+        "Collective Intelligence: trí tuệ tập thể giải quyết vấn đề",
+        "Công cụ: Slack, Teams, Notion, Lark",
+        "Hiệu quả hơn email + meeting truyền thống"
+      ],
+      "case_study": null,
+      "related_concepts": ["c3-knowledge-management", "c3-gamification"]
+    },
+    {
+      "id": "c3-gamification",
+      "term": "Gamification",
+      "definition": "Đưa yếu tố game (điểm, cấp độ, phần thưởng, bảng xếp hạng) vào MXH và hoạt động kinh doanh để tăng engagement.",
+      "key_points": [
+        "Mục đích: tăng engagement, loyalty, hành vi mong muốn",
+        "VD: Shopee Coins, Duolingo streaks, Grab Rewards",
+        "Xu hướng rất mạnh 2025-2026"
+      ],
+      "case_study": {
+        "title": "Shopee — Gamification toàn diện",
+        "context": "Shopee triển khai: Shopee Farm, Coins, daily check-in, shake to win, mini-games. Người dùng quay lại app hàng ngày để 'chơi game' → tăng retention và mua sắm.",
+        "analysis": "Gamification biến 'mua sắm' thành 'trải nghiệm giải trí'. Points + rewards + streaks tạo thói quen.",
+        "lesson_learned": "Gamification hiệu quả nhất khi phần thưởng CÓ GIÁ TRỊ THẬT (xu giảm giá, free shipping) và cơ chế ĐƠN GIẢN."
+      },
+      "related_concepts": ["c3-social-entertainment", "c3-social-enterprise"]
+    },
+    {
+      "id": "c3-social-government",
+      "term": "Social Government (E-Gov 2.0)",
+      "definition": "Chính phủ dùng MXH cải thiện dịch vụ cho công dân — ePetitions, shared workspaces, crowdsourcing ý tưởng.",
+      "key_points": [
+        "VN: Zalo Connect, Cổng dịch vụ công quốc gia",
+        "Tăng transparency và tương tác công dân",
+        "YouTube, Facebook cho phân phối thông tin chính sách"
+      ],
+      "case_study": null,
+      "related_concepts": ["c3-social-enterprise", "c3-p2p"]
+    },
+    {
+      "id": "c3-social-entertainment",
+      "term": "Social Entertainment",
+      "definition": "Internet TV, Social TV (xem cùng nhau từ xa), Social Radio. Streaming kết hợp MXH: Netflix, Spotify + social features.",
+      "key_points": [
+        "Social TV = thảo luận, tweet, review đồng thời khi xem",
+        "Social Games: multiplayer trên MXH/VR (Roblox, Fortnite)",
+        "Advergaming: game tích hợp thương hiệu"
+      ],
+      "case_study": null,
+      "related_concepts": ["c3-gamification"]
+    },
+    {
+      "id": "c3-p2p",
+      "term": "P2P Activities",
+      "definition": "Hoạt động giữa cá nhân: P2P lending (cho vay ngang hàng), sharing economy (Grab, Airbnb), collaborative consumption.",
+      "key_points": [
+        "MXH tạo nền tảng tin cậy cho giao dịch P2P",
+        "VD: Lending Club, Grab, Airbnb",
+        "Trust từ ratings/reviews là chìa khóa"
+      ],
+      "case_study": null,
+      "related_concepts": ["c3-social-government", "c3-social-enterprise"]
+    }
+  ],
+  "tests": {
+    "level_1": {
+      "name": "🎯 Level 1: Nắm rõ khái niệm",
+      "description": "Trắc nghiệm — Kiểm tra nhớ đúng định nghĩa",
+      "bloom_level": "Remember / Understand",
+      "questions": [
+        { "id": "L1-c3-q1", "type": "mc", "concept_ref": "c3-social-enterprise", "question": "Social Enterprise là gì?", "options": ["A. Chỉ bán hàng trên MXH", "B. Sử dụng MXH trong tổ chức cho mọi hoạt động", "C. Doanh nghiệp từ thiện", "D. Startup công nghệ"], "correct": "B" },
+        { "id": "L1-c3-q2", "type": "mc", "concept_ref": "c3-gamification", "question": "Gamification dùng yếu tố gì để tăng engagement?", "options": ["A. Quảng cáo", "B. Giảm giá sốc", "C. Điểm, cấp độ, phần thưởng, bảng xếp hạng", "D. Email marketing"], "correct": "C" },
+        { "id": "L1-c3-q3", "type": "mc", "concept_ref": "c3-knowledge-management", "question": "Knowledge Management bao gồm quy trình gì?", "options": ["A. Thu thập, lưu trữ, cập nhật, phân phối, sử dụng tri thức", "B. Quảng cáo sản phẩm", "C. Tuyển dụng nhân sự", "D. Bán hàng online"], "correct": "A" },
+        { "id": "L1-c3-q4", "type": "mc", "concept_ref": "c3-p2p", "question": "P2P lending là gì?", "options": ["A. Vay ngân hàng", "B. Bán hàng online", "C. Marketing qua influencer", "D. Cá nhân cho cá nhân vay qua nền tảng online"], "correct": "D" },
+        { "id": "L1-c3-q5", "type": "mc", "concept_ref": "c3-social-government", "question": "Social Government dùng MXH để làm gì?", "options": ["A. Bán hàng cho công dân", "B. Cải thiện dịch vụ cho công dân qua MXH", "C. Tuyển dụng công chức", "D. Quảng cáo chính sách"], "correct": "B" }
+      ]
+    },
+    "level_2": {
+      "name": "📝 Level 2: Giải thích",
+      "description": "Tự luận — Giải thích bằng lời của mình",
+      "bloom_level": "Understand / Analyze",
+      "questions": [
+        { "id": "L2-c3-q1", "type": "essay", "concept_ref": "c3-gamification", "question": "Phân tích cơ chế gamification của Shopee hoặc Duolingo. Tại sao nó hiệu quả trong việc giữ chân người dùng? Nêu 3 yếu tố gamification cụ thể.", "rubric": "Cần: (1) 3 yếu tố cụ thể (points, streaks, leaderboard...), (2) Giải thích tâm lý đằng sau, (3) Số liệu hoặc ví dụ thực tế", "max_words": 300 },
+        { "id": "L2-c3-q2", "type": "essay", "concept_ref": "c3-social-enterprise", "question": "So sánh Enterprise SNS (Slack, Teams) với email truyền thống. Tại sao nhiều DN đang chuyển đổi?", "rubric": "Cần: (1) So sánh ít nhất 3 tiêu chí, (2) Ưu/nhược từng loại, (3) Ví dụ DN chuyển đổi thành công", "max_words": 300 }
+      ]
+    },
+    "level_3": {
+      "name": "🚀 Level 3: Vận dụng",
+      "description": "Lên kế hoạch thực tế",
+      "bloom_level": "Apply / Create",
+      "questions": [
+        { "id": "L3-c3-q1", "type": "essay", "question": "Một app học tiếng Anh VN (kiểu Duolingo local) có retention rate chỉ 20%. Hãy thiết kế hệ thống gamification cụ thể để tăng lên 50%, bao gồm: (1) Cơ chế điểm/phần thưởng, (2) Bảng xếp hạng, (3) Streaks/thói quen, (4) Social features (chia sẻ, thách đấu bạn bè).", "rubric": "Cần: (1) 4 cơ chế cụ thể, (2) Tâm lý học đằng sau mỗi cơ chế, (3) Metrics đo hiệu quả, (4) Timeline triển khai", "max_words": 500 }
+      ]
+    }
+  }
+}

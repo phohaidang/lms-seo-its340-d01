@@ -1,0 +1,163 @@
+{
+  "chapter": 2,
+  "title": "Tiếp thị, Mua sắm Xã hội & CRM",
+  "sessions": [4, 5],
+  "scqa": {
+    "situation": "Doanh nghiệp đã hiểu SC là gì, có công cụ gì, và lý thuyết hành vi nào giải thích nó. Bước tiếp theo: LÀM THẾ NÀO để tiếp thị hiệu quả trên MXH, biến tương tác xã hội thành doanh thu, và chăm sóc khách hàng trong kỷ nguyên social?",
+    "complication": "Nhiều DN nhỏ VN chạy ads Facebook 'mò mẫm': không phân biệt owned/paid/earned, không đo lường ROI. DN lớn phải cân bằng nhiều kênh cùng lúc. Đồng thời, KH không còn gọi call center — họ comment, tweet, review 1 sao. CRM truyền thống không đáp ứng được.",
+    "question": "Chiến dịch SM marketing gồm mấy bước? Owned/Paid/Earned Media khác nhau thế nào? Social Shopping có bao nhiêu mô hình? Và CRM tiến hóa thành SCRM ra sao?",
+    "answer": "6 bước SM promotion + Owned/Paid/Earned Media + 5 nhóm metrics + Social Shopping models (Group Buying, Flash Sales, Communities, Marketplace) + CRM → e-CRM → SCRM (CRM 2.0) với 4 loại ứng dụng và Proactive > Reactive service."
+  },
+  "concepts": [
+    {
+      "id": "c2-owned-media",
+      "term": "Owned Media",
+      "definition": "Kênh truyền thông DO DN sở hữu và kiểm soát — website, fanpage, blog, kênh YouTube, community.",
+      "key_points": [
+        "DN kiểm soát nội dung hoàn toàn",
+        "Content marketing = tạo nội dung giá trị, nhất quán",
+        "Chi phí thấp nhưng cần đầu tư thời gian"
+      ],
+      "case_study": null,
+      "related_concepts": ["c2-paid-media", "c2-earned-media"]
+    },
+    {
+      "id": "c2-paid-media",
+      "term": "Paid Media",
+      "definition": "DN TRẢ TIỀN để sử dụng kênh của người khác — Facebook Ads, Google Ads, influencer marketing, sponsored posts.",
+      "key_points": [
+        "Mục tiêu: mở rộng reach, tiếp cận audience mới",
+        "Bao gồm: display ads, social ads, behaviorally targeted ads, advergaming",
+        "Cần đo lường ROI chặt chẽ"
+      ],
+      "case_study": null,
+      "related_concepts": ["c2-owned-media", "c2-earned-media"]
+    },
+    {
+      "id": "c2-earned-media",
+      "term": "Earned Media",
+      "definition": "Khi KHÁCH HÀNG trở thành kênh truyền thông: reviews, shares, UGC, mentions. Không thể mua — phải KIẾM ĐƯỢC.",
+      "key_points": [
+        "Mục tiêu tối thượng của SC",
+        "Đến từ trải nghiệm KH xuất sắc + nội dung tốt",
+        "Uy tín cao nhất vì đến từ người thật"
+      ],
+      "case_study": {
+        "title": "Häagen-Dazs — Viral Video tạo Earned Media",
+        "context": "Häagen-Dazs tạo chiến dịch bảo vệ ong mật → video viral → KH tự share → earned media bùng nổ.",
+        "analysis": "DN tạo owned content (video) → KH tự share → earned media → tăng brand reputation. Đây là golden formula.",
+        "lesson_learned": "Earned media hiệu quả nhất khi owned content có GIÁ TRỊ thật sự, không chỉ 'bán hàng'."
+      },
+      "related_concepts": ["c2-owned-media", "c2-reputation"]
+    },
+    {
+      "id": "c2-reputation",
+      "term": "Reputation Management",
+      "definition": "Quản lý danh tiếng trên MXH — xây dựng từ Trust (niềm tin), Transparency (minh bạch), Quality (chất lượng).",
+      "key_points": [
+        "Quy trình: Build → Maintain → Monitor → Repair",
+        "Chỉ 14% tin quảng cáo — reputation từ cộng đồng quan trọng hơn",
+        "Cần monitoring tools: Sprout Social, Mention, Brand24"
+      ],
+      "case_study": null,
+      "related_concepts": ["c2-earned-media", "c2-seo"]
+    },
+    {
+      "id": "c2-seo",
+      "term": "SEO (Search Engine Optimization)",
+      "definition": "Quy trình cải thiện visibility của DN trên trang kết quả tìm kiếm. Trong SC, social signals (likes, shares) ảnh hưởng gián tiếp đến SEO.",
+      "key_points": [
+        "Nội dung MXH có engagement cao → Google xếp hạng tốt hơn",
+        "Kết hợp content marketing + SEO + social media",
+        "Metrics: search ranking, organic traffic, click-through rate"
+      ],
+      "case_study": null,
+      "related_concepts": ["c2-reputation", "c2-metrics"]
+    },
+    {
+      "id": "c2-metrics",
+      "term": "5 Nhóm Social Media Metrics",
+      "definition": "Thước đo hiệu quả SC: Awareness, Brand Health, Engagement, Action, Innovation. Biểu thị bằng KPIs.",
+      "key_points": [
+        "Awareness: followers, page views, impressions",
+        "Brand Health: Share of Voice, sentiment",
+        "Engagement: likes, comments, shares",
+        "Action: CTR, conversions, registrations",
+        "Innovation: number of crowdsourced ideas"
+      ],
+      "case_study": null,
+      "related_concepts": ["c2-seo", "c2-owned-media"]
+    },
+    {
+      "id": "c2-social-shopping",
+      "term": "Social Shopping",
+      "definition": "Sales 2.0 — mua sắm trực tuyến sử dụng công cụ MXH và chia sẻ trải nghiệm. Khác EC truyền thống ở yếu tố XÃ HỘI.",
+      "key_points": [
+        "Group Buying: mua nhóm giảm giá (PinDuoDuo, Shopee 'Mua cùng bạn')",
+        "Flash Sales: deal giới hạn thời gian (FOMO)",
+        "Shopping Communities: cộng đồng chia sẻ cảm hứng mua sắm",
+        "Social Marketplace: Facebook Marketplace, Chợ Tốt"
+      ],
+      "case_study": {
+        "title": "TikTok Shop — Shoppertainment",
+        "context": "TikTok Shop kết hợp entertainment + shopping. Creator review → viewer mua ngay → chia sẻ trải nghiệm.",
+        "analysis": "TikTok Shop thay đổi cuộc chơi: không cần website riêng, content IS the store.",
+        "lesson_learned": "Shoppertainment (shopping + entertainment) là tương lai của social shopping."
+      },
+      "related_concepts": ["c2-scrm"]
+    },
+    {
+      "id": "c2-scrm",
+      "term": "Social CRM (SCRM / CRM 2.0)",
+      "definition": "CRM được hỗ trợ bởi MXH — engage KH trong hội thoại, chia sẻ, tương tác. SCRM mở rộng CRM, không thay thế.",
+      "key_points": [
+        "CRM → e-CRM → SCRM: hành trình tiến hóa",
+        "Touch points bùng nổ trên MXH",
+        "4 loại ứng dụng: Customer-facing, Customer-touching, Customer-centric Intelligence, Online Networking",
+        "Proactive > Reactive customer service"
+      ],
+      "case_study": {
+        "title": "Sony — SCRM đa kênh",
+        "context": "Sony dùng YouTube, Facebook, Tumblr, community.sony.com để tương tác KH. Proactively giải quyết vấn đề trước khi lan rộng.",
+        "analysis": "Sony kết hợp customer-facing (reply comment) + customer-touching (community self-help) + intelligence (sentiment analysis).",
+        "lesson_learned": "SCRM hiệu quả nhất khi KẾT HỢP cả 4 loại ứng dụng, không chỉ reply comment."
+      },
+      "related_concepts": ["c2-social-shopping", "c2-reputation"]
+    }
+  ],
+  "tests": {
+    "level_1": {
+      "name": "🎯 Level 1: Nắm rõ khái niệm",
+      "description": "Trắc nghiệm — Kiểm tra nhớ đúng định nghĩa",
+      "bloom_level": "Remember / Understand",
+      "questions": [
+        { "id": "L1-c2-q1", "type": "mc", "concept_ref": "c2-owned-media", "question": "Owned Media là gì?", "options": ["A. Quảng cáo trả tiền", "B. Nội dung KH tạo ra", "C. Kênh truyền thông do DN sở hữu và kiểm soát", "D. Viral marketing"], "correct": "C" },
+        { "id": "L1-c2-q2", "type": "mc", "concept_ref": "c2-earned-media", "question": "Earned Media đến từ đâu?", "options": ["A. DN trả tiền mua", "B. KH tự chia sẻ, review, tạo UGC", "C. Quảng cáo trên TV", "D. SEO"], "correct": "B" },
+        { "id": "L1-c2-q3", "type": "mc", "concept_ref": "c2-seo", "question": "SEO giúp DN cải thiện điều gì?", "options": ["A. Doanh số trực tiếp", "B. Visibility trên trang kết quả tìm kiếm", "C. Số nhân viên", "D. Chi phí vận hành"], "correct": "B" },
+        { "id": "L1-c2-q4", "type": "mc", "concept_ref": "c2-social-shopping", "question": "Group Buying là mô hình gì?", "options": ["A. Mua hàng xa xỉ", "B. Mua qua influencer", "C. Mua hàng live stream", "D. Nhóm người cùng mua để được giảm giá số lượng"], "correct": "D" },
+        { "id": "L1-c2-q5", "type": "mc", "concept_ref": "c2-scrm", "question": "SCRM là gì?", "options": ["A. Thay thế hoàn toàn CRM", "B. CRM hỗ trợ bởi MXH — mở rộng CRM, không thay thế", "C. Phần mềm quảng cáo", "D. Hệ thống ERP"], "correct": "B" },
+        { "id": "L1-c2-q6", "type": "mc", "concept_ref": "c2-scrm", "question": "Proactive customer service nghĩa là gì?", "options": ["A. Chờ KH phàn nàn rồi mới xử lý", "B. Chủ động phát hiện và giải quyết vấn đề TRƯỚC khi KH phàn nàn", "C. Gửi email marketing", "D. Tăng giá sản phẩm"], "correct": "B" },
+        { "id": "L1-c2-q7", "type": "mc", "concept_ref": "c2-metrics", "question": "5 nhóm metrics KHÔNG bao gồm nhóm nào?", "options": ["A. Awareness", "B. Brand Health", "C. Profitability", "D. Engagement"], "correct": "C" }
+      ]
+    },
+    "level_2": {
+      "name": "📝 Level 2: Giải thích",
+      "description": "Tự luận — Giải thích bằng lời của mình",
+      "bloom_level": "Understand / Analyze",
+      "questions": [
+        { "id": "L2-c2-q1", "type": "essay", "concept_ref": "c2-earned-media", "question": "Tại sao Earned Media được coi là 'mục tiêu tối thượng' của Social Commerce? So sánh hiệu quả của Earned Media với Paid Media.", "rubric": "Cần: (1) Định nghĩa cả hai, (2) 3 lý do earned > paid (tin cậy, chi phí, lan truyền), (3) Cho ví dụ cụ thể", "max_words": 300 },
+        { "id": "L2-c2-q2", "type": "essay", "concept_ref": "c2-scrm", "question": "Phân biệt CRM, e-CRM, và SCRM. Tại sao CRM truyền thống không đáp ứng được nhu cầu KH năm 2025?", "rubric": "Cần: (1) Định nghĩa 3 loại, (2) So sánh điểm khác biệt chính, (3) Ví dụ touch points mới trên MXH", "max_words": 350 },
+        { "id": "L2-c2-q3", "type": "essay", "concept_ref": "c2-reputation", "question": "Quy trình Reputation Management gồm 4 bước gì? Tại sao bước 'Monitor' quan trọng nhất trong thời đại MXH?", "rubric": "Cần: (1) 4 bước Build-Maintain-Monitor-Repair, (2) Lý do Monitor quan trọng (real-time, negative WoM), (3) Công cụ monitoring", "max_words": 300 }
+      ]
+    },
+    "level_3": {
+      "name": "🚀 Level 3: Vận dụng",
+      "description": "Lên kế hoạch thực tế — áp dụng kiến thức",
+      "bloom_level": "Apply / Create",
+      "questions": [
+        { "id": "L3-c2-q1", "type": "essay", "question": "Một chuỗi trà sữa VN 20 chi nhánh vừa bị khủng hoảng: video nhân viên xử lý nguyên liệu mất vệ sinh lan viral trên TikTok (2 triệu views). Với vai trò CMO, hãy xây dựng Crisis Response Plan chi tiết cho 72 giờ đầu tiên, bao gồm: (1) Kênh phản hồi, (2) Nội dung thông điệp, (3) Hành động cụ thể, (4) Metrics theo dõi.", "rubric": "Cần: (1) Timeline 24h-48h-72h cụ thể, (2) Kênh đúng (TikTok + Facebook), (3) Thông điệp chân thành + minh bạch, (4) Hành động nội bộ + công khai", "max_words": 500 },
+        { "id": "L3-c2-q2", "type": "essay", "question": "Bạn được thuê làm tư vấn SCRM cho một shop thời trang online trên TikTok (5 nhân viên, 50K followers). Hiện tại họ chỉ reply comment khi KH hỏi (reactive). Hãy thiết kế hệ thống SCRM proactive gồm: (1) Kênh SCRM, (2) Quy trình proactive, (3) Công cụ, (4) KPIs đo hiệu quả.", "rubric": "Cần: (1) Chọn kênh phù hợp SME, (2) Quy trình proactive rõ ràng, (3) Công cụ đơn giản (Zalo OA, chatbot), (4) 5 KPIs cụ thể", "max_words": 500 }
+      ]
+    }
+  }
+}

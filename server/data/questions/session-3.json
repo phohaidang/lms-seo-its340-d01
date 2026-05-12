@@ -1,0 +1,102 @@
+{
+  "session": 3,
+  "chapter": "Ch.2 §2.2-2.4",
+  "title": "Nghiên cứu từ khoá | ITS340 SEO",
+  "time_limit_minutes": 10,
+  "questions": [
+    {
+      "id": "s3-mc1",
+      "type": "mc",
+      "question": "5 keyword sau: 'cà phê', 'cà phê specialty', 'cà phê specialty quận 3', 'hạt mộc coffee menu', 'cách pha v60 hạt cầu đất'. Theo 6 thuộc tính keyword, cái nào Hạt Mộc KHÔNG NÊN tấn công và tại sao?",
+      "options": [
+        "A. 'cà phê' — vì volume quá cao, cạnh tranh khốc liệt, intent mơ hồ",
+        "B. 'cà phê specialty' — vì chỉ 2 từ, độ dài quá ngắn",
+        "C. 'hạt mộc coffee menu' — vì là navigational, độc quyền Hạt Mộc",
+        "D. 'cách pha v60 hạt cầu đất' — vì volume thấp, không đáng đầu tư"
+      ],
+      "correct": "A",
+      "explanation": "Keyword 'cà phê' có volume cao nhất nhưng: (1) cạnh tranh khốc liệt, full brand lớn (Trung Nguyên, Highlands); (2) intent mơ hồ (mua? học? tìm quán?); (3) Hạt Mộc nhỏ, không có ngân sách dùng PPC. Nên focus vào long-tail (keyword dài, intent rõ, cạnh tranh vừa) như 'cà phê specialty quận 3' hoặc 'cách pha v60 hạt cầu đất'."
+    },
+    {
+      "id": "s3-mc2",
+      "type": "mc",
+      "question": "Keyword 'quán cà phê specialty pha thủ công có wifi quận 3' có bao nhiêu trong 5 dấu hiệu của long-tail keyword vàng?",
+      "options": [
+        "A. 2 dấu hiệu",
+        "B. 3 dấu hiệu",
+        "C. 4 dấu hiệu",
+        "D. 5 dấu hiệu (đầy đủ)"
+      ],
+      "correct": "D",
+      "explanation": "5 dấu hiệu: (1) ≥4 từ ✓ (8 từ); (2) Có tín hiệu intent rõ (local + commercial + need-based) ✓; (3) Có tín hiệu local (quận 3) ✓; (4) Volume thấp (50–500/tháng) nhưng dương ✓; (5) Top 10 SERP còn yếu ✓ (toàn blog cá nhân, group Facebook, không có brand lớn). Đây là long-tail vàng cho Hạt Mộc."
+    },
+    {
+      "id": "s3-mc3",
+      "type": "mc",
+      "question": "5 lớp keyword theo bài giảng là: Core/Seed, Đồng nghĩa/Variant, Bổ trợ (LSI), Question keywords, Comparative keywords. Core keyword 'cà phê specialty quận 3' — cái nào là Question keyword tương ứng?",
+      "options": [
+        "A. 'specialty coffee là gì'",
+        "B. 'quán cà phê nào ngon nhất quận 3'",
+        "C. 'cà phê specialty quận 3 bao nhiêu tiền'",
+        "D. 'tìm quán cà phê specialty quận 3'"
+      ],
+      "correct": "B",
+      "explanation": "Question keyword là câu hỏi nguyên dạng (bắt đầu bằng 'ai, gì, đâu, khi nào, tại sao, như thế nào'). A là câu hỏi nhưng về 'specialty coffee' chung chung, không local. B là 'quán cà phê nào ngon nhất quận 3' — nguyên dạng câu hỏi, local, intent clear. C, D không phải câu hỏi. AI engines ưu tiên cite question keywords, nên lớp này cực quan trọng cho GEO."
+    },
+    {
+      "id": "s3-mc4",
+      "type": "mc",
+      "question": "Quy trình 5 bước keyword research của buổi 3 là gì, và bước nào được bài giảng lần đầu tiên đưa vào (không có trong giáo trình cũ)?",
+      "options": [
+        "A. Bước 1 Brainstorm, Bước 5 Phân loại + Lập bảng — bước 1 là mới",
+        "B. Bước 1 Brainstorm, Bước 2 Mở rộng Google tools, Bước 3 AnswerThePublic, Bước 4 Mining prompts từ AI, Bước 5 Lập bảng — bước 4 là mới",
+        "C. Bước 2 Mở rộng tools, Bước 3 Cộng đồng, Bước 4 Mining prompts là những bước mới",
+        "D. Không có bước nào mới — quy trình này đã có từ trước"
+      ],
+      "correct": "B",
+      "explanation": "5 bước là: (1) Brainstorm seed keywords từ ma trận buổi 2; (2) Mở rộng bằng Google free tools (KW Planner, Trends, Autocomplete, PAA); (3) Khai thác cộng đồng (AnswerThePublic, Reddit, Quora); (4) **Mining prompts từ AI** (ChatGPT/Claude) — Prompt Research là kỹ năng mới 2026 không có trong giáo trình cũ; (5) Phân loại + Lập bảng. Bước 4 giúp catch được 5–10 query mà KW Planner không có."
+    },
+    {
+      "id": "s3-mc5",
+      "type": "mc",
+      "question": "Theo bài giảng, khi lập danh sách ≥80 keyword cho Hạt Mộc, yêu cầu bắt buộc là gì?",
+      "options": [
+        "A. Chỉ focus vào head terms có volume cao (>1000/tháng), bỏ long-tail",
+        "B. Phân bổ: Core/Variant ≥20, Supporting ≥30, Question ≥20, Comparative ≥10; cần ≥5 keyword chứa quận 3/Saigon, ≥5 về kỹ thuật pha",
+        "C. Tất cả keyword phải có CPC cao (>5000 VND) để chứng tỏ commercial value",
+        "D. Tất cả keyword phải từ Google Keyword Planner, không dùng công cụ khác"
+      ],
+      "correct": "B",
+      "explanation": "Yêu cầu rõ ràng ở Tiết 5 Buổi 3: ≥80 keyword, phân bổ theo 5 lớp như nhân (Core/Variant 20, Supporting 30, Question 20, Comparative 10). Plus: ≥5 local (quận 3/Saigon) vì đó là differentiation; ≥5 kỹ thuật pha (V60/Aeropress/espresso) vì Hạt Mộc có chuyên sâu về đó. Đây là cách xây dựng danh sách balanced, không thèm volume mà thèm relevance."
+    }
+  ],
+  "discussion_questions": [
+    {
+      "id": "s3-tf1",
+      "type": "tf",
+      "question": "Giá trị CPC cao (Google Ads trả nhiều tiền cho click) luôn chỉ ra rằng keyword đó có intent mua mạnh và nên ưu tiên.",
+      "correct": true,
+      "explanation": "Đúng. Advertiser chỉ trả cao CPC khi keyword đó khả năng conversion cao (intent mua). CPC cao = intent commercial rõ = khách tiềm năng lớn. Hạt Mộc nên focus keywords có CPC cao hoặc medium-high, bỏ qua keywords CPC thấp dù volume cao."
+    },
+    {
+      "id": "s3-tf2",
+      "type": "tf",
+      "question": "Long-tail keywords có volume thấp (50–500/tháng) nên không đáng đầu tư vì lợi nhuận nhỏ; Hạt Mộc nên chỉ tập trung vào head terms 1–2 từ có volume cao.",
+      "correct": false,
+      "explanation": "Sai. Long-tail là **mỏ vàng cho quán nhỏ**. Lý do: (1) Tổng volume phần 'đuôi' thường lớn hơn 'đầu'; (2) Cạnh tranh thấp hơn nhiều (top 10 có thể chỉ là blog cá nhân, không phải brand); (3) Intent rõ → conversion cao. Hạt Mộc không thể đua 'cà phê' nhưng có thể thắng 'quán cà phê specialty pha thủ công có wifi quận 3'."
+    }
+  ],
+  "essays": [
+    {
+      "id": "s3-essay1",
+      "type": "essay",
+      "question": "Scenario: Bạn nhận danh sách 30 keywords sau từ một sinh viên khác (không có trong lớp bạn):\n\n(Danh sách giả lập):\n'cà phê' (1M/tháng), 'specialty coffee' (50K/tháng), 'cà phê specialty tp hcm' (1.2K/tháng), 'hạt mộc coffee' (500/tháng), 'v60 giá rẻ' (200/tháng), 'cách pha v60 cho người mới' (800/tháng), 'coffee near me' (5K/tháng), 'the workshop saigon' (2K/tháng), 'quán cà phê specialty quận 1' (600/tháng), 'quán cà phê specialty quận 3' (750/tháng), 'v60 vs aeropress' (300/tháng), 'hạt mộc menu' (150/tháng), 'quán cà phê đẹp quận 3 chụp ảnh' (1.1K/tháng), 'barista training quận 3' (100/tháng), 'cà phê arabica việt nam' (900/tháng), 'specialty coffee là gì' (600/tháng), 'giá v60 hario chính hãng' (180/tháng), 'cách thử cà phê specialty' (250/tháng), 'hạt rang TP HCM' (400/tháng), 'workshop pha cà phê quận 3' (220/tháng), 'cà phê ethic source là gì' (180/tháng), 'quán cà phê specialty nào tốt nhất quận 3' (220/tháng), 'mua v60 hario online' (280/tháng), 'hạt mộc specialty coffee' (50/tháng), 'cách chọn máy pha cà phê' (400/tháng), 'coffee shop quận 3 saigon' (950/tháng), 'tại sao nên uống specialty coffee' (150/tháng), 'hạt mộc coffee có tốt không' (80/tháng), 'v60 cho người mới' (220/tháng), 'review quán cà phê specialty quận 3' (140/tháng)\n\nYêu cầu:\n(1) Chỉ ra ≥ 3 keywords KHÔNG NÊN RANK (và tại sao);\n(2) Phân loại danh sách thành 5 lớp keyword (Core, Variant, Supporting, Question, Comparative) — mỗi lớp ≥ 2 ví dụ;\n(3) Lập chiến lược ưu tiên (Priority 1-3) cho Hạt Mộc — cái nào rank trước, cái nào rank sau.",
+      "sample_answer": "**Phần 1: Keywords KHÔNG NÊN RANK**\n\n1. **'cà phê' (1M/tháng)** — Head term cực cao, cạnh tranh khốc liệt (toàn Trung Nguyên, Highlands, Starbucks), Hạt Mộc không bao giờ thắng. Volume cao nhưng intent mơ hồ.\n\n2. **'specialty coffee' (50K/tháng)** — Tiếng Anh, global, không local. Top 10 toàn brand Starbucks, specialty roaster nước ngoài. Hạt Mộc, quán nhỏ, không có authority đó.\n\n3. **'coffee near me' (5K/tháng)** — Tiếng Anh, query quốc tế. SG không phải nước chủ yếu dùng tiếng Anh search cà phê. Nên focus tiếng Việt.\n\n**Phần 2: Phân loại 5 lớp**\n\n**Core/Seed** (giại diện topic Hạt Mộc, 2–3 từ):\n- 'cà phê specialty quận 3'\n- 'hạt mộc coffee'\n- 'quán cà phê specialty quận 3'\n\n**Variant** (cách nói khác của core):\n- 'quán cà phê specialty quận 1'\n- 'coffee shop quận 3 saigon'\n- 'specialty coffee tp hcm'\n\n**Supporting/LSI** (từ khái niệm liên quan):\n- 'cà phê arabica việt nam'\n- 'v60 vs aeropress'\n- 'cách chọn máy pha cà phê'\n- 'barista training quận 3'\n- 'hạt rang TP HCM'\n\n**Question Keywords** (câu hỏi nguyên dạng):\n- 'specialty coffee là gì'\n- 'tại sao nên uống specialty coffee'\n- 'quán cà phê specialty nào tốt nhất quận 3'\n- 'cách thử cà phê specialty'\n- 'cách pha v60 cho người mới'\n- 'v60 cho người mới'\n\n**Comparative Keywords** (so sánh):\n- 'v60 vs aeropress' (đã liệt ở Supporting, nhưng cũng fit Comparative)\n- 'hạt mộc vs the workshop' (không có trong list, nhưng nên mining thêm)\n\n**Phần 3: Chiến lược Priority**\n\n**Priority 1 (Rank ngay — 0–3 tháng):** Long-tail local, intent rõ, competition thấp\n- 'quán cà phê specialty quận 3' (750/tháng, local, high intent)\n- 'cách pha v60 cho người mới' (800/tháng, informational, có schema FAQs)\n- 'workshop pha cà phê quận 3' (220/tháng, local + transactional)\n- 'quán cà phê specialty nào tốt nhất quận 3' (220/tháng, question, AI friendly)\n- 'cà phê specialty quận 3' (1.2K/tháng, core, local traffic)\n\n**Priority 2 (Rank tiếp — 3–6 tháng):** Long-tail supporting, informational, kỹ thuật pha\n- 'specialty coffee là gì' (600/tháng, educational)\n- 'cách chọn máy pha cà phê' (400/tháng, how-to)\n- 'v60 vs aeropress' (300/tháng, comparative, commercial)\n- 'cà phê arabica việt nam' (900/tháng, supporting, educational)\n- 'review quán cà phê specialty quận 3' (140/tháng, long-tail local review)\n\n**Priority 3 (Rank sau — 6+ tháng):** Navigational, brand-specific, ít volume\n- 'hạt mộc menu' (150/tháng, navigational)\n- 'giá v60 hario chính hãng' (180/tháng, transactional, niche)\n- 'mua v60 hario online' (280/tháng, transactional, cạnh tranh cao)\n- 'barista training quận 3' (100/tháng, niche, workshop)\n\n**Kết luận:** Hạt Mộc nên áp dụng chiến lược 'dâm ngôn địa phương' (hyperlocal) — tập trung quận 3, từ keywords có 'quận 3' hoặc 'Saigon' đầu tiên, rank được rồi mở rộng quận 1, 7 sau.",
+      "rubric": {
+        "excellent": "10-9đ: (1) Chỉ ra ≥3 keywords không nên rank + lý do chuẩn (volume cao/cạnh tranh/intent mơ hồ); (2) Phân loại 5 lớp đầy đủ, mỗi lớp ≥2 ví dụ, sử dụng đúng tiêu chí; (3) Priority 1-3 logic, dựa trên volume + competition + local signal; có chiến lược xuyên suốt (ví dụ: hyperlocal trước, mở rộng sau).",
+        "acceptable": "8-6đ: (1) Chỉ ra 2–3 keywords nhưng lý do chưa sâu; (2) Phân loại 4–5 lớp, tổng cộng ≥8 keywords, nhưng có lớp thiếu ví dụ; (3) Priority hơi logic nhưng chưa rõ lý do hoặc chưa có chiến lược tổng thể.",
+        "insufficient": "<6đ: (1) Chỉ ra <2 keywords hoặc lý do sai; (2) Phân loại <3 lớp, hoặc lớp bị nhầm lẫn; (3) Priority không logic hoặc thiếu phần lớn."
+      }
+    }
+  ]
+}

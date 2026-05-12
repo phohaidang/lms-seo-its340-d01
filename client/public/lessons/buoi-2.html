@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buổi 2 — Hành trình khách hàng & Search Intent | ITS340 SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --paper: #F7F2E7;
+    --paper-shade: #EFE8D6;
+    --ink: #1B1714;
+    --ink-soft: #4A413A;
+    --rule: #C8BCA3;
+    --oxblood: #7A1F1F;
+    --oxblood-soft: #9B3838;
+    --gold: #B8893A;
+    --gold-soft: #D4A85F;
+    --green: #2F4A36;
+    --warm-gray: #8B7E6F;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+    background-image: 
+        radial-gradient(ellipse at top left, rgba(184,137,58,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(122,31,31,0.03) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.frame {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 48px 120px;
+    position: relative;
+}
+
+@media (max-width: 720px) {
+    .frame { padding: 40px 24px 80px; }
+    body { font-size: 16px; }
+}
+
+/* ===== Hero / Cover ===== */
+.cover {
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.cover-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    font-family: 'DM Mono', 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.cover-meta-left { line-height: 1.9; }
+.cover-meta-right { text-align: right; line-height: 1.9; }
+
+.cover-meta strong {
+    color: var(--oxblood);
+    font-weight: 600;
+}
+
+.session-roman {
+    font-family: 'Cormorant Garamond', 'Garamond', serif;
+    font-size: 220px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.9;
+    color: var(--gold);
+    margin-bottom: 0;
+    letter-spacing: -0.04em;
+    opacity: 0.9;
+}
+
+.session-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-bottom: 16px;
+}
+
+.session-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 24px 0 32px;
+    letter-spacing: -0.02em;
+    max-width: 720px;
+}
+
+@media (max-width: 720px) {
+    .session-roman { font-size: 140px; }
+    .session-title { font-size: 36px; }
+}
+
+.session-subtitle {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    max-width: 640px;
+    margin-bottom: 40px;
+}
+
+.cover-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0;
+}
+
+.cover-stat {
+    text-align: left;
+}
+
+.cover-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--oxblood);
+    line-height: 1;
+}
+
+.cover-stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+    .cover-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Section ===== */
+section {
+    margin-bottom: 72px;
+    scroll-margin-top: 40px;
+}
+
+.section-num {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.section-num::before {
+    content: "§ ";
+    color: var(--oxblood);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 28px;
+    letter-spacing: -0.015em;
+    max-width: 720px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--oxblood);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+p { margin-bottom: 18px; max-width: 720px; }
+
+p.lede {
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+p.lede::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    float: left;
+    line-height: 0.85;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: var(--oxblood);
+    font-style: normal;
+    font-weight: 500;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 28px;
+    max-width: 720px;
+}
+
+li { margin-bottom: 8px; padding-left: 6px; }
+
+ul li::marker { color: var(--gold); }
+ol li::marker { color: var(--oxblood); font-weight: 600; }
+
+strong { color: var(--ink); font-weight: 700; }
+em { color: var(--ink-soft); }
+
+a {
+    color: var(--oxblood);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-soft);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+/* ===== SCQA blocks ===== */
+.scqa {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: var(--paper-shade);
+    border-left: 3px solid var(--oxblood);
+    position: relative;
+}
+
+.scqa-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--gold);
+    font-style: italic;
+}
+
+.scqa-body { padding-top: 4px; }
+
+.scqa-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.scqa-content { font-size: 16px; line-height: 1.7; }
+.scqa-content p { margin-bottom: 10px; }
+.scqa-content p:last-child { margin-bottom: 0; }
+
+/* ===== Blockquote / Pull quote ===== */
+blockquote {
+    margin: 32px 0;
+    padding: 0 0 0 32px;
+    border-left: 3px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 720px;
+}
+
+blockquote::before {
+    content: "❝";
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--oxblood);
+    margin-right: 8px;
+    font-size: 28px;
+    line-height: 0;
+    vertical-align: -8px;
+}
+
+/* ===== Tiết block — kịch bản từng tiết ===== */
+.tiet {
+    margin: 36px 0;
+    background: #FFFEFB;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(27, 23, 20, 0.04);
+}
+
+.tiet-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 20px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tiet-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.tiet-num::before { content: "§ "; }
+
+.tiet-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    flex: 1;
+    line-height: 1.3;
+    color: var(--paper);
+    letter-spacing: -0.005em;
+}
+
+.tiet-duration {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+}
+
+.tiet-body { padding: 28px 32px; }
+
+.tiet-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px dashed var(--rule);
+}
+
+.tiet-row:last-child { border-bottom: none; }
+
+.tiet-row-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--oxblood);
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.tiet-row-content {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.tiet-row-content p { margin-bottom: 10px; }
+.tiet-row-content p:last-child { margin-bottom: 0; }
+.tiet-row-content ol, .tiet-row-content ul { margin-bottom: 10px; padding-left: 22px; }
+.tiet-row-content li { font-size: 15px; }
+
+@media (max-width: 720px) {
+    .tiet-row { grid-template-columns: 1fr; gap: 8px; }
+    .tiet-body { padding: 20px; }
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+table thead {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+}
+
+table th {
+    padding: 12px 14px;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    vertical-align: bottom;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--rule);
+}
+
+table tbody tr:last-child {
+    border-bottom: 2px solid var(--ink);
+}
+
+table td {
+    padding: 14px;
+    vertical-align: top;
+    color: var(--ink);
+}
+
+table td:first-child {
+    font-weight: 600;
+    color: var(--oxblood);
+}
+
+/* ===== Cards / Callouts ===== */
+.callout {
+    background: var(--paper-shade);
+    border-radius: 2px;
+    padding: 24px 28px;
+    margin: 28px 0;
+    border-left: 3px solid var(--gold);
+}
+
+.callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.callout-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.callout p { margin-bottom: 8px; font-size: 15.5px; }
+.callout p:last-child { margin-bottom: 0; }
+
+.callout.danger {
+    border-left-color: var(--oxblood);
+    background: rgba(122, 31, 31, 0.04);
+}
+.callout.danger .callout-label { color: var(--oxblood); }
+
+.callout.note {
+    border-left-color: var(--green);
+}
+.callout.note .callout-label { color: var(--green); }
+
+/* ===== Story / Persona Box ===== */
+.persona {
+    border: 1px solid var(--rule);
+    background: linear-gradient(135deg, rgba(184,137,58,0.05) 0%, rgba(122,31,31,0.03) 100%);
+    padding: 28px 32px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.persona::before {
+    content: "";
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+    border-radius: 1px;
+    transform: translate(4px, 4px);
+    z-index: -1;
+}
+
+.persona-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.persona p {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-style: italic;
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 100%;
+}
+
+/* ===== Numbered list with circles ===== */
+.steps {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+    max-width: 720px;
+}
+
+.steps > li {
+    counter-increment: step;
+    padding-left: 56px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--oxblood);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--oxblood);
+    background: var(--paper);
+}
+
+/* ===== Tag / Pill ===== */
+.tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.tag.gold { border-color: var(--gold-soft); color: var(--oxblood); background: rgba(184,137,58,0.08); }
+
+/* ===== Story map (diagram) ===== */
+.story-map {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 32px 36px;
+    margin: 32px 0;
+    border-radius: 2px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-x: auto;
+}
+
+.story-map pre {
+    color: var(--gold-soft);
+    font-family: inherit;
+    white-space: pre;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 100px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--warm-gray);
+    text-align: center;
+    line-height: 1.8;
+}
+
+footer .ornament {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--gold);
+    letter-spacing: 0.4em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* ===== TOC sidebar (navigation) ===== */
+.nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.nav-pill {
+    padding: 8px 14px;
+    background: var(--paper-shade);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 1px;
+}
+
+.nav-pill:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+/* ===== Highlight box for key concepts ===== */
+.concept {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 24px 0;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.concept-formula {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.concept-formula .accent { color: var(--oxblood); font-weight: 600; }
+.concept-formula .gold { color: var(--gold); font-weight: 600; }
+
+/* ===== Print ===== */
+@media print {
+    body { 
+        background: white; 
+        font-size: 12pt;
+        background-image: none;
+    }
+    .frame { padding: 0; max-width: 100%; }
+    .session-roman { font-size: 100pt; }
+    .session-title { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    h3 { font-size: 14pt; }
+    .tiet { break-inside: avoid; box-shadow: none; }
+    .tiet-header { background: #1B1714 !important; -webkit-print-color-adjust: exact; }
+    section { break-inside: avoid-page; }
+}
+</style>
+</head>
+<body>
+<div class="frame">
+
+<header class="cover">
+    <div class="cover-meta">
+        <div class="cover-meta-left">
+            ITS340 · Phân tích & Tối ưu Bộ máy Tìm kiếm<br>
+            Khoa HTTT Quản lý — Đại học Ngân hàng TP.HCM<br>
+            <strong>Học liệu điện tử</strong> · Cập nhật 2026
+        </div>
+        <div class="cover-meta-right">
+            Buổi 2 / 6<br>
+            05 tiết · 250 phút<br>
+            <strong>Phiên bản SEO + GEO</strong>
+        </div>
+    </div>
+    
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:280px;">
+            <div class="session-label">Buổi học · Session</div>
+            <h1 class="session-title">Hành trình khách hàng & Search Intent</h1>
+            <p class="session-subtitle">Cái gốc của mọi từ khoá — không phải tools, mà là sự thấu hiểu người dùng đang ở đâu trên hành trình của họ.</p>
+        </div>
+        <div class="session-roman">II</div>
+    </div>
+    
+    <div class="cover-stats">
+        <div class="cover-stat">
+            <div class="cover-stat-value">05</div>
+            <div class="cover-stat-label">Tiết học</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">SCQA</div>
+            <div class="cover-stat-label">Khung tài liệu</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">B2C</div>
+            <div class="cover-stat-label">Local · Café</div>
+        </div>
+        <div class="cover-stat">
+            <div class="cover-stat-value">2026</div>
+            <div class="cover-stat-label">Phiên bản</div>
+        </div>
+    </div>
+    
+    <nav class="nav-pills" style="margin-top:32px;"><a class="nav-pill" href="buoi-1.html">← Buổi 1</a>
+<a class="nav-pill" href="#muc-tieu">Mục tiêu</a>
+<a class="nav-pill" href="#tai-lieu">Tài liệu SCQA</a>
+<a class="nav-pill" href="#kich-ban">Kịch bản</a>
+<a class="nav-pill" href="#bai-tap">Bài tập</a>
+<a class="nav-pill" href="#hoc-lieu">Học liệu</a>
+<a class="nav-pill" href="buoi-3.html">Buổi 3 →</a></nav>
+</header>
+
+<section id="muc-tieu">
+    <div class="section-num">Phần I</div>
+    <h2>Mục tiêu buổi học</h2>
+    
+<p class="lede">Buổi 1 đã chỉ ra Hạt Mộc đang vô hình trên cả Google lẫn AI. Trước khi sửa được kết quả search, ta phải biết khách hàng đang hỏi gì, vào lúc nào, với tâm trạng gì. Đây là gốc rễ của mọi chiến lược keyword.</p>
+
+<h3>Chuẩn đầu ra (CLO mapping)</h3>
+<ul>
+    <li><strong>CLO1 + CLO2.</strong> Phân biệt được persona và search intent; xây dựng được ma trận intent cho một doanh nghiệp cụ thể.</li>
+    <li><strong>Bổ sung GEO.</strong> Hiểu sự khác biệt giữa <em>search query intent</em> (gõ vào Google) và <em>prompt intent</em> (hỏi AI) — vì AI thường khơi gợi intent sâu hơn: so sánh, tổng hợp, tư vấn cho tình huống cá nhân.</li>
+</ul>
+
+<div class="nav-pills" style="margin-top:24px;">
+    <span class="tag gold">CLO1 · CLO2</span>
+    <span class="tag">Ch.2.1 Giáo trình</span>
+    <span class="tag">Persona</span>
+    <span class="tag">Search Intent</span>
+    <span class="tag gold">Prompt Intent</span>
+    <span class="tag">STDC Journey</span>
+</div>
+
+</section><section id="ket-noi">
+    <div class="section-num">Phần II</div>
+    <h2>Kết nối với Buổi 1 (3 phút mở bài)</h2>
+    
+<blockquote>Buổi trước các em đã thấy: hỏi ChatGPT 'gợi ý quán cà phê specialty SG' — không có Hạt Mộc. Hỏi sai, kết quả sai. Nhưng trước khi sửa được kết quả, ta phải biết người ta đang hỏi gì, vào lúc nào, với tâm trạng gì. Đó là buổi hôm nay.</blockquote>
+<p>GV thu bài tập về nhà: bảng AI Visibility Audit của 1 đối thủ. Mỗi nhóm trình bày 1 phút — GV ghi 3 phát hiện chung lên bảng để dùng làm "nguyên liệu" xuyên suốt buổi học.</p>
+
+</section><section id="tai-lieu">
+    <div class="section-num">Phần III</div>
+    <h2>Tài liệu điện tử — khung SCQA</h2>
+    <div class="scqa">
+    <div class="scqa-letter">S</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Situation — Cái sinh viên đã biết</div>
+        <div class="scqa-content">
+<p>Sinh viên đã học môn Marketing căn bản, biết <strong>Buyer Persona</strong> (chân dung khách hàng) và <strong>USP</strong> (unique selling proposition). Thường thì persona vẽ ra trông như CV: <em>Linh, 28 tuổi, nữ, marketer, thu nhập 15tr, thích yoga và cà phê.</em></p>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">C</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Complication — Cái không khớp</div>
+        <div class="scqa-content">
+<p>Persona kiểu CV không đủ cho SEO/GEO. Vì cùng một Linh, trong một ngày, có thể tạo ra 5–7 truy vấn search/prompt khác nhau với intent hoàn toàn khác nhau:</p>
+<ul>
+    <li>Sáng 7h: <em>"cách pha V60 cho người mới"</em> — intent học hỏi</li>
+    <li>Trưa 12h: <em>"quán cà phê yên tĩnh gần Q.3 để làm việc"</em> — intent local + need-based</li>
+    <li>Chiều 3h: <em>"V60 vs Aeropress khác gì"</em> — intent so sánh</li>
+    <li>Tối 9h, hỏi ChatGPT: <em>"mình đang muốn tặng quà sinh nhật cho sếp mê cà phê specialty, gợi ý 3 món dưới 1 triệu"</em> — intent rất sâu</li>
+    <li>Cuối tuần: <em>"Hạt Mộc Coffee có giao hạt rang không"</em> — intent giao dịch</li>
+</ul>
+<p>Persona "Linh" là đúng — nhưng không đủ. Cái cần thêm là <strong>bản đồ các intent của Linh</strong> ở từng moment.</p>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">Q</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Question — Câu hỏi định hướng</div>
+        <div class="scqa-content">
+<blockquote>Làm thế nào để chuyển từ persona tĩnh → ma trận intent động? Và làm sao khớp các intent đó với content mà Hạt Mộc tạo ra?</blockquote>
+</div>
+    </div>
+</div><div class="scqa">
+    <div class="scqa-letter">A</div>
+    <div class="scqa-body">
+        <div class="scqa-label">Answer — Định hướng giải đáp</div>
+        <div class="scqa-content">
+<p>Buổi này giới thiệu khung <strong>Persona × Customer Journey × Search Intent</strong>, trong đó Customer Journey dùng mô hình <strong>See – Think – Do – Care</strong> (Avinash Kaushik / Google) thay vì AIDA cũ vì phù hợp với hành vi search hơn — không tuyến tính, mà bám vào trạng thái khách hàng.</p>
+<div class="concept">
+    <div class="concept-formula">
+        Persona &nbsp;×&nbsp; <span class="accent">Journey (STDC)</span> &nbsp;×&nbsp; <span class="gold">Intent (5 loại)</span>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+</section><section id="kich-ban">
+    <div class="section-num">Phần IV</div>
+    <h2>Kịch bản giảng dạy — 5 tiết</h2>
+    <div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 1</div>
+        <div class="tiet-title">Persona &amp; USP — Cái biết, làm chặt lại</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–10'</div><div class="tiet-row-content"><p><strong>Quick warm-up.</strong> Mỗi nhóm trình bày 1 phút về kết quả audit đối thủ ở nhà. GV ghi 3 phát hiện chung lên bảng — sẽ dùng tham chiếu xuyên suốt buổi.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">10–25'</div><div class="tiet-row-content"><p><strong>Hỏi ngược:</strong></p>
+<blockquote>Nếu ta đặt câu hỏi 'khách hàng của Hạt Mộc là ai', có 3 mức trả lời. Theo các em, mức nào dùng được cho SEO?</blockquote>
+<p>GV viết lên bảng:</p>
+<ol>
+    <li>"Người yêu cà phê" — vô dụng, quá rộng.</li>
+    <li>"Người 25–40 tuổi, thu nhập trung-cao ở SG" — nhân khẩu học, vẫn chưa đủ.</li>
+    <li>"Linh, 28t, marketer, làm trong toà nhà gần Q.3, sáng cần caffeine, trưa cần chỗ yên tĩnh để work, weekend muốn khám phá hạt mới" — đây mới là persona dùng được.</li>
+</ol></div></div>
+<div class="tiet-row"><div class="tiet-row-time">25–50'</div><div class="tiet-row-content"><p><strong>Vẽ persona Hạt Mộc cùng cả lớp.</strong> GV làm mẫu 1 persona (Linh — Marketer Bận Rộn). SV làm 2 persona còn lại theo nhóm:</p>
+<ul>
+    <li>Anh — Workshop Frequent Visitor (35t, designer)</li>
+    <li>Mai — Sinh viên Specialty Beginner (22t)</li>
+    <li>Chú Nam — Coffee Enthusiast Tự Pha Tại Nhà (50t)</li>
+</ul>
+<p>Yêu cầu mỗi persona phải có:</p>
+<ul>
+    <li>Tên + tuổi + nghề</li>
+    <li>1 câu <strong>JTBD</strong> (Jobs-to-be-Done — "thuê" Hạt Mộc để làm việc gì)</li>
+    <li>3 lo lắng</li>
+    <li>3 nguồn thông tin họ tin tưởng</li>
+</ul>
+<div class="callout">
+    <div class="callout-label">Điểm chốt</div>
+    <p>Persona dùng được phải trả lời được câu: <em>"Khi gặp vấn đề X, người này gõ gì lên Google/ChatGPT?"</em></p>
+</div></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 2</div>
+        <div class="tiet-title">Search Intent — 4 + 1 loại</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–5'</div><div class="tiet-row-content"><p>GV gõ 1 query lên màn hình: <em>"v60"</em>. Hỏi: <em>"Người này muốn gì?"</em></p>
+<p>Lớp im lặng — vì không thể đoán. Đó là vấn đề: <strong>cùng 1 keyword, nhiều intent.</strong></p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">5–25'</div><div class="tiet-row-content"><p><strong>4 loại Search Intent cổ điển:</strong></p>
+<table>
+<thead><tr><th>Loại</th><th>Đặc điểm</th><th>Ví dụ Hạt Mộc</th></tr></thead>
+<tbody>
+<tr><td><strong>(I) Informational</strong></td><td>học hỏi, tìm hiểu</td><td>"v60 là gì", "cách pha v60"</td></tr>
+<tr><td><strong>(N) Navigational</strong></td><td>tìm thương hiệu cụ thể</td><td>"hạt mộc coffee", "the workshop saigon menu"</td></tr>
+<tr><td><strong>(C) Commercial</strong></td><td>đang cân nhắc mua</td><td>"v60 vs aeropress", "top quán cà phê specialty quận 3"</td></tr>
+<tr><td><strong>(T) Transactional</strong></td><td>sẵn sàng giao dịch</td><td>"mua v60 hario chính hãng", "đặt bàn hạt mộc coffee"</td></tr>
+</tbody>
+</table></div></div>
+<div class="tiet-row"><div class="tiet-row-time">25–40'</div><div class="tiet-row-content"><p><strong>Loại thứ 5 — Local Intent</strong> (cực quan trọng cho Hạt Mộc):</p>
+<p>Query có tín hiệu địa lý ("near me", "quận 3", "saigon", hoặc Google tự nhận từ vị trí thiết bị). Local intent thường <em>overlap</em> với cả 4 loại trên.</p>
+<p><strong>Demo:</strong> search <em>"cà phê specialty"</em> trên 2 thiết bị ở 2 quận khác nhau → kết quả khác nhau hoàn toàn.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">40–50'</div><div class="tiet-row-content"><p><strong>Bài tập nhanh.</strong> GV chiếu 10 query, lớp gọi loại intent:</p>
+<ul>
+    <li>"v60 hario giá rẻ" → T</li>
+    <li>"specialty coffee là gì" → I</li>
+    <li>"shin coffee có giao hàng không" → N+T</li>
+    <li>"quán cà phê đẹp chụp ảnh quận 1" → C+Local</li>
+    <li>"cách thử cà phê specialty" → I</li>
+</ul></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 3</div>
+        <div class="tiet-title">Prompt Intent — Khi người ta nói chuyện với AI</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–15'</div><div class="tiet-row-content"><p><strong>So sánh trực tiếp.</strong> GV chiếu 2 cột:</p>
+<table>
+<thead><tr><th>Search query (Google)</th><th>Prompt (ChatGPT)</th></tr></thead>
+<tbody>
+<tr>
+    <td><em>"v60 vs aeropress"</em><br><span class="tag">3 từ</span></td>
+    <td><em>"Mình đang muốn mua dụng cụ pha cà phê tại nhà, ngân sách 1.5 triệu, mình thích cà phê body đậm hơn là chua, mỗi sáng pha 1 ly. V60 hay Aeropress phù hợp hơn?"</em><br><span class="tag">40+ từ</span></td>
+</tr>
+</tbody>
+</table>
+<p>Hỏi lớp: <em>"Khác biệt chính ở đâu?"</em> — Prompt chứa <strong>context cá nhân</strong>, đặt <strong>câu hỏi phức tạp hơn</strong>, mong <strong>lời khuyên</strong> chứ không chỉ thông tin.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">15–35'</div><div class="tiet-row-content"><p><strong>3 đặc điểm của Prompt Intent</strong> (mới, không có trong giáo trình cũ):</p>
+<ol class="steps">
+    <li><strong>Conversational</strong> — câu dài, đầy đủ ngữ pháp.</li>
+    <li><strong>Context-rich</strong> — chứa thông tin về tình huống cá nhân, ràng buộc, sở thích.</li>
+    <li><strong>Synthesis-seeking</strong> — mong AI tổng hợp/khuyên chứ không chỉ liệt kê.</li>
+</ol>
+<div class="callout note">
+    <div class="callout-label">Hệ quả cho content</div>
+    <p>Muốn được AI cite, content phải <strong>chứa câu trả lời sẵn</strong> cho dạng query phức tạp này — không chỉ trang sản phẩm, mà bài viết kiểu "Cách chọn dụng cụ pha cà phê theo phong cách bạn thích".</p>
+</div></div></div>
+<div class="tiet-row"><div class="tiet-row-time">35–50'</div><div class="tiet-row-content"><p><strong>Thảo luận nhóm:</strong></p>
+<blockquote>Liệt kê 5 prompt mà Linh (persona) có thể gõ vào ChatGPT khi đang trong các giai đoạn khác nhau của hành trình mua cà phê specialty.</blockquote>
+<p>Mỗi nhóm chia sẻ 1 prompt thú vị nhất.</p></div></div></div>
+</div><div style="text-align:center; margin:24px 0; color:var(--gold); font-family:Cormorant Garamond, serif; font-size:24px; letter-spacing:0.3em;">— ☕ NGHỈ GIẢI LAO 15' —</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 4</div>
+        <div class="tiet-title">Customer Journey — See · Think · Do · Care</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–10'</div><div class="tiet-row-content"><p><strong>Vì sao đổi từ AIDA sang STDC?</strong></p>
+<p>AIDA tuyến tính (Awareness → Interest → Desire → Action), nhưng hành vi search không tuyến tính. STDC bám vào <strong>trạng thái</strong> chứ không phải bước thời gian — phù hợp hơn với cách người dùng nhảy qua lại giữa các kênh trong hành trình mua.</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">10–30'</div><div class="tiet-row-content"><p>Trình bày 4 giai đoạn cho Hạt Mộc:</p>
+<table>
+<thead><tr><th>Giai đoạn</th><th>Trạng thái KH</th><th>Query/prompt mẫu</th><th>Content cần</th></tr></thead>
+<tbody>
+<tr><td><strong>SEE</strong></td><td>Có quan tâm cà phê chung</td><td>"specialty coffee là gì", "khu vực trồng cà phê việt nam"</td><td>Giáo dục, blog rộng</td></tr>
+<tr><td><strong>THINK</strong></td><td>Đang cân nhắc trải nghiệm specialty</td><td>"quán cà phê specialty đáng đi quận 1, 3", "specialty vs truyền thống khác gì"</td><td>So sánh, listicle</td></tr>
+<tr><td><strong>DO</strong></td><td>Sẵn sàng đến/mua</td><td>"hạt mộc coffee menu", "hạt mộc giờ mở cửa", "đặt bàn hạt mộc"</td><td>Trang sản phẩm, GBP, schema</td></tr>
+<tr><td><strong>CARE</strong></td><td>Đã trải nghiệm, đang gắn bó</td><td>"hạt mộc workshop pha cà phê", "mua hạt mộc online", "hạt mộc có gì mới"</td><td>Email/SMS, blog cập nhật, community</td></tr>
+</tbody>
+</table></div></div>
+<div class="tiet-row"><div class="tiet-row-time">30–50'</div><div class="tiet-row-content"><p><strong>Câu hỏi sâu:</strong></p>
+<blockquote>Theo các em, Hạt Mộc đang đầu tư content cho giai đoạn nào? Họ thiếu giai đoạn nào?</blockquote>
+<p><em>Thường SV phát hiện: Phương đầu tư mạnh vào DO (menu, ảnh đẹp, IG) nhưng bỏ trống SEE và THINK — tức là không có ai đến vì khách không biết quán này tồn tại từ giai đoạn đầu.</em></p></div></div></div>
+</div><div class="tiet">
+    <div class="tiet-header">
+        <div class="tiet-num">Tiết 5</div>
+        <div class="tiet-title">Workshop — Ma trận Persona × Journey × Intent cho Hạt Mộc</div>
+        <div class="tiet-duration">50 phút</div>
+    </div>
+    <div class="tiet-body"><div class="tiet-row"><div class="tiet-row-time">0–10'</div><div class="tiet-row-content"><p>GV phát template ma trận (3 persona × 4 stage):</p>
+<table>
+<thead><tr><th></th><th>SEE</th><th>THINK</th><th>DO</th><th>CARE</th></tr></thead>
+<tbody>
+<tr><td>Linh</td><td>· · ·</td><td>· · ·</td><td>· · ·</td><td>· · ·</td></tr>
+<tr><td>Anh</td><td>· · ·</td><td>· · ·</td><td>· · ·</td><td>· · ·</td></tr>
+<tr><td>Mai</td><td>· · ·</td><td>· · ·</td><td>· · ·</td><td>· · ·</td></tr>
+</tbody>
+</table>
+<p>Mỗi ô điền: <strong>2 query/prompt + 1 đề xuất content.</strong></p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">10–40'</div><div class="tiet-row-content"><p>Các nhóm điền ma trận. GV đi từng nhóm với 2 yêu cầu:</p>
+<ul>
+    <li><strong>Không lặp lại query</strong> giữa các ô</li>
+    <li><strong>Không bỏ trống</strong> ô nào</li>
+</ul>
+<p>Đây chính là <strong>bản đồ content</strong> sẽ dùng cho buổi 3 (keyword research) và buổi 5 (sản xuất content).</p></div></div>
+<div class="tiet-row"><div class="tiet-row-time">40–50'</div><div class="tiet-row-content"><p>2 nhóm chia sẻ. GV chốt:</p>
+<blockquote>Ma trận này có 12 ô × ~3 query/ô ≈ <strong>36 cơ hội content</strong>. Đây là toàn bộ "không gian search" mà Hạt Mộc cần phủ.</blockquote></div></div></div>
+</div>
+</section><section id="bai-tap">
+    <div class="section-num">Phần V</div>
+    <h2>Bài tập về nhà</h2>
+    
+<h3>Cá nhân — Storytelling</h3>
+<div class="callout note">
+    <div class="callout-label">Đánh giá tham gia</div>
+    <div class="callout-title">"Một ngày của Linh"</div>
+    <p>Mỗi em chọn 1 persona đã vẽ, viết 1 trang <em>"Một ngày của [tên persona]"</em> — kể chuyện tự nhiên, gài vào đó tối thiểu 5 search/prompt mà cô ấy thực hiện liên quan cà phê. Mục đích: cảm nhận flow tự nhiên, không gò ép.</p>
+</div>
+
+<h3>Nhóm — Hoàn thiện ma trận</h3>
+<div class="callout">
+    <div class="callout-label">Chuẩn bị Buổi 3</div>
+    <div class="callout-title">Persona × Journey × Intent Matrix (digital)</div>
+    <p>Hoàn thiện ma trận Persona × Journey × Intent cho Hạt Mộc — số hoá thành Google Sheets/Notion, có ≥ 36 query/prompt cụ thể. Nộp đầu Buổi 3.</p>
+</div>
+
+</section><section id="hoc-lieu">
+    <div class="section-num">Phần VI</div>
+    <h2>Học liệu</h2>
+    
+<h3>Bắt buộc</h3>
+<ul>
+    <li>McDonald, Jason. <em>SEO Workbook</em>, 2021. <strong>Chương 2 mục 2.1.</strong></li>
+    <li>Slide gốc: <em>Chân dung Khách hàng mục tiêu, USP, Phân khúc khách hàng</em>.</li>
+</ul>
+
+<h3>Bổ sung</h3>
+<ul>
+    <li>Avinash Kaushik — <em>See, Think, Do, Care: A Content, Marketing, Measurement Business Framework</em> (kaushik.net).</li>
+    <li>Christensen, C. — <em>Jobs to Be Done</em> framework (Harvard Business Review).</li>
+    <li>Search Engine Land — <em>Search intent: a complete guide</em> (cập nhật 2025).</li>
+</ul>
+
+</section>
+
+<footer>
+    <div class="ornament">⁂ · ⁂ · ⁂</div>
+    Phân tích & Tối ưu hoá Bộ máy Tìm kiếm · ITS340<br>
+    Khoa Hệ thống Thông tin Quản lý — Trường Đại học Ngân hàng TP. Hồ Chí Minh<br>
+    Buổi 2 of 6 · Phiên bản SEO + GEO · 2026
+</footer>
+
+</div>
+</body>
+</html>
