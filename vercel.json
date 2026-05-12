@@ -8,7 +8,9 @@
     {
       "src": "client/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "build" }
+      "config": {
+        "distDir": "build"
+      }
     }
   ],
   "rewrites": [
@@ -17,8 +19,8 @@
       "destination": "server/index.js"
     },
     {
-      "source": "/((?!api/).*)",
-      "destination": "client/index.html"
+      "source": "/(.*)",
+      "destination": "/client/index.html"
     }
   ],
   "env": {
