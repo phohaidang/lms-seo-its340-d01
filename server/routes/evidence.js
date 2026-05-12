@@ -12,7 +12,9 @@ const __dirname = dirname(__filename);
 const EVIDENCE_DIR = join(__dirname, '..', '..', 'data', 'evidence');
 
 // Ensure evidence dir exists
-if (!existsSync(EVIDENCE_DIR)) mkdirSync(EVIDENCE_DIR, { recursive: true });
+if (!process.env.VERCEL) {
+  if (!existsSync(EVIDENCE_DIR)) mkdirSync(EVIDENCE_DIR, { recursive: true });
+}
 
 const router = Router();
 

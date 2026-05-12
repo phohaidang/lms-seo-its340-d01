@@ -17,7 +17,9 @@ const DATA_DIR = join(__dirname, '..', '..', 'data');
 const MOCK_DB_PATH = join(DATA_DIR, '_mock_db.json');
 
 // Ensure data directory exists
-if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
+if (!process.env.VERCEL) {
+  if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
+}
 
 const IS_MOCK = !process.env.GOOGLE_SHEETS_ID;
 

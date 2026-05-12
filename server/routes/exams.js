@@ -14,8 +14,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const EXAMS_DIR = join(__dirname, '..', 'data', 'exams');
 const EVIDENCE_DIR = join(__dirname, '..', '..', 'data', 'evidence');
-const UPLOAD_DIR = join(__dirname, '..', 'data', 'uploads');
-if (!existsSync(UPLOAD_DIR)) mkdirSync(UPLOAD_DIR, { recursive: true });
 
 // Change to memory storage for Serverless / Google Drive upload
 const upload = multer({ storage: multer.memoryStorage() });
