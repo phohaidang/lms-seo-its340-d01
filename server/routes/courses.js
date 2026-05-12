@@ -11,17 +11,17 @@ const router = Router();
 
 // Course session metadata
 const SESSIONS = [
-  { id: 1, chapter: 'Ch.1 §1.1-1.3', title: 'Giới thiệu & Python cơ bản', topics: 'Biến, Kiểu dữ liệu, Toán tử số học, Nhập/Xuất dữ liệu', clo: 'CLO1', textbook: 'Ch.1-2 Think Python', duration: '5 tiết (250 phút)' },
-  { id: 2, chapter: 'Ch.2 §2.1-2.4', title: 'Cấu trúc điều khiển & Vòng lặp', topics: 'If-elif-else, Vòng lặp for, while, Logic Operators', clo: 'CLO1, CLO2', textbook: 'Ch.3-4 Think Python', duration: '5 tiết (250 phút)' },
-  { id: 3, chapter: 'Ch.3 §3.1-3.3', title: 'Hàm, Phân rã & Trừu tượng', topics: 'Def, Return, Scope, Parameters, Abstraction, Decomposition', clo: 'CLO1, CLO2', textbook: 'Ch.5-6 Think Python', duration: '5 tiết (250 phút)' },
-  { id: 4, chapter: 'Ch.3-4', title: 'Đệ quy, Chuỗi & Lập trình phòng thủ', topics: 'Recursion, String Methods, try/except, assert + Kiểm tra giữa kỳ 1', clo: 'CLO1, CLO2, CLO3', textbook: 'Ch.7-8 Think Python', duration: '5 tiết (250 phút)', hasExam: true, examId: 'midterm-1' },
-  { id: 5, chapter: 'Ch.5', title: 'Lớp, Đối tượng & OOP', topics: 'Class, Instance, __init__, Inheritance, Overriding', clo: 'CLO2, CLO3', textbook: 'Ch.9-10 Think Python', duration: '5 tiết (250 phút)' },
-  { id: 6, chapter: 'Ch.6', title: 'Độ hiệu quả (Big-O) & Tổng kết', topics: 'Big-O, Search Algorithms, List vs Set, Tối ưu hóa + Kiểm tra giữa kỳ 2', clo: 'CLO1-3', textbook: 'Ch.11 Think Python', duration: '5 tiết (250 phút)', hasExam: true, examId: 'midterm-2' }
+  { id: 1, chapter: 'Ch.1 §1.1-1.3', title: 'Tổng quan về SEO & Search Engine', topics: 'Cơ chế hoạt động của Google, Các loại SEO, Quy trình SEO tổng thể', clo: 'CLO1', textbook: 'SEO Fundamentals', duration: '5 tiết' },
+  { id: 2, chapter: 'Ch.2 §2.1-2.4', title: 'Nghiên cứu Từ khóa (Keyword Research)', topics: 'User Intent, Công cụ nghiên cứu từ khóa, Lập kế hoạch từ khóa', clo: 'CLO1, CLO2', textbook: 'Keyword Research Guide', duration: '5 tiết' },
+  { id: 3, chapter: 'Ch.3 §3.1-3.3', title: 'SEO On-page & Tối ưu nội dung', topics: 'Thẻ Meta, Cấu trúc bài viết chuẩn SEO, Tối ưu hình ảnh', clo: 'CLO2', textbook: 'On-page Optimization', duration: '5 tiết' },
+  { id: 4, chapter: 'Ch.4 §4.1-4.2', title: 'Technical SEO & Trải nghiệm người dùng', topics: 'Sitemap, Robots.txt, Page Speed, Core Web Vitals', clo: 'CLO2, CLO3', textbook: 'Technical SEO Audit', duration: '5 tiết' },
+  { id: 5, chapter: 'Ch.5 §5.1-5.3', title: 'SEO Off-page & Xây dựng liên kết', topics: 'Backlinks, Topical Authority, Social Signals', clo: 'CLO3', textbook: 'Link Building Strategies', duration: '5 tiết' },
+  { id: 6, chapter: 'Ch.6 §6.1-6.2', title: 'Đo lường & Báo cáo SEO', topics: 'Google Search Console, Google Analytics, Báo cáo thứ hạng', clo: 'CLO1-3', textbook: 'SEO Reporting', duration: '5 tiết' }
 ];
 
 /**
  * GET /api/courses/sessions
- * List all 9 sessions
+ * List all sessions
  */
 router.get('/sessions', authenticate, (req, res) => {
   res.json({
@@ -50,12 +50,10 @@ router.get('/sessions/:id', authenticate, (req, res) => {
   const lessonsDir = join(__dirname, '..', '..', 'client', 'public', 'lessons');
   const slidesDir = join(__dirname, '..', '..', 'client', 'public', 'slides');
   
-  const paddedId = id.toString().padStart(2, '0');
-  
   res.json({
     ...session,
-    hasLesson: existsSync(join(lessonsDir, `Buoi_${paddedId}.html`)),
-    hasSlide: existsSync(join(slidesDir, `Buoi_${paddedId}.pdf`))
+    hasLesson: existsSync(join(lessonsDir, `buoi-${id}.html`)),
+    hasSlide: existsSync(join(slidesDir, `buoi-${id}.pdf`))
   });
 });
 
